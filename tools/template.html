@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Taviraj:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v={{CSS_V}}">
 <script>
+  document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('rc-theme'); if (t) document.documentElement.dataset.theme = t;
         var f = localStorage.getItem('rc-fs'); if (f) document.documentElement.style.setProperty('--rc-fs', f + 'px'); } catch (e) {}
 </script>
@@ -26,6 +27,7 @@
       <span><b>รัฐธรรมนูญแห่งราชอาณาจักรไทย</b><small>พุทธศักราช ๒๕๖๐ · ฉบับปรับปรุงล่าสุด</small></span>
     </a>
     <nav class="rc-nav" aria-label="เมนูหลัก">
+      <a href="#topics">หัวข้อความรู้</a>
       <a href="#reader">ตัวบท</a>
       <a href="#history">ประวัติการแก้ไข</a>
       <a href="#glossary">อภิธานศัพท์</a>
@@ -78,6 +80,22 @@
       <div class="rc-legend-item"><i class="is-explain"></i><div><b>คำอธิบายของเว็บไซต์</b><span>กรอบเส้นประ ไม่ใช่ตัวบทกฎหมาย</span></div></div>
     </div>
     <p class="rc-disclaimer">เว็บไซต์นี้จัดทำโดยบุคคลเพื่อให้อ่านง่าย ไม่ใช่เว็บไซต์ของหน่วยงานรัฐ หากจะใช้อ้างอิงทางกฎหมาย โปรดตรวจกับฉบับที่ประกาศในราชกิจจานุเบกษา</p>
+  </section>
+
+  <section class="tp-hub" id="topics" aria-labelledby="tpTitle">
+    <div class="rc-hub-head"><h2 id="tpTitle">หัวข้อความรู้ <span>{{N_TOPICS}} หัวข้อ</span></h2><p>คำอธิบายเรื่องการเมืองการปกครองไทย อ้างอิงตัวบทรัฐธรรมนูญและแหล่งทางการ</p></div>
+    <div class="tp-groups">{{TOPIC_HUB}}</div>
+  </section>
+
+  <section class="tp-stage" id="stage" aria-label="เนื้อหาหัวข้อ">
+    <div class="tp-stage-bar">
+      <div class="tp-crumb"><span id="stageGroup">หัวข้อความรู้</span><b id="stageTitle"></b></div>
+      <div class="tp-stage-nav">
+        <button class="rc-btn" type="button" id="tpPrev" aria-label="หัวข้อก่อนหน้า">‹ ก่อนหน้า</button>
+        <button class="rc-btn" type="button" id="tpNext" aria-label="หัวข้อถัดไป">ถัดไป ›</button>
+      </div>
+    </div>
+    <div class="tp-stage-body" id="stageBody">{{TOPIC_PANELS}}</div>
   </section>
 
   <section class="rc-hub" id="chapters" aria-labelledby="hubTitle">

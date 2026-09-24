@@ -211,6 +211,101 @@ def chapter_id(ch):
     return 'chT' if ch['no'] is None else 'ch%d' % ch['no']
 
 
+# ── knowledge topics (explanatory panels built from topics/*.html) ───────
+TOPIC_HEAD = re.compile(r'^<!--topic\s*(\{.*?\})\s*-->\s*', re.S)
+
+
+def load_topics():
+    tdir = os.path.join(ROOT, 'topics')
+    with io.open(os.path.join(tdir, '_groups.json'), encoding='utf-8') as f:
+        groups = json.load(f)
+    topics = []
+    for name in sorted(os.listdir(tdir)):
+        if not name.endswith('.html'):
+            continue
+        with io.open(os.path.join(tdir, name), encoding='utf-8') as f:
+            src = f.read()
+        m = TOPIC_HEAD.match(src)
+        assert m, 'topic header missing in ' + name
+        meta = json.loads(m.group(1))
+        meta['body'] = src[m.end():]
+        meta['file'] = name
+        topics.append(meta)
+    gids = [g['id'] for g in groups]
+    for t in topics:
+        assert t['group'] in gids, 'unknown group in ' + t['file']
+    assert len({t['id'] for t in topics}) == len(topics), 'duplicate topic id'
+    topics.sort(key=lambda t: (gids.index(t['group']), t['order']))
+    return groups, topics
+
+
+def linkify_html(text):
+    """linkify() for text that is already HTML (topic sources are hand-written HTML)."""
+    return linkify(html.unescape(text))
+
+
+def render_topic(t, secs):
+    body = t['body']
+
+    # 1. every data-check="N:phrase;N:phrase" must be literally in that section, then the attribute is dropped
+    def check(m):
+        for pair in m.group(1).split(';'):
+            n, phrase = pair.split(':', 1)
+            if phrase not in ' '.join(secs[int(n)]['paras']):
+                raise SystemExit('topic %s: section %s does not contain “%s”' % (t['id'], n, phrase))
+        return ''
+    body = re.sub(r'\s*data-check="([^"]*)"', check, body)
+    # 2. numbers copied from a source in Arabic digits → Thai digits, so they are never retyped
+    body = re.sub(r'\{\{th:([0-9,.]+)\}\}', lambda m: th(m.group(1)), body)
+    # 3. "มาตรา ๘๓" in the explanatory text → link (text between tags only)
+    body = re.sub(r'>([^<]+)<', lambda m: '>' + linkify_html(m.group(1)) + '<', body)
+
+    # 4. official quotes are copied from the data, never typed
+    def quote(m):
+        n = int(m.group(1))
+        paras = secs[n]['paras']
+        part = bool(m.group(2))
+        if part:
+            a, _, b = m.group(2).partition('-')
+            a, b = int(a), int(b or a)
+            assert 1 <= a <= b <= len(paras), 'bad paragraph range in ' + m.group(0)
+            paras = paras[a - 1:b]
+        return ('<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s%d" data-n="%d">มาตรา %s</a>'
+                '<span>ตัวบททางการ%s</span></p>%s</blockquote>') % (
+                    n, n, secs[n]['th'], ' (บางวรรค)' if part else '', para_html(paras))
+    body = re.sub(r'\{\{sec:(\d+)(?::(\d+(?:-\d+)?))?\}\}', quote, body)
+    left = re.findall(r'\{\{[^}]*\}\}', body)
+    assert not left, 'unknown placeholder in %s: %s' % (t['id'], left)
+
+    srcs = ''.join('<li>%s</li>' % (
+        '<a href="%s"%s>%s</a>' % (attr(s['u']), '' if s['u'].startswith('#') else ' rel="noopener" target="_blank"', esc(s['t']))
+        if s.get('u') else esc(s['t'])) for s in t['sources'])
+    return ('<section class="tp-panel" id="t-%s" data-topic="%s" aria-labelledby="t-%s-h">'
+            '<header class="tp-head"><span class="tp-ic" aria-hidden="true">%s</span><div><h3 id="t-%s-h">%s</h3>'
+            '<p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ %s</p></div></header>'
+            '<div class="tp-body">%s</div>'
+            '<footer class="tp-src"><b>แหล่งอ้างอิง</b><ul>%s</ul></footer></section>') % (
+                t['id'], t['id'], t['id'], t['icon'], t['id'], esc(t['title']), th_date(t['asof']), body, srcs)
+
+
+def topics_html(groups, topics, secs):
+    hub, panels, k = [], [], 0
+    for g in groups:
+        mine = [t for t in topics if t['group'] == g['id']]
+        if not mine:
+            continue
+        k += 1
+        btns = ''.join('<button type="button" class="tp-btn" data-topic="%s" aria-controls="t-%s" style="--i:%d">'
+                       '<span class="tp-btn-ic" aria-hidden="true">%s</span><span>%s</span></button>' % (
+                           t['id'], t['id'], i, t['icon'], esc(t['title'])) for i, t in enumerate(mine))
+        hub.append('<details class="tp-group" open><summary><span class="tp-group-ic" aria-hidden="true">%s</span>'
+                   '<span class="tp-group-no">%s</span><span class="tp-group-name">%s</span>'
+                   '<span class="tp-group-count">%s หัวข้อ</span></summary><div class="tp-btns">%s</div></details>' % (
+                       g['icon'], th('%02d' % k), esc(g['name']), th(len(mine)), btns))
+        panels += [render_topic(t, secs) for t in mine]
+    return ''.join(hub), ''.join(panels)
+
+
 def build():
     d = load('constitution.json')
     g = load('glossary.json')
@@ -348,6 +443,9 @@ def build():
     else:
         raise SystemExit('OCS original text differs from the Royal Gazette PDF — run tools/verify_gazette.py')
 
+    t_groups, topics = load_topics()
+    t_hub, t_panels = topics_html(t_groups, topics, secs)
+
     live = repo_live()
     print('GitHub repo reachable:', live, '(links to it are %s)' % ('included' if live else 'left out'))
     page = TEMPLATE
@@ -365,6 +463,7 @@ def build():
         '{{REPO_FOOT}}': ' · <a href="%s" rel="noopener" target="_blank">ซอร์สโค้ด</a>' % REPO_URL if live else '',
         '{{REPO_REPORT}}': 'หากพบข้อผิดพลาด โปรดแจ้งผ่าน <a href="%s/issues" rel="noopener" target="_blank">GitHub</a> ' % REPO_URL if live else '',
         '{{AM_SOURCES}}': am_sources, '{{CHANGED}}': changed, '{{VERIFY_GAZETTE}}': verify_msg,
+        '{{TOPIC_HUB}}': t_hub, '{{TOPIC_PANELS}}': t_panels, '{{N_TOPICS}}': th(len(topics)),
     }
     for k, v in repl.items():
         page = page.replace(k, v)

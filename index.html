@@ -10,8 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Taviraj:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=68f3b1a9e6">
+<link rel="stylesheet" href="assets/site.css?v=bbffde3607">
 <script>
+  document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('rc-theme'); if (t) document.documentElement.dataset.theme = t;
         var f = localStorage.getItem('rc-fs'); if (f) document.documentElement.style.setProperty('--rc-fs', f + 'px'); } catch (e) {}
 </script>
@@ -26,6 +27,7 @@
       <span><b>รัฐธรรมนูญแห่งราชอาณาจักรไทย</b><small>พุทธศักราช ๒๕๖๐ · ฉบับปรับปรุงล่าสุด</small></span>
     </a>
     <nav class="rc-nav" aria-label="เมนูหลัก">
+      <a href="#topics">หัวข้อความรู้</a>
       <a href="#reader">ตัวบท</a>
       <a href="#history">ประวัติการแก้ไข</a>
       <a href="#glossary">อภิธานศัพท์</a>
@@ -78,6 +80,211 @@
       <div class="rc-legend-item"><i class="is-explain"></i><div><b>คำอธิบายของเว็บไซต์</b><span>กรอบเส้นประ ไม่ใช่ตัวบทกฎหมาย</span></div></div>
     </div>
     <p class="rc-disclaimer">เว็บไซต์นี้จัดทำโดยบุคคลเพื่อให้อ่านง่าย ไม่ใช่เว็บไซต์ของหน่วยงานรัฐ หากจะใช้อ้างอิงทางกฎหมาย โปรดตรวจกับฉบับที่ประกาศในราชกิจจานุเบกษา</p>
+  </section>
+
+  <section class="tp-hub" id="topics" aria-labelledby="tpTitle">
+    <div class="rc-hub-head"><h2 id="tpTitle">หัวข้อความรู้ <span>๙ หัวข้อ</span></h2><p>คำอธิบายเรื่องการเมืองการปกครองไทย อ้างอิงตัวบทรัฐธรรมนูญและแหล่งทางการ</p></div>
+    <div class="tp-groups"><details class="tp-group" open><summary><span class="tp-group-ic" aria-hidden="true">👑</span><span class="tp-group-no">๐๑</span><span class="tp-group-name">สถาบันพระมหากษัตริย์ &amp; มรดกชาติ</span><span class="tp-group-count">๑ หัวข้อ</span></summary><div class="tp-btns"><button type="button" class="tp-btn" data-topic="privy-council" aria-controls="t-privy-council" style="--i:0"><span class="tp-btn-ic" aria-hidden="true">📜</span><span>คณะองคมนตรี</span></button></div></details><details class="tp-group" open><summary><span class="tp-group-ic" aria-hidden="true">🏛️</span><span class="tp-group-no">๐๒</span><span class="tp-group-name">การเมือง การปกครอง</span><span class="tp-group-count">๘ หัวข้อ</span></summary><div class="tp-btns"><button type="button" class="tp-btn" data-topic="legislature" aria-controls="t-legislature" style="--i:0"><span class="tp-btn-ic" aria-hidden="true">⚖️</span><span>ฝ่ายนิติบัญญัติ (รัฐสภา)</span></button><button type="button" class="tp-btn" data-topic="cabinet" aria-controls="t-cabinet" style="--i:1"><span class="tp-btn-ic" aria-hidden="true">🏛️</span><span>ฝ่ายบริหาร (คณะรัฐมนตรี)</span></button><button type="button" class="tp-btn" data-topic="judiciary" aria-controls="t-judiciary" style="--i:2"><span class="tp-btn-ic" aria-hidden="true">⚖️</span><span>ฝ่ายตุลาการ (ศาลไทย)</span></button><button type="button" class="tp-btn" data-topic="const-court" aria-controls="t-const-court" style="--i:3"><span class="tp-btn-ic" aria-hidden="true">⚖️</span><span>ศาลรัฐธรรมนูญ</span></button><button type="button" class="tp-btn" data-topic="independent-organs" aria-controls="t-independent-organs" style="--i:4"><span class="tp-btn-ic" aria-hidden="true">🛡️</span><span>องค์กรอิสระตามรัฐธรรมนูญ</span></button><button type="button" class="tp-btn" data-topic="law-hierarchy" aria-controls="t-law-hierarchy" style="--i:5"><span class="tp-btn-ic" aria-hidden="true">📐</span><span>ลำดับศักดิ์กฎหมาย</span></button><button type="button" class="tp-btn" data-topic="local-gov" aria-controls="t-local-gov" style="--i:6"><span class="tp-btn-ic" aria-hidden="true">🏙️</span><span>องค์กรปกครองส่วนท้องถิ่น (การกระจายอำนาจ)</span></button><button type="button" class="tp-btn" data-topic="elections" aria-controls="t-elections" style="--i:7"><span class="tp-btn-ic" aria-hidden="true">🗳️</span><span>ระบบเลือกตั้ง &amp; กกต.</span></button></div></details></div>
+  </section>
+
+  <section class="tp-stage" id="stage" aria-label="เนื้อหาหัวข้อ">
+    <div class="tp-stage-bar">
+      <div class="tp-crumb"><span id="stageGroup">หัวข้อความรู้</span><b id="stageTitle"></b></div>
+      <div class="tp-stage-nav">
+        <button class="rc-btn" type="button" id="tpPrev" aria-label="หัวข้อก่อนหน้า">‹ ก่อนหน้า</button>
+        <button class="rc-btn" type="button" id="tpNext" aria-label="หัวข้อถัดไป">ถัดไป ›</button>
+      </div>
+    </div>
+    <div class="tp-stage-body" id="stageBody"><section class="tp-panel" id="t-privy-council" data-topic="privy-council" aria-labelledby="t-privy-council-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">📜</span><div><h3 id="t-privy-council-h">คณะองคมนตรี</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">พระมหากษัตริย์ทรงเลือกและทรงแต่งตั้งผู้ทรงคุณวุฒิเป็นประธานองคมนตรีคนหนึ่งและองคมนตรีอื่นอีกไม่เกินสิบแปดคน ประกอบเป็นคณะองคมนตรี (<a class="rc-xref" href="#s10" data-n="10">มาตรา ๑๐</a>)</p>
+
+<div class="tp-stats">
+  <div class="tp-stat"><b>๑</b><span>ประธานองคมนตรี</span><small><a class="rc-xref" href="#s10" data-n="10">มาตรา ๑๐</a></small></div>
+  <div class="tp-stat"><b>ไม่เกิน ๑๘</b><span>องคมนตรีอื่น</span><small><a class="rc-xref" href="#s10" data-n="10">มาตรา ๑๐</a></small></div>
+</div>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>หน้าที่</h4><p>ถวายความเห็นต่อพระมหากษัตริย์ในพระราชกรณียกิจทั้งปวงที่พระมหากษัตริย์ทรงปรึกษา และหน้าที่อื่นตามที่บัญญัติไว้ในรัฐธรรมนูญ (<a class="rc-xref" href="#s10" data-n="10">มาตรา ๑๐</a>)</p></div>
+  <div class="tp-card"><h4>ความเป็นกลางทางการเมือง</h4><p>องคมนตรีต้องไม่ดำรงตำแหน่งทางการเมือง ไม่เป็นสมาชิกหรือเจ้าหน้าที่ของพรรคการเมือง และต้องไม่แสดงการฝักใฝ่ในพรรคการเมืองใด ๆ (<a class="rc-xref" href="#s12" data-n="12">มาตรา ๑๒</a>)</p></div>
+  <div class="tp-card"><h4>ถวายสัตย์ปฏิญาณ</h4><p>ก่อนเข้ารับหน้าที่ องคมนตรีต้องถวายสัตย์ปฏิญาณต่อพระมหากษัตริย์ (<a class="rc-xref" href="#s13" data-n="13">มาตรา ๑๓</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s10" data-n="10">มาตรา ๑๐</a><span>ตัวบททางการ</span></p><p class="rc-p1">พระมหากษัตริย์ทรงเลือกและทรงแต่งตั้งผู้ทรงคุณวุฒิเป็นประธานองคมนตรีคนหนึ่งและองคมนตรีอื่นอีกไม่เกินสิบแปดคนประกอบเป็นคณะองคมนตรี</p><p class="rc-p">คณะองคมนตรีมีหน้าที่ถวายความเห็นต่อพระมหากษัตริย์ในพระราชกรณียกิจทั้งปวงที่พระมหากษัตริย์ทรงปรึกษา และมีหน้าที่อื่นตามที่บัญญัติไว้ในรัฐธรรมนูญ</p></blockquote>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s11" data-n="11">มาตรา ๑๑</a><span>ตัวบททางการ</span></p><p class="rc-p1">การเลือกและแต่งตั้งองคมนตรีหรือการให้องคมนตรีพ้นจากตำแหน่ง ให้เป็นไปตามพระราชอัธยาศัย</p><p class="rc-p">ให้ประธานรัฐสภาเป็นผู้ลงนามรับสนองพระบรมราชโองการแต่งตั้งประธานองคมนตรีหรือให้ประธานองคมนตรีพ้นจากตำแหน่ง</p><p class="rc-p">ให้ประธานองคมนตรีเป็นผู้ลงนามรับสนองพระบรมราชโองการแต่งตั้งองคมนตรีอื่นหรือให้องคมนตรีอื่นพ้นจากตำแหน่ง</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch2">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๒ พระมหากษัตริย์ (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-legislature" data-topic="legislature" aria-labelledby="t-legislature-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">⚖️</span><div><h3 id="t-legislature-h">ฝ่ายนิติบัญญัติ (รัฐสภา)</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">รัฐสภาเป็นองค์กรฝ่ายนิติบัญญัติ ทำหน้าที่ตรากฎหมาย ควบคุมการบริหารราชการแผ่นดิน และให้ความเห็นชอบในเรื่องสำคัญตามรัฐธรรมนูญ ประกอบด้วยสองสภา คือ สภาผู้แทนราษฎรและวุฒิสภา (<a class="rc-xref" href="#s79" data-n="79">มาตรา ๗๙</a>) โดยประธานสภาผู้แทนราษฎรเป็นประธานรัฐสภา (<a class="rc-xref" href="#s80" data-n="80">มาตรา ๘๐</a>)</p>
+
+<div class="tp-stats">
+  <div class="tp-stat"><b>๕๐๐</b><span>สมาชิกสภาผู้แทนราษฎร</span><small><a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a></small></div>
+  <div class="tp-stat"><b>๔๐๐ + ๑๐๐</b><span>แบ่งเขตเลือกตั้ง + บัญชีรายชื่อ</span><small><a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a></small></div>
+  <div class="tp-stat"><b>๒๐๐</b><span>สมาชิกวุฒิสภา</span><small><a class="rc-xref" href="#s107" data-n="107">มาตรา ๑๐๗</a></small></div>
+  <div class="tp-stat"><b>๔ ปี</b><span>อายุสภาผู้แทนราษฎร</span><small><a class="rc-xref" href="#s99" data-n="99">มาตรา ๙๙</a></small></div>
+  <div class="tp-stat"><b>๕ ปี</b><span>อายุวุฒิสภา</span><small><a class="rc-xref" href="#s109" data-n="109">มาตรา ๑๐๙</a></small></div>
+  <div class="tp-stat"><b>กึ่งหนึ่ง</b><span>องค์ประชุมของแต่ละสภา</span><small><a class="rc-xref" href="#s120" data-n="120">มาตรา ๑๒๐</a></small></div>
+</div>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>สภาผู้แทนราษฎร</h4><p>สมาชิกมาจากการเลือกตั้งโดยออกเสียงลงคะแนนโดยตรงและลับ ใช้บัตรเลือกตั้งแบบละหนึ่งใบ ตาม<a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a> ที่แก้ไขเพิ่มเติมเมื่อ พ.ศ. ๒๕๖๔ ผู้สมัครต้องมีสัญชาติไทยโดยการเกิดและอายุไม่ต่ำกว่ายี่สิบห้าปี (<a class="rc-xref" href="#s97" data-n="97">มาตรา ๙๗</a>)</p></div>
+  <div class="tp-card"><h4>วุฒิสภา</h4><p>สมาชิกมาจากการเลือกกันเองของบุคคลในกลุ่มความรู้ ความเชี่ยวชาญ อาชีพ หรือประสบการณ์ต่าง ๆ (<a class="rc-xref" href="#s107" data-n="107">มาตรา ๑๐๗</a>) ส่วนวุฒิสภาในวาระเริ่มแรกมีสองร้อยห้าสิบคนตามบทเฉพาะกาล (<a class="rc-xref" href="#s269" data-n="269">มาตรา ๒๖๙</a>)</p></div>
+  <div class="tp-card"><h4>การตรากฎหมาย</h4><p>ร่างพระราชบัญญัติประกอบรัฐธรรมนูญและร่างพระราชบัญญัติจะตราเป็นกฎหมายได้ก็แต่โดยคำแนะนำและยินยอมของรัฐสภา (<a class="rc-xref" href="#s81" data-n="81">มาตรา ๘๑</a>)</p></div>
+  <div class="tp-card"><h4>การควบคุมรัฐบาล</h4><p>สมาชิกสภาผู้แทนราษฎรไม่น้อยกว่าหนึ่งในห้าของจำนวนสมาชิกทั้งหมดเท่าที่มีอยู่ เข้าชื่อเสนอญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีได้ (<a class="rc-xref" href="#s151" data-n="151">มาตรา ๑๕๑</a>)</p></div>
+  <div class="tp-card"><h4>การประชุมร่วมกันของรัฐสภา</h4><p>สองสภาประชุมร่วมกันในกรณีที่<a class="rc-xref" href="#s156" data-n="156">มาตรา ๑๕๖</a> กำหนด เช่น การแถลงนโยบาย การแก้ไขเพิ่มเติมรัฐธรรมนูญ และการให้ความเห็นชอบหนังสือสัญญา</p></div>
+  <div class="tp-card"><h4>การเปิด–ปิดประชุม</h4><p>พระมหากษัตริย์ทรงเรียกประชุมรัฐสภา ทรงเปิดและทรงปิดประชุม (<a class="rc-xref" href="#s122" data-n="122">มาตรา ๑๒๒</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s79" data-n="79">มาตรา ๗๙</a><span>ตัวบททางการ</span></p><p class="rc-p1">รัฐสภาประกอบด้วยสภาผู้แทนราษฎรและวุฒิสภา</p><p class="rc-p">รัฐสภาจะประชุมร่วมกันหรือแยกกัน ย่อมเป็นไปตามบทบัญญัติแห่งรัฐธรรมนูญ</p><p class="rc-p">บุคคลจะเป็นสมาชิกสภาผู้แทนราษฎรและสมาชิกวุฒิสภาในขณะเดียวกันมิได้</p></blockquote>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a><span>ตัวบททางการ (บางวรรค)</span></p><p class="rc-p1">สภาผู้แทนราษฎรประกอบด้วยสมาชิกจำนวนห้าร้อยคน โดยเป็นสมาชิกซึ่งมาจากการเลือกตั้งแบบแบ่งเขตเลือกตั้งจำนวนสี่ร้อยคน และสมาชิกซึ่งมาจากการเลือกตั้งแบบบัญชีรายชื่อจำนวนหนึ่งร้อยคน</p><p class="rc-p">การเลือกตั้งสมาชิกสภาผู้แทนราษฎรให้ใช้วิธีออกเสียงลงคะแนนโดยตรงและลับ โดยให้ใช้บัตรเลือกตั้งสมาชิกสภาผู้แทนราษฎรแบบละหนึ่งใบ</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch7">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๗ รัฐสภา (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-cabinet" data-topic="cabinet" aria-labelledby="t-cabinet-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">🏛️</span><div><h3 id="t-cabinet-h">ฝ่ายบริหาร (คณะรัฐมนตรี)</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">คณะรัฐมนตรีเป็นองค์กรฝ่ายบริหาร ประกอบด้วยนายกรัฐมนตรีคนหนึ่งและรัฐมนตรีอื่นอีกไม่เกินสามสิบห้าคน มีหน้าที่บริหารราชการแผ่นดินตามหลักความรับผิดชอบร่วมกัน (<a class="rc-xref" href="#s158" data-n="158">มาตรา ๑๕๘</a>)</p>
+
+<div class="tp-stats">
+  <div class="tp-stat"><b>๑ + ๓๕</b><span>นายกรัฐมนตรี + รัฐมนตรีอื่นสูงสุด</span><small><a class="rc-xref" href="#s158" data-n="158">มาตรา ๑๕๘</a></small></div>
+  <div class="tp-stat"><b>๘ ปี</b><span>นายกรัฐมนตรีดำรงตำแหน่งรวมกันได้ไม่เกิน</span><small><a class="rc-xref" href="#s158" data-n="158">มาตรา ๑๕๘</a></small></div>
+  <div class="tp-stat"><b>๓๕ ปี</b><span>อายุขั้นต่ำของรัฐมนตรี</span><small><a class="rc-xref" href="#s160" data-n="160">มาตรา ๑๖๐</a></small></div>
+  <div class="tp-stat"><b>๓ ชื่อ</b><span>รายชื่อผู้ที่พรรคเสนอเป็นนายกฯ ได้สูงสุด</span><small><a class="rc-xref" href="#s88" data-n="88">มาตรา ๘๘</a></small></div>
+</div>
+
+<h3 class="tp-h">นายกรัฐมนตรีมาจากไหน</h3>
+<ol class="tp-steps">
+  <li><b>ก่อนเลือกตั้ง</b> พรรคการเมืองที่ส่งผู้สมัครแจ้งรายชื่อบุคคลที่จะเสนอเป็นนายกรัฐมนตรีไม่เกินสามรายชื่อต่อคณะกรรมการการเลือกตั้งก่อนปิดการรับสมัคร (<a class="rc-xref" href="#s88" data-n="88">มาตรา ๘๘</a>)</li>
+  <li><b>สภาผู้แทนราษฎรให้ความเห็นชอบ</b> จากรายชื่อของพรรคที่มีสมาชิกได้รับเลือกไม่น้อยกว่าร้อยละห้าของจำนวนสมาชิกทั้งหมด (<a class="rc-xref" href="#s159" data-n="159">มาตรา ๑๕๙</a>)</li>
+  <li><b>ทรงแต่งตั้ง</b> ประธานสภาผู้แทนราษฎรเป็นผู้ลงนามรับสนองพระบรมราชโองการแต่งตั้งนายกรัฐมนตรี (<a class="rc-xref" href="#s158" data-n="158">มาตรา ๑๕๘</a>)</li>
+  <li><b>แถลงนโยบาย</b> คณะรัฐมนตรีที่เข้ารับหน้าที่ต้องแถลงนโยบายต่อรัฐสภา (<a class="rc-xref" href="#s162" data-n="162">มาตรา ๑๖๒</a>)</li>
+</ol>
+<p class="tp-note">บทเฉพาะกาล<a class="rc-xref" href="#s272" data-n="272">มาตรา ๒๗๒</a> กำหนดว่าในระหว่างห้าปีแรกนับแต่วันที่มีรัฐสภาชุดแรกตามรัฐธรรมนูญนี้ การพิจารณาให้ความเห็นชอบนายกรัฐมนตรีให้กระทำในที่ประชุมร่วมกันของรัฐสภา</p>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>พระราชกำหนด</h4><p>ในกรณีฉุกเฉินที่มีความจำเป็นรีบด่วนอันมิอาจหลีกเลี่ยงได้ คณะรัฐมนตรีอาจเสนอให้ตราพระราชกำหนดใช้บังคับดังเช่นพระราชบัญญัติ แล้วต้องเสนอต่อรัฐสภาในการประชุมคราวต่อไป (<a class="rc-xref" href="#s172" data-n="172">มาตรา ๑๗๒</a>)</p></div>
+  <div class="tp-card"><h4>การลงนามรับสนอง</h4><p>บทกฎหมาย พระราชหัตถเลขา และพระบรมราชโองการอันเกี่ยวกับราชการแผ่นดิน ต้องมีรัฐมนตรีลงนามรับสนองพระบรมราชโองการ (<a class="rc-xref" href="#s182" data-n="182">มาตรา ๑๘๒</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s158" data-n="158">มาตรา ๑๕๘</a><span>ตัวบททางการ</span></p><p class="rc-p1">พระมหากษัตริย์ทรงแต่งตั้งนายกรัฐมนตรีและรัฐมนตรีอื่นอีกไม่เกินสามสิบห้าคนประกอบเป็นคณะรัฐมนตรี มีหน้าที่บริหารราชการแผ่นดินตามหลักความรับผิดชอบร่วมกัน</p><p class="rc-p">นายกรัฐมนตรีต้องแต่งตั้งจากบุคคลซึ่งสภาผู้แทนราษฎรให้ความเห็นชอบตาม<a class="rc-xref" href="#s159" data-n="159">มาตรา ๑๕๙</a></p><p class="rc-p">ให้ประธานสภาผู้แทนราษฎรเป็นผู้ลงนามรับสนองพระบรมราชโองการแต่งตั้งนายกรัฐมนตรี</p><p class="rc-p">นายกรัฐมนตรีจะดำรงตำแหน่งรวมกันแล้วเกินแปดปีมิได้ ทั้งนี้ ไม่ว่าจะเป็นการดำรงตำแหน่งติดต่อกันหรือไม่ แต่มิให้นับรวมระยะเวลาในระหว่างที่อยู่ปฏิบัติหน้าที่ต่อไปหลังพ้นจากตำแหน่ง</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch8">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๘ คณะรัฐมนตรี และบทเฉพาะกาล (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-judiciary" data-topic="judiciary" aria-labelledby="t-judiciary-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">⚖️</span><div><h3 id="t-judiciary-h">ฝ่ายตุลาการ (ศาลไทย)</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">การพิจารณาพิพากษาอรรถคดีเป็นอำนาจของศาล ซึ่งต้องดำเนินการให้เป็นไปตามกฎหมายและในพระปรมาภิไธยพระมหากษัตริย์ (<a class="rc-xref" href="#s188" data-n="188">มาตรา ๑๘๘</a>) รัฐธรรมนูญแบ่งศาลออกเป็นสี่ระบบ</p>
+
+<div class="tp-cards tp-cards-4">
+  <div class="tp-card"><h4>ศาลยุติธรรม</h4><p>มีอำนาจพิจารณาพิพากษาคดีทั้งปวง เว้นแต่คดีที่รัฐธรรมนูญหรือกฎหมายบัญญัติให้อยู่ในอำนาจของศาลอื่น (<a class="rc-xref" href="#s194" data-n="194">มาตรา ๑๙๔</a>)</p></div>
+  <div class="tp-card"><h4>ศาลปกครอง</h4><p>พิจารณาคดีปกครองอันเนื่องมาจากการใช้อำนาจทางปกครองหรือการดำเนินกิจการทางปกครอง มีศาลปกครองสูงสุดและศาลปกครองชั้นต้น (<a class="rc-xref" href="#s197" data-n="197">มาตรา ๑๙๗</a>)</p></div>
+  <div class="tp-card"><h4>ศาลทหาร</h4><p>พิจารณาคดีอาญาที่ผู้กระทำความผิดเป็นบุคคลซึ่งอยู่ในอำนาจศาลทหาร และคดีอื่นตามที่กฎหมายบัญญัติ (<a class="rc-xref" href="#s199" data-n="199">มาตรา ๑๙๙</a>)</p></div>
+  <div class="tp-card"><h4>ศาลรัฐธรรมนูญ</h4><p>วินิจฉัยความชอบด้วยรัฐธรรมนูญของกฎหมายหรือร่างกฎหมาย และหน้าที่อื่นตามหมวด ๑๑ — ดูหัวข้อศาลรัฐธรรมนูญ</p></div>
+</div>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>คดีนักการเมือง</h4><p>ให้มีแผนกคดีอาญาของผู้ดำรงตำแหน่งทางการเมืองในศาลฎีกา โดยเลือกองค์คณะผู้พิพากษาเป็นรายคดี (<a class="rc-xref" href="#s195" data-n="195">มาตรา ๑๙๕</a>)</p></div>
+  <div class="tp-card"><h4>ความเป็นอิสระของผู้พิพากษา</h4><p>การบริหารงานบุคคลของผู้พิพากษาศาลยุติธรรมดำเนินการโดยคณะกรรมการตุลาการศาลยุติธรรม (<a class="rc-xref" href="#s196" data-n="196">มาตรา ๑๙๖</a>) และของตุลาการศาลปกครองโดยคณะกรรมการตุลาการศาลปกครอง (<a class="rc-xref" href="#s198" data-n="198">มาตรา ๑๙๘</a>)</p></div>
+  <div class="tp-card"><h4>การแต่งตั้ง</h4><p>พระมหากษัตริย์ทรงแต่งตั้งและให้ผู้พิพากษาและตุลาการพ้นจากตำแหน่ง (<a class="rc-xref" href="#s190" data-n="190">มาตรา ๑๙๐</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s188" data-n="188">มาตรา ๑๘๘</a><span>ตัวบททางการ</span></p><p class="rc-p1">การพิจารณาพิพากษาอรรถคดีเป็นอำนาจของศาล ซึ่งต้องดำเนินการให้เป็นไปตามกฎหมาย และในพระปรมาภิไธยพระมหากษัตริย์</p><p class="rc-p">ผู้พิพากษาและตุลาการย่อมมีอิสระในการพิจารณาพิพากษาอรรถคดีตามรัฐธรรมนูญและกฎหมายให้เป็นไปโดยรวดเร็ว เป็นธรรม และปราศจากอคติทั้งปวง</p></blockquote>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s194" data-n="194">มาตรา ๑๙๔</a><span>ตัวบททางการ (บางวรรค)</span></p><p class="rc-p1">ศาลยุติธรรมมีอำนาจพิจารณาพิพากษาคดีทั้งปวง เว้นแต่คดีที่รัฐธรรมนูญหรือกฎหมายบัญญัติให้อยู่ในอำนาจของศาลอื่น</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch10">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๑๐ ศาล และหมวด ๑๑ ศาลรัฐธรรมนูญ (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-const-court" data-topic="const-court" aria-labelledby="t-const-court-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">⚖️</span><div><h3 id="t-const-court-h">ศาลรัฐธรรมนูญ</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">ศาลรัฐธรรมนูญประกอบด้วยตุลาการศาลรัฐธรรมนูญเก้าคนซึ่งพระมหากษัตริย์ทรงแต่งตั้ง (<a class="rc-xref" href="#s200" data-n="200">มาตรา ๒๐๐</a>) มีวาระเจ็ดปีและดำรงตำแหน่งได้เพียงวาระเดียว (<a class="rc-xref" href="#s207" data-n="207">มาตรา ๒๐๗</a>)</p>
+
+<div class="tp-stats">
+  <div class="tp-stat"><b>๙</b><span>ตุลาการศาลรัฐธรรมนูญ</span><small><a class="rc-xref" href="#s200" data-n="200">มาตรา ๒๐๐</a></small></div>
+  <div class="tp-stat"><b>๗ ปี</b><span>วาระเดียว</span><small><a class="rc-xref" href="#s207" data-n="207">มาตรา ๒๐๗</a></small></div>
+</div>
+
+<h3 class="tp-h">ที่มาของตุลาการ ๙ คน (<a class="rc-xref" href="#s200" data-n="200">มาตรา ๒๐๐</a>)</h3>
+<table class="tp-table">
+  <thead><tr><th>ที่มา</th><th>จำนวน</th></tr></thead>
+  <tbody>
+    <tr><td>ผู้พิพากษาในศาลฎีกา คัดเลือกโดยที่ประชุมใหญ่ศาลฎีกา</td><td>๓</td></tr>
+    <tr><td>ตุลาการในศาลปกครองสูงสุด คัดเลือกโดยที่ประชุมใหญ่ตุลาการในศาลปกครองสูงสุด</td><td>๒</td></tr>
+    <tr><td>ผู้ทรงคุณวุฒิสาขานิติศาสตร์</td><td>๑</td></tr>
+    <tr><td>ผู้ทรงคุณวุฒิสาขารัฐศาสตร์หรือรัฐประศาสนศาสตร์</td><td>๑</td></tr>
+    <tr><td>ผู้ทรงคุณวุฒิจากผู้รับหรือเคยรับราชการระดับสูง (ไม่ต่ำกว่าอธิบดีหรือเทียบเท่า หรือไม่ต่ำกว่ารองอัยการสูงสุด)</td><td>๒</td></tr>
+  </tbody>
+</table>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>คำวินิจฉัยเด็ดขาด</h4><p>คำวินิจฉัยของศาลรัฐธรรมนูญเป็นเด็ดขาดและมีผลผูกพันองค์กรของรัฐตามที่<a class="rc-xref" href="#s211" data-n="211">มาตรา ๒๑๑</a> บัญญัติ</p></div>
+  <div class="tp-card"><h4>ประชาชนยื่นคำร้องได้</h4><p>บุคคลซึ่งถูกละเมิดสิทธิหรือเสรีภาพที่รัฐธรรมนูญคุ้มครองไว้มีสิทธิยื่นคำร้องต่อศาลรัฐธรรมนูญ ตามหลักเกณฑ์ใน<a class="rc-xref" href="#s213" data-n="213">มาตรา ๒๑๓</a></p></div>
+</div>
+
+<h3 class="tp-h">หน้าที่และอำนาจ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s210" data-n="210">มาตรา ๒๑๐</a><span>ตัวบททางการ (บางวรรค)</span></p><p class="rc-p1">ศาลรัฐธรรมนูญมีหน้าที่และอำนาจ ดังต่อไปนี้</p><p class="rc-item">(๑) พิจารณาวินิจฉัยความชอบด้วยรัฐธรรมนูญของกฎหมายหรือร่างกฎหมาย</p><p class="rc-item">(๒) พิจารณาวินิจฉัยปัญหาเกี่ยวกับหน้าที่และอำนาจของสภาผู้แทนราษฎร วุฒิสภา รัฐสภา คณะรัฐมนตรี หรือองค์กรอิสระ</p><p class="rc-item">(๓) หน้าที่และอำนาจอื่นตามที่บัญญัติไว้ในรัฐธรรมนูญ</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch11">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๑๑ ศาลรัฐธรรมนูญ (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-independent-organs" data-topic="independent-organs" aria-labelledby="t-independent-organs-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">🛡️</span><div><h3 id="t-independent-organs-h">องค์กรอิสระตามรัฐธรรมนูญ</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">องค์กรอิสระเป็นองค์กรที่จัดตั้งขึ้นให้มีความอิสระในการปฏิบัติหน้าที่ (<a class="rc-xref" href="#s215" data-n="215">มาตรา ๒๑๕</a>) รัฐธรรมนูญกำหนดไว้ห้าองค์กร กรรมการทุกองค์กรพระมหากษัตริย์ทรงแต่งตั้งตามคำแนะนำของวุฒิสภา มีวาระเจ็ดปีและดำรงตำแหน่งได้เพียงวาระเดียว</p>
+
+<table class="tp-table">
+  <thead><tr><th>องค์กร</th><th>จำนวน</th><th>วาระ</th><th>มาตรา</th></tr></thead>
+  <tbody>
+    <tr><td>คณะกรรมการการเลือกตั้ง (กกต.)</td><td>๗</td><td>๗ ปี วาระเดียว</td><td><a class="rc-xref" href="#s222" data-n="222">มาตรา ๒๒๒</a>–๒๒๗</td></tr>
+    <tr><td>ผู้ตรวจการแผ่นดิน</td><td>๓</td><td>๗ ปี วาระเดียว</td><td><a class="rc-xref" href="#s228" data-n="228">มาตรา ๒๒๘</a>–๒๓๑</td></tr>
+    <tr><td>คณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ (ป.ป.ช.)</td><td>๙</td><td>๗ ปี วาระเดียว</td><td><a class="rc-xref" href="#s232" data-n="232">มาตรา ๒๓๒</a>–๒๓๗</td></tr>
+    <tr><td>คณะกรรมการตรวจเงินแผ่นดิน</td><td>๗</td><td>๗ ปี วาระเดียว</td><td><a class="rc-xref" href="#s238" data-n="238">มาตรา ๒๓๘</a>–๒๔๕</td></tr>
+    <tr><td>คณะกรรมการสิทธิมนุษยชนแห่งชาติ (กสม.)</td><td>๗</td><td>๗ ปี วาระเดียว</td><td><a class="rc-xref" href="#s246" data-n="246">มาตรา ๒๔๖</a>–๒๔๗</td></tr>
+  </tbody>
+</table>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>คุณสมบัติทั่วไป</h4><p>นอกจากคุณสมบัติเฉพาะของแต่ละองค์กร ผู้ดำรงตำแหน่งในองค์กรอิสระต้องมีคุณสมบัติและไม่มีลักษณะต้องห้ามทั่วไปตาม<a class="rc-xref" href="#s216" data-n="216">มาตรา ๒๑๖</a></p></div>
+  <div class="tp-card"><h4>องค์กรอัยการ</h4><p>องค์กรอัยการอยู่ในหมวด ๑๓ แยกจากหมวดองค์กรอิสระ มีหน้าที่และอำนาจตามที่บัญญัติไว้ในรัฐธรรมนูญและกฎหมาย (<a class="rc-xref" href="#s248" data-n="248">มาตรา ๒๔๘</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s215" data-n="215">มาตรา ๒๑๕</a><span>ตัวบททางการ</span></p><p class="rc-p1">องค์กรอิสระเป็นองค์กรที่จัดตั้งขึ้นให้มีความอิสระในการปฏิบัติหน้าที่ ให้เป็นไปตามรัฐธรรมนูญและกฎหมาย</p><p class="rc-p">การปฏิบัติหน้าที่และการใช้อำนาจขององค์กรอิสระต้องเป็นไปโดยสุจริต เที่ยงธรรม กล้าหาญ และปราศจากอคติทั้งปวงในการใช้ดุลพินิจ</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch12">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๑๒ องค์กรอิสระ (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-law-hierarchy" data-topic="law-hierarchy" aria-labelledby="t-law-hierarchy-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">📐</span><div><h3 id="t-law-hierarchy-h">ลำดับศักดิ์กฎหมาย</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">กฎหมายไทยมีลำดับชั้น กฎหมายที่อยู่ลำดับต่ำกว่าจะขัดหรือแย้งกับกฎหมายที่อยู่ลำดับสูงกว่าไม่ได้ ลำดับด้านล่างเป็นหลักที่ใช้กันทั่วไปในทางกฎหมาย ชั้นที่รัฐธรรมนูญบัญญัติไว้โดยตรงระบุมาตราไว้ ส่วนชั้นที่ไม่ได้อยู่ในรัฐธรรมนูญมีป้าย “หลักทั่วไป”</p>
+
+<ol class="tp-pyramid">
+  <li><b>รัฐธรรมนูญ</b><span>กฎหมายสูงสุดของประเทศ บทบัญญัติหรือการกระทำใดขัดหรือแย้งต่อรัฐธรรมนูญย่อมใช้บังคับมิได้ (<a class="rc-xref" href="#s5" data-n="5">มาตรา ๕</a>)</span></li>
+  <li><b>พระราชบัญญัติประกอบรัฐธรรมนูญ</b><span>กฎหมายที่รัฐธรรมนูญกำหนดให้ตราขึ้นในเรื่องเฉพาะ รายชื่ออยู่ใน<a class="rc-xref" href="#s130" data-n="130">มาตรา ๑๓๐</a></span></li>
+  <li><b>พระราชบัญญัติ · พระราชกำหนด · ประมวลกฎหมาย</b><span>พระราชบัญญัติตราโดยคำแนะนำและยินยอมของรัฐสภา (<a class="rc-xref" href="#s81" data-n="81">มาตรา ๘๑</a>) พระราชกำหนดใช้บังคับดังเช่นพระราชบัญญัติ (<a class="rc-xref" href="#s172" data-n="172">มาตรา ๑๗๒</a>) ส่วนประมวลกฎหมายตราขึ้นในรูปพระราชบัญญัติ <em class="tp-tag">หลักทั่วไป</em></span></li>
+  <li><b>พระราชกฤษฎีกา</b><span>พระมหากษัตริย์ทรงตราโดยไม่ขัดต่อกฎหมาย (<a class="rc-xref" href="#s175" data-n="175">มาตรา ๑๗๕</a>)</span></li>
+  <li><b>กฎกระทรวง</b><span>รัฐมนตรีออกโดยอาศัยอำนาจตามพระราชบัญญัติที่ให้อำนาจไว้ <em class="tp-tag">หลักทั่วไป</em></span></li>
+  <li><b>ข้อบัญญัติท้องถิ่น</b><span>องค์กรปกครองส่วนท้องถิ่นออกโดยอาศัยอำนาจตามกฎหมายจัดตั้ง ประชาชนในท้องถิ่นเข้าชื่อเสนอข้อบัญญัติได้ (<a class="rc-xref" href="#s254" data-n="254">มาตรา ๒๕๔</a>) <em class="tp-tag">หลักทั่วไป</em></span></li>
+</ol>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>ใครตรวจว่ากฎหมายขัดรัฐธรรมนูญ</h4><p>ศาลรัฐธรรมนูญพิจารณาวินิจฉัยความชอบด้วยรัฐธรรมนูญของกฎหมายหรือร่างกฎหมาย (<a class="rc-xref" href="#s210" data-n="210">มาตรา ๒๑๐</a>)</p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s5" data-n="5">มาตรา ๕</a><span>ตัวบททางการ</span></p><p class="rc-p1">รัฐธรรมนูญเป็นกฎหมายสูงสุดของประเทศ บทบัญญัติใดของกฎหมาย กฎหรือข้อบังคับ หรือการกระทำใด ขัดหรือแย้งต่อรัฐธรรมนูญ บทบัญญัติหรือการกระทำนั้นเป็นอันใช้บังคับมิได้</p><p class="rc-p">เมื่อไม่มีบทบัญญัติแห่งรัฐธรรมนูญนี้บังคับแก่กรณีใด ให้กระทำการนั้นหรือวินิจฉัยกรณีนั้นไปตามประเพณีการปกครองประเทศไทยในระบอบประชาธิปไตยอันมีพระมหากษัตริย์ทรงเป็นประมุข</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#s5">รัฐธรรมนูญแห่งราชอาณาจักรไทย มาตรา ๕ ๘๑ ๑๓๐ ๑๗๒ ๑๗๕ ๒๑๐ (ตัวบทในหน้านี้)</a></li></ul></footer></section><section class="tp-panel" id="t-local-gov" data-topic="local-gov" aria-labelledby="t-local-gov-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">🏙️</span><div><h3 id="t-local-gov-h">องค์กรปกครองส่วนท้องถิ่น (การกระจายอำนาจ)</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">รัฐธรรมนูญกำหนดให้มีการจัดการปกครองส่วนท้องถิ่นตามหลักแห่งการปกครองตนเองตามเจตนารมณ์ของประชาชนในท้องถิ่น ส่วนรูปแบบขององค์กรเป็นไปตามที่กฎหมายบัญญัติ (<a class="rc-xref" href="#s249" data-n="249">มาตรา ๒๔๙</a>)</p>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>หน้าที่</h4><p>ดูแลและจัดทำบริการสาธารณะและกิจกรรมสาธารณะเพื่อประโยชน์ของประชาชนในท้องถิ่น รวมทั้งส่งเสริมการจัดการศึกษา (<a class="rc-xref" href="#s250" data-n="250">มาตรา ๒๕๐</a>)</p></div>
+  <div class="tp-card"><h4>ที่มาของสภาท้องถิ่น</h4><p>สมาชิกสภาท้องถิ่นต้องมาจากการเลือกตั้ง (<a class="rc-xref" href="#s252" data-n="252">มาตรา ๒๕๒</a>)</p></div>
+  <div class="tp-card"><h4>ประชาชนมีส่วนร่วม</h4><p>ผู้มีสิทธิเลือกตั้งในท้องถิ่นเข้าชื่อกันเพื่อเสนอข้อบัญญัติ หรือเพื่อถอดถอนสมาชิกสภาท้องถิ่นหรือผู้บริหารท้องถิ่นได้ตามที่กฎหมายบัญญัติ (<a class="rc-xref" href="#s254" data-n="254">มาตรา ๒๕๔</a>)</p></div>
+</div>
+
+<h3 class="tp-h">รูปแบบองค์กรปกครองส่วนท้องถิ่นและกฎหมายจัดตั้ง</h3>
+<table class="tp-table">
+  <thead><tr><th>รูปแบบ</th><th>กฎหมายจัดตั้ง</th></tr></thead>
+  <tbody>
+    <tr><td>องค์การบริหารส่วนจังหวัด (อบจ.)</td><td>พระราชบัญญัติองค์การบริหารส่วนจังหวัด พ.ศ. ๒๕๔๐</td></tr>
+    <tr><td>เทศบาล</td><td>พระราชบัญญัติเทศบาล พ.ศ. ๒๔๙๖</td></tr>
+    <tr><td>องค์การบริหารส่วนตำบล (อบต.)</td><td>พระราชบัญญัติสภาตำบลและองค์การบริหารส่วนตำบล พ.ศ. ๒๕๓๗</td></tr>
+    <tr><td>กรุงเทพมหานคร</td><td>พระราชบัญญัติระเบียบบริหารราชการกรุงเทพมหานคร พ.ศ. ๒๕๒๘</td></tr>
+    <tr><td>เมืองพัทยา</td><td>พระราชบัญญัติระเบียบบริหารราชการเมืองพัทยา พ.ศ. ๒๕๔๒</td></tr>
+  </tbody>
+</table>
+<p class="tp-note">การถ่ายโอนภารกิจจากส่วนกลางสู่ท้องถิ่นมีกฎหมายกลางคือ พระราชบัญญัติกำหนดแผนและขั้นตอนการกระจายอำนาจให้แก่องค์กรปกครองส่วนท้องถิ่น พ.ศ. ๒๕๔๒ ชื่อกฎหมายทั้งหมดตรวจกับระบบฐานข้อมูลกฎหมายของกฤษฎีกา และแต่ละฉบับมีการแก้ไขเพิ่มเติมภายหลัง</p>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s249" data-n="249">มาตรา ๒๔๙</a><span>ตัวบททางการ (บางวรรค)</span></p><p class="rc-p1">ภายใต้บังคับ<a class="rc-xref" href="#s1" data-n="1">มาตรา ๑</a> ให้มีการจัดการปกครองส่วนท้องถิ่นตามหลักแห่งการปกครองตนเองตามเจตนารมณ์ของประชาชนในท้องถิ่น ทั้งนี้ ตามวิธีการและรูปแบบองค์กรปกครองส่วนท้องถิ่นที่กฎหมายบัญญัติ</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#ch14">รัฐธรรมนูญแห่งราชอาณาจักรไทย หมวด ๑๔ การปกครองส่วนท้องถิ่น (ตัวบทในหน้านี้)</a></li><li><a href="https://www.ocs.go.th/searchlaw-law" rel="noopener" target="_blank">ชื่อพระราชบัญญัติจัดตั้งแต่ละรูปแบบ: ระบบฐานข้อมูลกฎหมาย สำนักงานคณะกรรมการกฤษฎีกา</a></li></ul></footer></section><section class="tp-panel" id="t-elections" data-topic="elections" aria-labelledby="t-elections-h"><header class="tp-head"><span class="tp-ic" aria-hidden="true">🗳️</span><div><h3 id="t-elections-h">ระบบเลือกตั้ง &amp; กกต.</h3><p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ ๒๔ กันยายน ๒๕๖๙</p></div></header><div class="tp-body"><p class="tp-lead">สภาผู้แทนราษฎรมาจากการเลือกตั้งสองแบบ คือ แบบแบ่งเขตเลือกตั้งสี่ร้อยคนและแบบบัญชีรายชื่อหนึ่งร้อยคน ผู้มีสิทธิเลือกตั้งได้บัตรเลือกตั้งแบบละหนึ่งใบ ตาม<a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a> ที่แก้ไขเพิ่มเติมเมื่อ พ.ศ. ๒๕๖๔</p>
+
+<div class="tp-stats">
+  <div class="tp-stat"><b>๑๘ ปี</b><span>อายุขั้นต่ำผู้มีสิทธิเลือกตั้ง (ในวันเลือกตั้ง)</span><small><a class="rc-xref" href="#s95" data-n="95">มาตรา ๙๕</a></small></div>
+  <div class="tp-stat"><b>๒๕ ปี</b><span>อายุขั้นต่ำผู้สมัคร ส.ส.</span><small><a class="rc-xref" href="#s97" data-n="97">มาตรา ๙๗</a></small></div>
+  <div class="tp-stat"><b>๒ ใบ</b><span>บัตรแบ่งเขต + บัตรบัญชีรายชื่อ</span><small><a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a></small></div>
+  <div class="tp-stat"><b>๗</b><span>กรรมการการเลือกตั้ง</span><small><a class="rc-xref" href="#s222" data-n="222">มาตรา ๒๒๒</a></small></div>
+</div>
+
+<div class="tp-cards">
+  <div class="tp-card"><h4>ใครเลือกตั้งได้</h4><p>ผู้มีสัญชาติไทย (หากแปลงสัญชาติต้องได้สัญชาติมาแล้วไม่น้อยกว่าห้าปี) อายุไม่ต่ำกว่าสิบแปดปีในวันเลือกตั้ง และมีชื่อในทะเบียนบ้านในเขตเลือกตั้งมาแล้วไม่น้อยกว่าเก้าสิบวัน (<a class="rc-xref" href="#s95" data-n="95">มาตรา ๙๕</a>)</p></div>
+  <div class="tp-card"><h4>แบ่งเขตอย่างไร</h4><p>นำจำนวนราษฎรทั้งประเทศเฉลี่ยด้วยสี่ร้อยเป็นจำนวนราษฎรต่อสมาชิกหนึ่งคน แล้วคำนวณจำนวนสมาชิกของแต่ละจังหวัดตามวิธีใน<a class="rc-xref" href="#s86" data-n="86">มาตรา ๘๖</a></p></div>
+  <div class="tp-card"><h4>บัญชีรายชื่อคำนวณอย่างไร</h4><p>นำคะแนนที่แต่ละพรรคได้รับรวมกันทั้งประเทศมาคำนวณเป็นสัดส่วนที่สัมพันธ์กันโดยตรง และให้ผู้สมัครได้รับเลือกเรียงตามลำดับในบัญชี (<a class="rc-xref" href="#s91" data-n="91">มาตรา ๙๑</a>) รายละเอียดอยู่ในพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร</p></div>
+  <div class="tp-card"><h4>แคนดิเดตนายกรัฐมนตรี</h4><p>พรรคที่ส่งผู้สมัครแจ้งรายชื่อผู้ที่จะเสนอเป็นนายกรัฐมนตรีได้ไม่เกินสามรายชื่อ และ กกต. ประกาศให้ประชาชนทราบ (<a class="rc-xref" href="#s88" data-n="88">มาตรา ๘๘</a>)</p></div>
+  <div class="tp-card"><h4>หน้าที่ของประชาชน</h4><p>การไปใช้สิทธิเลือกตั้งและออกเสียงประชามติเป็นหน้าที่ของปวงชนชาวไทยตามหมวด ๔ (<a class="rc-xref" href="#s50" data-n="50">มาตรา ๕๐</a>)</p></div>
+  <div class="tp-card"><h4>คณะกรรมการการเลือกตั้ง</h4><p>กรรมการเจ็ดคน วาระเจ็ดปีและดำรงตำแหน่งได้เพียงวาระเดียว (<a class="rc-xref" href="#s222" data-n="222">มาตรา ๒๒๒</a> ๒๒๓) หน้าที่และอำนาจอยู่ใน<a class="rc-xref" href="#s224" data-n="224">มาตรา ๒๒๔</a></p></div>
+</div>
+
+<h3 class="tp-h">ตัวบทสำคัญ</h3>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s83" data-n="83">มาตรา ๘๓</a><span>ตัวบททางการ</span></p><p class="rc-p1">สภาผู้แทนราษฎรประกอบด้วยสมาชิกจำนวนห้าร้อยคน โดยเป็นสมาชิกซึ่งมาจากการเลือกตั้งแบบแบ่งเขตเลือกตั้งจำนวนสี่ร้อยคน และสมาชิกซึ่งมาจากการเลือกตั้งแบบบัญชีรายชื่อจำนวนหนึ่งร้อยคน</p><p class="rc-p">การเลือกตั้งสมาชิกสภาผู้แทนราษฎรให้ใช้วิธีออกเสียงลงคะแนนโดยตรงและลับ โดยให้ใช้บัตรเลือกตั้งสมาชิกสภาผู้แทนราษฎรแบบละหนึ่งใบ</p><p class="rc-p">ในกรณีที่ตำแหน่งสมาชิกสภาผู้แทนราษฎรว่างลงไม่ว่าด้วยเหตุใด และยังไม่มีการเลือกตั้งหรือประกาศชื่อสมาชิกสภาผู้แทนราษฎรขึ้นแทนตำแหน่งที่ว่าง ให้สภาผู้แทนราษฎรประกอบด้วยสมาชิกสภาผู้แทนราษฎรเท่าที่มีอยู่</p><p class="rc-p">ในกรณีมีเหตุใด ๆ ที่ทำให้สมาชิกสภาผู้แทนราษฎรแบบบัญชีรายชื่อมีจำนวนไม่ถึงหนึ่งร้อยคน ให้สมาชิกสภาผู้แทนราษฎรแบบบัญชีรายชื่อประกอบด้วยสมาชิกเท่าที่มีอยู่</p></blockquote>
+<blockquote class="tp-quote"><p class="tp-quote-head"><a class="rc-xref" href="#s95" data-n="95">มาตรา ๙๕</a><span>ตัวบททางการ (บางวรรค)</span></p><p class="rc-p1">บุคคลผู้มีคุณสมบัติดังต่อไปนี้ เป็นผู้มีสิทธิเลือกตั้ง</p><p class="rc-item">(๑) มีสัญชาติไทย แต่บุคคลผู้มีสัญชาติไทยโดยการแปลงสัญชาติ ต้องได้สัญชาติไทยมาแล้วไม่น้อยกว่าห้าปี</p><p class="rc-item">(๒) มีอายุไม่ต่ำกว่าสิบแปดปีในวันเลือกตั้ง</p><p class="rc-item">(๓) มีชื่ออยู่ในทะเบียนบ้านในเขตเลือกตั้งมาแล้วเป็นเวลาไม่น้อยกว่าเก้าสิบวันนับถึงวันเลือกตั้ง</p></blockquote>
+</div><footer class="tp-src"><b>แหล่งอ้างอิง</b><ul><li><a href="#s83">รัฐธรรมนูญแห่งราชอาณาจักรไทย มาตรา ๘๓–๙๗ และ ๒๒๒–๒๒๗ รวมถึงที่แก้ไขเพิ่มเติม (ฉบับที่ ๑) พ.ศ. ๒๕๖๔ (ตัวบทในหน้านี้)</a></li></ul></footer></section></div>
   </section>
 
   <section class="rc-hub" id="chapters" aria-labelledby="hubTitle">
@@ -194,6 +401,6 @@
 <div class="rc-popup" id="popup" role="dialog" aria-modal="false" hidden></div>
 <div class="rc-toast" id="toast" role="status" hidden></div>
 <button class="rc-top" type="button" id="toTop" aria-label="กลับขึ้นด้านบน" hidden>↑</button>
-<script src="assets/site.js?v=1ba25817ea" defer></script>
+<script src="assets/site.js?v=fcdbaf04d7" defer></script>
 </body>
 </html>

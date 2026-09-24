@@ -266,7 +266,7 @@
     }
     crumbSec.textContent = sec ? 'มาตรา ' + toTh(sec.dataset.n) : '';
     var here = null;
-    ['about', 'glossary', 'history', 'reader'].some(function (id) {
+    ['about', 'glossary', 'history', 'reader', 'topics'].some(function (id) {
       var el = document.getElementById(id);
       if (el.getBoundingClientRect().top <= line) { here = id; return true; }
       return false;
@@ -279,6 +279,37 @@
   top.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
   fitPadding();
   onScroll();
+
+  /* ── knowledge topics: one panel at a time in the stage ────────────── */
+  var tpBtns = $$('.tp-btn'), tpPanels = $$('.tp-panel');
+  var tpOrder = tpBtns.map(function (b) { return b.dataset.topic; });
+  var tpPrev = $('#tpPrev'), tpNext = $('#tpNext');
+  function showTopic(id, push, scroll) {
+    var panel = document.getElementById('t-' + id);
+    if (!panel) return false;
+    tpPanels.forEach(function (p) { p.classList.toggle('is-on', p === panel); });
+    tpBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.topic === id)); });
+    var btn = tpBtns.filter(function (b) { return b.dataset.topic === id; })[0];
+    var group = btn.closest('.tp-group');
+    group.open = true;
+    $('#stageTitle').textContent = panel.querySelector('h3').textContent;
+    $('#stageGroup').textContent = group.querySelector('.tp-group-name').textContent;
+    var i = tpOrder.indexOf(id);
+    tpPrev.disabled = i <= 0; tpNext.disabled = i >= tpOrder.length - 1;
+    if (push && location.hash !== '#t-' + id) history.pushState(null, '', '#t-' + id);
+    if (scroll) $('#stage').scrollIntoView({ block: 'start' });
+    return true;
+  }
+  tpBtns.forEach(function (b) { b.addEventListener('click', function () { showTopic(b.dataset.topic, true, true); }); });
+  tpPrev.addEventListener('click', function () { var i = tpOrder.indexOf($('.tp-btn[aria-pressed="true"]').dataset.topic); if (i > 0) showTopic(tpOrder[i - 1], true, true); });
+  tpNext.addEventListener('click', function () { var i = tpOrder.indexOf($('.tp-btn[aria-pressed="true"]').dataset.topic); if (i < tpOrder.length - 1) showTopic(tpOrder[i + 1], true, true); });
+  window.addEventListener('hashchange', function () {
+    var m = /^#t-([\w-]+)$/.exec(location.hash);
+    if (m) showTopic(m[1], false, true);
+  });
+  var mt = /^#t-([\w-]+)$/.exec(location.hash);
+  if (!(mt && showTopic(mt[1], false, false)) && tpOrder.length) showTopic(tpOrder[0], false, false);
+  if (mt) setTimeout(function () { $('#stage').scrollIntoView({ block: 'start' }); }, 60);
 
   /* ── arriving with #sN ─────────────────────────────────────────────── */
   var m0 = /^#s(\d+)$/.exec(location.hash);

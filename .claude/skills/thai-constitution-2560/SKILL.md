@@ -47,6 +47,22 @@ node ~/.claude/skills/safe-web-editing/scripts/layout_check.mjs file:///…/inde
 Assets carry `?v=<sha1>` stamps written by build.py — always rebuild after
 editing `assets/site.css` or `assets/site.js`.
 
+## Knowledge topics (`topics/*.html` → hub + stage in index.html)
+
+Each file starts with `<!--topic {json} -->` (id, group from `topics/_groups.json`,
+order, icon, title, asof, sources) followed by hand-written HTML. The whole
+panel is labelled as explanation; build.py enforces the facts:
+
+- `data-check="83:สี่ร้อยคน;99:คราวละสี่ปี"` on any element: the build fails
+  unless each phrase is literally in that section. Put one on every tile, card,
+  row or step that states a number or rule from the constitution.
+- `{{sec:79}}`, `{{sec:83:1-2}}`: official quote copied from the data. Never
+  paste constitutional text into a topic by hand.
+- `{{th:2540}}`: numbers taken from an Arabic-digit source, converted to Thai digits.
+- "มาตรา ๘๓" in topic text becomes a cross-reference link automatically.
+- Facts from outside the constitution (law titles, people, dates) must come
+  from an official page you actually read this session. Name it in `sources`.
+
 ## Adding a new amendment (ฉบับที่ ๒ …)
 
 1. Find it on OCS: `https://www.ocs.go.th/searchlaw-law?q=รัฐธรรมนูญแห่งราชอาณาจักรไทย`,
