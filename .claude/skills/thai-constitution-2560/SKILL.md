@@ -12,6 +12,13 @@ charter — may appear here. Only the *visual style* was borrowed (the user aske
 for the look of `website_new.html`: charcoal + gold/jade, Taviraj headings,
 Sarabun body, section cards with a number column).
 
+## Where it lives
+
+- Repo: https://github.com/RzSyn/ThaiConstitution2560 (public), branch `main`.
+- Site: https://rzsyn.github.io/ThaiConstitution2560/ (GitHub Pages from `main` /root, `.nojekyll`).
+- `gh` is installed at `C:/Program Files/GitHub CLI/gh.exe`, logged in as RzSyn (not on the Bash PATH).
+- Commit and push after every finished change.
+
 ## The official-text rule
 
 - Constitutional text comes **only** from official sources: the Office of the
