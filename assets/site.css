@@ -219,6 +219,18 @@ button, input { font: inherit; }
 .tp-quote-head { display: flex; gap: 10px; align-items: baseline; margin: 0 0 4px !important; font: 600 14px var(--sans); }
 .tp-quote-head span { font-weight: 500; font-size: 12px; color: var(--acc); letter-spacing: 0.04em; }
 .tp-quote p { margin: 0 0 0.4em; }
+.tp-quote.is-law { border-left-color: var(--amend); }
+.tp-quote.is-law .tp-quote-head span { color: var(--amend); }
+.tp-flag { margin: 0 0 18px; max-width: 420px; }
+.tp-flag svg { display: block; width: 100%; height: auto; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); }
+.tp-flag figcaption { margin-top: 8px; font-size: 13px; color: var(--text-3); line-height: 1.6; }
+.tp-list { columns: 2 260px; column-gap: 24px; margin: 0 0 8px; padding-left: 1.6em; }
+.tp-list li { break-inside: avoid; padding: 3px 0; color: var(--text); }
+.tp-rank-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin: 0 0 10px; }
+.tp-rank-cols > div { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
+.tp-rank-cols h5 { margin: 0 0 6px; font: 600 15px var(--serif); color: var(--acc-2); }
+.tp-rank-cols ol { margin: 0; padding-left: 1.4em; color: var(--text); }
+.tp-ranks td { color: var(--text); }
 .tp-src { margin-top: 24px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 13.5px; color: var(--text-3); }
 .tp-src ul { margin: 4px 0 0; padding-left: 1.2em; }
 

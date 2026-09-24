@@ -1,4 +1,4 @@
-// node scrape.mjs <encTimelineId> <outDir>
+// node tools/scrape_ocs.mjs <encTimelineId> <outDir> [latest]
 // Loads the OCS public law page in headless Chrome, then for each timeline version
 // (ฉบับหลัก / ฉบับแก้ไข / ฉบับปรับปรุงล่าสุด) clicks its view button and saves the
 // children of div.in-a4 (id, class, innerHTML, innerText) as JSON. Nothing is edited.
@@ -65,7 +65,8 @@ const title = await ev(`document.querySelector('div.in-a4').innerText.slice(0,80
 writeFileSync(join(out, 'default.json'), JSON.stringify({ timeline: tl, title, items: await ev(grab) }, null, 1));
 console.log('saved default', sig);
 
-for (const t of tl) {
+const latestOnly = process.argv[4] === 'latest';   // other laws: the consolidated text is enough
+for (const t of (latestOnly ? [] : tl)) {
   if (!t.view) continue;
   await ev(`document.querySelector('#${t.id} button.timeline-button').click()`);
   try { sig = await waitDoc(sig); } catch (e) { console.log(t.id, 'no change after click'); }

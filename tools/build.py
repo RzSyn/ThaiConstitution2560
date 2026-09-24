@@ -244,15 +244,109 @@ def linkify_html(text):
     return linkify(html.unescape(text))
 
 
+# ── other laws scraped from the OCS database (data/source-ocs/laws/*.json) ─
+_LAWS = {}
+
+
+def law(name):
+    """{'title', 'url', 'secs': {'๕': [paras]}, 'html': {'๕': raw html}} for one scraped law."""
+    if name not in _LAWS:
+        ldir = os.path.join(ROOT, 'data', 'source-ocs', 'laws')
+        with io.open(os.path.join(ldir, '_index.json'), encoding='utf-8') as f:
+            meta = json.load(f)[name]
+        with io.open(os.path.join(ldir, name + '.json'), encoding='utf-8') as f:
+            items = json.load(f)['items']
+        secs_, raw = {}, {}
+        for it in items:
+            # the consolidated dump appends each amending act (with its own มาตรา ๑, ๒ …) after the countersignature
+            if it['text'].strip().startswith('ผู้รับสนอง'):
+                break
+            m = re.match(r'\s*มาตรา\s*([๐-๙]+(?:/[๐-๙]+)?)', it['text'])
+            if not m or not it['id'] or m.group(1) in secs_:
+                continue
+            paras = []
+            for chunk in re.split(r'</p\s*>|<br\s*/?>', re.sub(r'<sup[^>]*>\[\d+\]</sup>', '', it['html'])):
+                txt = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', chunk))).replace(' ', ' ').strip()
+                if txt:
+                    paras.append(txt)
+            paras[0] = re.sub(r'^มาตรา\s*[๐-๙/]+\s*', '', paras[0])
+            if not paras[0]:
+                paras = paras[1:]
+            secs_[m.group(1)] = paras
+            raw[m.group(1)] = it['html']
+        _LAWS[name] = dict(meta, secs=secs_, html=raw)
+    return _LAWS[name]
+
+
+def law_key(n):
+    return th(n) if re.match(r'^[0-9/]+$', n) else n
+
+
+def law_quote(name, n, rng=None):
+    L = law(name)
+    paras = L['secs'][law_key(n)]
+    if rng:
+        a, _, b = rng.partition('-')
+        a, b = int(a), int(b or a)
+        assert 1 <= a <= b <= len(paras), 'bad paragraph range for %s ม.%s' % (name, n)
+        paras = paras[a - 1:b]
+    # never linkify: "มาตรา" inside another law refers to that law, not to the constitution
+    return ('<blockquote class="tp-quote is-law"><p class="tp-quote-head"><a href="%s" rel="noopener" target="_blank">%s มาตรา %s</a>'
+            '<span>ตัวบททางการ%s</span></p>%s</blockquote>') % (
+                attr(L['url']), esc(L['title']), law_key(n), ' (บางวรรค)' if rng else '', para_html(paras, link=False))
+
+
+def law_items(name, n):
+    """Numbered items of a section, leaving out repealed ones — e.g. the list of ministries."""
+    items = [p for p in law(name)['secs'][law_key(n)] if re.match(r'^\([๐-๙/]+\)', p) and '(ยกเลิก)' not in p]
+    names = [re.sub(r'^\([๐-๙/]+\)\s*', '', p) for p in items]
+    return ('<ol class="tp-list">%s</ol><p class="tp-note">รวม %s รายการ ตามมาตรา %s แห่ง%s (ฉบับปรับปรุงล่าสุด ไม่รวมอนุมาตราที่ยกเลิกแล้ว)</p>' % (
+        ''.join('<li>%s</li>' % esc(x) for x in names), th(len(names)), law_key(n), esc(law(name)['title'])))
+
+
+def rank_table(name, n, which=None):
+    """Rank tables drawn as HTML tables in the law (พ.ร.บ.ยศทหาร ม.๔). Rows line up only when no cell has blanks."""
+    src = law(name)['html'][law_key(n)]
+    out = []
+    tables = re.findall(r'<table.*?</table>', src, re.S)
+    if which:
+        tables = [tables[int(which) - 1]]
+    for tbl in tables:
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', tbl, re.S)
+        cells = [[c for c in re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>', r, re.S)] for r in rows]
+        head = [re.sub(r'<[^>]+>', '', html.unescape(c)).strip() for c in cells[1]]
+        cols = []
+        for c in cells[2]:
+            lines = [re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', html.unescape(p))).strip() for p in re.split(r'<br\s*/?>|</p>', c)]
+            cols.append(lines)
+        clean = [[x for x in col if x] for col in cols]
+        # rows are only "equivalent ranks" when every column has the same entries with no leading/inner blanks
+        aligned = len({len(c) for c in clean}) == 1 and all(col[:len(cl)] == cl for col, cl in zip(cols, clean))
+        if aligned:
+            body = ''.join('<tr>%s</tr>' % ''.join('<td>%s</td>' % esc(col[i]) for col in clean) for i in range(len(clean[0])))
+            out.append('<table class="tp-table tp-ranks"><thead><tr>%s</tr></thead><tbody>%s</tbody></table>' % (
+                ''.join('<th>%s</th>' % esc(h) for h in head), body))
+        else:
+            out.append('<div class="tp-rank-cols">%s</div>' % ''.join(
+                '<div><h5>%s</h5><ol>%s</ol></div>' % (esc(h), ''.join('<li>%s</li>' % esc(x) for x in col))
+                for h, col in zip(head, clean)))
+    return ''.join(out)
+
+
 def render_topic(t, secs):
     body = t['body']
 
-    # 1. every data-check="N:phrase;N:phrase" must be literally in that section, then the attribute is dropped
+    # 1. every data-check="N:phrase;law:NAME:N:phrase" must be literally in that section, then the attribute is dropped
     def check(m):
         for pair in m.group(1).split(';'):
-            n, phrase = pair.split(':', 1)
-            if phrase not in ' '.join(secs[int(n)]['paras']):
-                raise SystemExit('topic %s: section %s does not contain “%s”' % (t['id'], n, phrase))
+            if pair.startswith('law:'):
+                _, name, n, phrase = pair.split(':', 3)
+                text, where = ' '.join(law(name)['secs'][law_key(n)]), '%s ม.%s' % (name, n)
+            else:
+                n, phrase = pair.split(':', 1)
+                text, where = ' '.join(secs[int(n)]['paras']), 'section %s' % n
+            if phrase not in text:
+                raise SystemExit('topic %s: %s does not contain “%s”' % (t['id'], where, phrase))
         return ''
     body = re.sub(r'\s*data-check="([^"]*)"', check, body)
     # 2. numbers copied from a source in Arabic digits → Thai digits, so they are never retyped
@@ -274,15 +368,25 @@ def render_topic(t, secs):
                 '<span>ตัวบททางการ%s</span></p>%s</blockquote>') % (
                     n, n, secs[n]['th'], ' (บางวรรค)' if part else '', para_html(paras))
     body = re.sub(r'\{\{sec:(\d+)(?::(\d+(?:-\d+)?))?\}\}', quote, body)
+    body = re.sub(r'\{\{law:([\w-]+):([0-9๐-๙/]+)(?::(\d+(?:-\d+)?))?\}\}', lambda m: law_quote(m.group(1), m.group(2), m.group(3)), body)
+    body = re.sub(r'\{\{lawitems:([\w-]+):([0-9๐-๙/]+)\}\}', lambda m: law_items(m.group(1), m.group(2)), body)
+    body = re.sub(r'\{\{ranktable:([\w-]+):([0-9๐-๙/]+)(?::(\d))?\}\}', lambda m: rank_table(m.group(1), m.group(2), m.group(3)), body)
+    body = re.sub(r'\{\{lawtitle:([\w-]+)\}\}', lambda m: esc(law(m.group(1))['title']), body)
+    body = re.sub(r'\{\{lawurl:([\w-]+)\}\}', lambda m: attr(law(m.group(1))['url']), body)
     left = re.findall(r'\{\{[^}]*\}\}', body)
     assert not left, 'unknown placeholder in %s: %s' % (t['id'], left)
 
+    for s in t['sources']:
+        if s.get('law'):   # {"law": "flag"} → the scraped law's own title and OCS link
+            L = law(s['law'])
+            s['t'] = '%s (ฉบับปรับปรุงล่าสุด) — ระบบฐานข้อมูลกฎหมาย สำนักงานคณะกรรมการกฤษฎีกา ดึงข้อมูล %s' % (L['title'], th_date(L['retrieved']))
+            s['u'] = L['url']
     srcs = ''.join('<li>%s</li>' % (
         '<a href="%s"%s>%s</a>' % (attr(s['u']), '' if s['u'].startswith('#') else ' rel="noopener" target="_blank"', esc(s['t']))
         if s.get('u') else esc(s['t'])) for s in t['sources'])
     return ('<section class="tp-panel" id="t-%s" data-topic="%s" aria-labelledby="t-%s-h">'
             '<header class="tp-head"><span class="tp-ic" aria-hidden="true">%s</span><div><h3 id="t-%s-h">%s</h3>'
-            '<p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากรัฐธรรมนูญ · ข้อมูล ณ %s</p></div></header>'
+            '<p class="tp-kind">คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบทกฎหมาย · กรอบ “ตัวบททางการ” คัดจากตัวบทตามแหล่งอ้างอิงท้ายหัวข้อ · ข้อมูล ณ %s</p></div></header>'
             '<div class="tp-body">%s</div>'
             '<footer class="tp-src"><b>แหล่งอ้างอิง</b><ul>%s</ul></footer></section>') % (
                 t['id'], t['id'], t['id'], t['icon'], t['id'], esc(t['title']), th_date(t['asof']), body, srcs)

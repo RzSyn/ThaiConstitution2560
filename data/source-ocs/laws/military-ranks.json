@@ -1,0 +1,496 @@
+{
+ "timeline": [
+  {
+   "id": "timeline-0",
+   "text": "ฉบับหลัก",
+   "view": true
+  },
+  {
+   "id": "timeline-1",
+   "text": "ฉบับแก้ไข ครั้งที่ 1",
+   "view": true
+  },
+  {
+   "id": "timeline-2",
+   "text": "ฉบับปรับปรุง ครั้งที่ 1",
+   "view": true
+  },
+  {
+   "id": "timeline-3",
+   "text": "ฉบับแก้ไข ครั้งที่ 2",
+   "view": true
+  },
+  {
+   "id": "timeline-4",
+   "text": "ฉบับปรับปรุง ครั้งที่ 2",
+   "view": true
+  },
+  {
+   "id": "timeline-5",
+   "text": "ฉบับแก้ไข ครั้งที่ 3",
+   "view": true
+  },
+  {
+   "id": "timeline-6",
+   "text": "ฉบับปรับปรุง ครั้งที่ 3",
+   "view": true
+  },
+  {
+   "id": "timeline-7",
+   "text": "ฉบับแก้ไข ครั้งที่ 4",
+   "view": true
+  },
+  {
+   "id": "timeline-8",
+   "text": "ฉบับปรับปรุง ครั้งที่ 4",
+   "view": true
+  },
+  {
+   "id": "timeline-9",
+   "text": "ฉบับแก้ไข ครั้งที่ 5",
+   "view": true
+  },
+  {
+   "id": "timeline-10",
+   "text": "ฉบับปรับปรุง ครั้งที่ 5",
+   "view": true
+  },
+  {
+   "id": "timeline-11",
+   "text": "ฉบับแก้ไข ครั้งที่ 6",
+   "view": true
+  },
+  {
+   "id": "timeline-12",
+   "text": "ฉบับปรับปรุง ครั้งที่ 6",
+   "view": true
+  },
+  {
+   "id": "timeline-13",
+   "text": "ฉบับแก้ไข ครั้งที่ 7",
+   "view": true
+  },
+  {
+   "id": "timeline-14",
+   "text": "ฉบับปรับปรุงล่าสุด",
+   "view": false
+  }
+ ],
+ "title": "พระราชบัญญัติ\n\nยศทหาร พุทธศักราช ๒๔๗๙\n\nในพระปรมาภิไธยสมเด็จพระเจ้าอยู่หัวอานันทม",
+ "items": [
+  {
+   "id": "sec-4255636",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255636",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-align:center;\"><span>พระราชบัญญัติ</span></p><p style=\"text-align:center;\"><span>ยศทหาร พุทธศักราช ๒๔๗๙</span></p>",
+   "text": "พระราชบัญญัติ\n\nยศทหาร พุทธศักราช ๒๔๗๙"
+  },
+  {
+   "id": "sec-4255637",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255637",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-align:center;\"><span>ในพระปรมาภิไธยสมเด็จพระเจ้าอยู่หัวอานันทมหิดล</span></p><p style=\"text-align:center;\"><span>คณะผู้สำเร็จราชการแทนพระองค์</span></p><p style=\"text-align:center;\"><span>(ตามประกาศประธานสภาผู้แทนราษฎร</span></p><p style=\"text-align:center;\"><span>ลงวันที่ ๒๐ สิงหาคม พุทธศักราช ๒๔๗๘)</span></p><p style=\"text-align:center;\"><span>เจ้าพระยายมราช</span></p><p style=\"text-align:center;\"><span>พล.อ. เจ้าพระยาพิชเยนทร โยธิน</span></p><p style=\"text-align:center;\"><span>ตราไว้ ณ วันที่ ๓๑ ตุลาคม พุทธศักราช ๒๔๗๙</span></p><p style=\"text-align:center;\"><span>เป็นปีที่ ๓ ในรัชกาลปัจจุบัน</span></p>",
+   "text": "ในพระปรมาภิไธยสมเด็จพระเจ้าอยู่หัวอานันทมหิดล\n\nคณะผู้สำเร็จราชการแทนพระองค์\n\n(ตามประกาศประธานสภาผู้แทนราษฎร\n\nลงวันที่ ๒๐ สิงหาคม พุทธศักราช ๒๔๗๘)\n\nเจ้าพระยายมราช\n\nพล.อ. เจ้าพระยาพิชเยนทร โยธิน\n\nตราไว้ ณ วันที่ ๓๑ ตุลาคม พุทธศักราช ๒๔๗๙\n\nเป็นปีที่ ๓ ในรัชกาลปัจจุบัน"
+  },
+  {
+   "id": "sec-4255638",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255638",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span>โดยที่สภาผู้แทนราษฎรลงมติว่า สมควรมีพระราชบัญญัติยศทหารขึ้นโดยเฉพาะ</span></p><p style=\"text-indent:72.0pt;\"><span>จึงมีพระบรมราชโองการให้ตราพระราชบัญญัติขึ้นไว้โดยคำแนะนำและยินยอมของสภาผู้แทนราษฎร ดังต่อไปนี้</span></p>",
+   "text": "โดยที่สภาผู้แทนราษฎรลงมติว่า สมควรมีพระราชบัญญัติยศทหารขึ้นโดยเฉพาะ\n\nจึงมีพระบรมราชโองการให้ตราพระราชบัญญัติขึ้นไว้โดยคำแนะนำและยินยอมของสภาผู้แทนราษฎร ดังต่อไปนี้"
+  },
+  {
+   "id": "sec-4255639",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255639",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S1\"></span><span>มาตรา ๑</span><span>  พระราชบัญญัตินี้ให้เรียกว่า </span><span>“</span><span>พระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙</span><span>”</span></p>",
+   "text": "มาตรา ๑  พระราชบัญญัตินี้ให้เรียกว่า “พระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙”"
+  },
+  {
+   "id": "sec-4255640",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255640",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S2\"></span><span>มาตรา </span><span><span href=\"#foot-549e64c1-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒</span><a href=\"#foot-549e64c1-74ab-11ef-9d78-fa163e58ef71-1\"><sup id=\"ref-549e64c1-74ab-11ef-9d78-fa163e58ef71-1\">[1]</sup></a></span><span>  ให้ใช้พระราชบัญญัตินี้ตั้งแต่วันประกาศในราชกิจจานุเบกษาเป็นต้นไป</span></p>",
+   "text": "มาตรา ๒[1]  ให้ใช้พระราชบัญญัตินี้ตั้งแต่วันประกาศในราชกิจจานุเบกษาเป็นต้นไป"
+  },
+  {
+   "id": "sec-4255641",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255641",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S3\"></span><span>มาตรา ๓</span><span>  ตั้งแต่วันใช้พระราชบัญญัตินี้ ให้ยกเลิกบรรดาบทกฎหมาย กฎ และข้อบังคับอื่น ๆ ในส่วนที่มีบัญญัติไว้แล้วในพระราชบัญญัตินี้ หรือซึ่งขัดแย้งกับบทแห่งพระราชบัญญัตินี้</span></p>",
+   "text": "มาตรา ๓  ตั้งแต่วันใช้พระราชบัญญัตินี้ ให้ยกเลิกบรรดาบทกฎหมาย กฎ และข้อบังคับอื่น ๆ ในส่วนที่มีบัญญัติไว้แล้วในพระราชบัญญัตินี้ หรือซึ่งขัดแย้งกับบทแห่งพระราชบัญญัตินี้"
+  },
+  {
+   "id": "sec-4255642",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255642",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S4\"></span><span>มาตรา </span><span><span href=\"#foot-549e6539-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๔</span><a href=\"#foot-549e6539-74ab-11ef-9d78-fa163e58ef71-2\"><sup id=\"ref-549e6539-74ab-11ef-9d78-fa163e58ef71-2\">[2]</sup></a></span><span>  ยศทหารมีตามลำดับดังนี้</span></p><p style=\"text-align:center;\"><span>๑. สัญญาบัตร</span></p><table class=\"TableNormal TableGrid\"><tbody></tbody><thead><tr><td class=\"TableNormal TableGrid\" style=\"width:380.0pt;\" colspan=\"3\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ลำดับยศและเทียบยศ</span></p></td></tr><tr><td class=\"TableNormal TableGrid\" style=\"width:117.6pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารบก</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:141.4pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารเรือ</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:121.0pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารอากาศ</span></p></td></tr></thead><tbody><tr class=\"TableNormal TableGrid\"><td class=\"TableNormal TableGrid\" style=\"width:117.6pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จอมพล</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">ร้อยเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">ร้อยโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">ร้อยตรี</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:141.4pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จอมพลเรือ</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลเรือเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลเรือโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลเรือตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เรือเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เรือโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เ</span><span class=\"Normal PlainText\">รือตรี</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:121.0pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จอมพลอากาศ</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลอากาศเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลอากาศโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พลอากาศตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาอากาศเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาอากาศโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นาวาอากาศตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เรืออากาศเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เรืออากาศโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">เรืออากาศตรี</span></p></td></tr></tbody></table><p style=\"text-indent:72.0pt;\"><br></p><p style=\"text-align:center;\"><span>๒. ประทวน</span></p><table class=\"TableNormal TableGrid\"><tbody></tbody><thead><tr><td class=\"TableNormal TableGrid\" style=\"width:380.0pt;\" colspan=\"3\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ลำดับยศและเทียบยศ</span></p></td></tr><tr><td class=\"TableNormal TableGrid\" style=\"width:117.6pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารบก</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:141.4pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารเรือ</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:121.0pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;text-align:center;\"><span class=\"Normal PlainText\">ทหารอากาศ</span></p></td></tr></thead><tbody><tr class=\"TableNormal TableGrid\"><td class=\"TableNormal TableGrid\" style=\"width:117.6pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">นายดาบ</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าสิบเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าสิบโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าสิบตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">สิบเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">สิบโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">สิบตรี</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:141.4pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><br></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าตรี</span></p></td><td class=\"TableNormal TableGrid\" style=\"width:121.0pt;\"><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><br></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าอากาศเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าอากาศโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">พันจ่าอากาศตรี</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าอากาศเอก</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าอากาศโท</span></p><p class=\"Normal PlainText\" style=\"text-indent:0.0pt;\"><span class=\"Normal PlainText\">จ่าอากาศตรี</span></p></td></tr></tbody></table><p style=\"text-indent:72.0pt;\"><br></p>",
+   "text": "มาตรา ๔[2]  ยศทหารมีตามลำดับดังนี้\n\n๑. สัญญาบัตร\n\nลำดับยศและเทียบยศ\n\n\n\n\nทหารบก\n\n\t\n\nทหารเรือ\n\n\t\n\nทหารอากาศ\n\n\n\n\nจอมพล\n\nพลเอก\n\nพลโท\n\nพลตรี\n\nพันเอก\n\nพันโท\n\nพันตรี\n\nร้อยเอก\n\nร้อยโท\n\nร้อยตรี\n\n\t\n\nจอมพลเรือ\n\nพลเรือเอก\n\nพลเรือโท\n\nพลเรือตรี\n\nนาวาเอก\n\nนาวาโท\n\nนาวาตรี\n\nเรือเอก\n\nเรือโท\n\nเรือตรี\n\n\t\n\nจอมพลอากาศ\n\nพลอากาศเอก\n\nพลอากาศโท\n\nพลอากาศตรี\n\nนาวาอากาศเอก\n\nนาวาอากาศโท\n\nนาวาอากาศตรี\n\nเรืออากาศเอก\n\nเรืออากาศโท\n\nเรืออากาศตรี\n\n\n\n\n๒. ประทวน\n\nลำดับยศและเทียบยศ\n\n\n\n\nทหารบก\n\n\t\n\nทหารเรือ\n\n\t\n\nทหารอากาศ\n\n\n\n\nนายดาบ\n\nจ่าสิบเอก\n\nจ่าสิบโท\n\nจ่าสิบตรี\n\nสิบเอก\n\nสิบโท\n\nสิบตรี\n\n\t\n\n\n\n\nพันจ่าเอก\n\nพันจ่าโท\n\nพันจ่าตรี\n\nจ่าเอก\n\nจ่าโท\n\nจ่าตรี\n\n\t\n\n\n\n\nพันจ่าอากาศเอก\n\nพันจ่าอากาศโท\n\nพันจ่าอากาศตรี\n\nจ่าอากาศเอก\n\nจ่าอากาศโท\n\nจ่าอากาศตรี\n\n\n"
+  },
+  {
+   "id": "sec-4255643",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255643",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S5\"></span><span>มาตรา </span><span><span href=\"#foot-549e6594-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๕</span><a href=\"#foot-549e6594-74ab-11ef-9d78-fa163e58ef71-3\"><sup id=\"ref-549e6594-74ab-11ef-9d78-fa163e58ef71-3\">[3]</sup></a></span><span>  ผู้ใดจะเป็นทหารสัญญาบัตรยศชั้นใดได้นั้น จะได้ทรงพระกรุณาโปรดเกล้าฯ แต่งตั้งขึ้น เว้นแต่ผู้ที่มียศเป็นทหารสัญญาบัตรอยู่แล้วรับราชการประจำในสังกัดใหม่กองทัพใด ทหารยศไม่ตรงกับสังกัดกองทัพนั้น ก็ให้มียศตามกองทัพที่สังกัดใหม่ในชั้นเดียวกับยศเดิมได้ ตั้งแต่วันที่มีคำสั่งให้รับราชการประจำในสังกัดใหม่</span></p>",
+   "text": "มาตรา ๕[3]  ผู้ใดจะเป็นทหารสัญญาบัตรยศชั้นใดได้นั้น จะได้ทรงพระกรุณาโปรดเกล้าฯ แต่งตั้งขึ้น เว้นแต่ผู้ที่มียศเป็นทหารสัญญาบัตรอยู่แล้วรับราชการประจำในสังกัดใหม่กองทัพใด ทหารยศไม่ตรงกับสังกัดกองทัพนั้น ก็ให้มียศตามกองทัพที่สังกัดใหม่ในชั้นเดียวกับยศเดิมได้ ตั้งแต่วันที่มีคำสั่งให้รับราชการประจำในสังกัดใหม่"
+  },
+  {
+   "id": "sec-4255644",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255644",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S6\"></span><span>มาตรา ๖</span><span>  ผู้ที่จะเป็นทหารสัญญาบัตรนั้นต้องเป็นผู้ที่มีวิทยฐานะตามที่กระทรวงกลาโหมกำหนดไว้ เว้นแต่ผู้ที่ทรงพระกรุณาโปรดเกล้า ฯ แต่งตั้งเป็นพิเศษ</span></p>",
+   "text": "มาตรา ๖  ผู้ที่จะเป็นทหารสัญญาบัตรนั้นต้องเป็นผู้ที่มีวิทยฐานะตามที่กระทรวงกลาโหมกำหนดไว้ เว้นแต่ผู้ที่ทรงพระกรุณาโปรดเกล้า ฯ แต่งตั้งเป็นพิเศษ"
+  },
+  {
+   "id": "sec-4255645",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255645",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span style=\"font-family: var(--font-family); white-space: normal; color: black; text-indent: 1in;\">มาตรา </span><span style=\"font-family: var(--font-family); white-space: normal; color: black; text-indent: 1in;\"><span href=\"#foot-796557e0-e2dc-4a9b-aa0f-678077747d22\" class=\"footnote-detect\">๗</span><a href=\"#foot-796557e0-e2dc-4a9b-aa0f-678077747d22-4\"><sup id=\"ref-796557e0-e2dc-4a9b-aa0f-678077747d22-4\">[4]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span style=\"font-family: var(--font-family); white-space: normal; color: black; text-indent: 1in;\"> &nbsp;การแต่งตั้งผู้ใดให้ว่าที่ยศนายทหารสัญญาบัตรชั้นใดชั่วคราว\nให้รัฐมนตรีว่าการกระทรวงกลาโหมมีอำนาจแต่งตั้งผู้นั้นให้ว่าที่ยศสัญญาบัตรชั้นนั้นชั่วคราวได้\nเว้นแต่การแต่งตั้งว่าที่ยศนายทหารสัญญาบัตรชั่วคราวของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์\nให้อยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์</span><br><span id=\"S7\"></span></p>",
+   "text": "มาตรา ๗[4]   การแต่งตั้งผู้ใดให้ว่าที่ยศนายทหารสัญญาบัตรชั้นใดชั่วคราว ให้รัฐมนตรีว่าการกระทรวงกลาโหมมีอำนาจแต่งตั้งผู้นั้นให้ว่าที่ยศสัญญาบัตรชั้นนั้นชั่วคราวได้ เว้นแต่การแต่งตั้งว่าที่ยศนายทหารสัญญาบัตรชั่วคราวของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์ ให้อยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์\n"
+  },
+  {
+   "id": "sec-4255646",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255646",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span lang=\"TH\" style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal; text-indent: 1in;\">มาตรา </span><span lang=\"TH\" style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal; text-indent: 1in;\"><span href=\"#foot-48edf842-fafe-4bd8-bbf7-d9601f40804f\" class=\"footnote-detect\">๘</span><a href=\"#foot-48edf842-fafe-4bd8-bbf7-d9601f40804f-5\"><sup id=\"ref-48edf842-fafe-4bd8-bbf7-d9601f40804f-5\">[5]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span lang=\"TH\" style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal; text-indent: 1in;\"> &nbsp;ผู้ใดจะเป็นนายทหารประทวนชั้นใดได้นั้น\nให้รัฐมนตรีว่าการกระทรวงกลาโหม\nผู้บังคับบัญชาชั้นแม่ทัพซึ่งเป็นหัวหน้าส่วนราชการที่ขึ้นตรงต่อกระทรวงกลาโหม\nผู้บัญชาการทหารบก ผู้บัญชาการทหารเรือ\nหรือผู้บัญชาการทหารอากาศออกประทวนแต่งตั้งผู้อยู่ใต้บังคับบัญชาได้ เว้นแต่การแต่งตั้งนายทหารประทวนของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์\nให้อยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์</span><br><span id=\"S8\"></span></p>",
+   "text": "มาตรา ๘[5]   ผู้ใดจะเป็นนายทหารประทวนชั้นใดได้นั้น ให้รัฐมนตรีว่าการกระทรวงกลาโหม ผู้บังคับบัญชาชั้นแม่ทัพซึ่งเป็นหัวหน้าส่วนราชการที่ขึ้นตรงต่อกระทรวงกลาโหม ผู้บัญชาการทหารบก ผู้บัญชาการทหารเรือ หรือผู้บัญชาการทหารอากาศออกประทวนแต่งตั้งผู้อยู่ใต้บังคับบัญชาได้ เว้นแต่การแต่งตั้งนายทหารประทวนของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์ ให้อยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์\n"
+  },
+  {
+   "id": "sec-4255647",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255647",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S9\"></span><span>มาตรา ๙</span><span>  ผู้ที่จะเป็นทหารประทวนนั้น ต้องเป็นผู้ที่มีวิทยฐานะตามที่กระทรวงกลาโหมกำหนดไว้ เว้นแต่ผู้ที่รัฐมนตรีว่าการกระทรวงกลาโหมแต่งตั้งเป็นพิเศษ</span></p>",
+   "text": "มาตรา ๙  ผู้ที่จะเป็นทหารประทวนนั้น ต้องเป็นผู้ที่มีวิทยฐานะตามที่กระทรวงกลาโหมกำหนดไว้ เว้นแต่ผู้ที่รัฐมนตรีว่าการกระทรวงกลาโหมแต่งตั้งเป็นพิเศษ"
+  },
+  {
+   "id": "sec-4255648",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255648",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S10\"></span><span>มาตรา ๑๐</span><span>  ผู้ที่ได้รับยศทหารอยู่แล้วก่อนวันใช้พระราชบัญญัตินี้ให้คงมียศต่อไปตามเดิม</span></p>",
+   "text": "มาตรา ๑๐  ผู้ที่ได้รับยศทหารอยู่แล้วก่อนวันใช้พระราชบัญญัตินี้ให้คงมียศต่อไปตามเดิม"
+  },
+  {
+   "id": "sec-4255649",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255649",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S11\"></span><span>มาตรา ๑๑</span><span>  ทหารผู้ใดที่มิได้มียศตามพระราชบัญญัตินี้ให้รัฐมนตรีว่าการกระทรวงกลาโหมมีอำนาจออกกฎกระทรวงเทียบฐานะกับยศทหารได้</span></p>",
+   "text": "มาตรา ๑๑  ทหารผู้ใดที่มิได้มียศตามพระราชบัญญัตินี้ให้รัฐมนตรีว่าการกระทรวงกลาโหมมีอำนาจออกกฎกระทรวงเทียบฐานะกับยศทหารได้"
+  },
+  {
+   "id": "sec-4255650",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255650",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S12\"></span><span>มาตรา </span><span><span href=\"#foot-549e6731-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๑๒</span><a href=\"#foot-549e6731-74ab-11ef-9d78-fa163e58ef71-6\"><sup id=\"ref-549e6731-74ab-11ef-9d78-fa163e58ef71-6\">[6]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span></span><span>  </span><span style=\"font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt;\">การถอดหรือการออกจากยศสัญญาบัตรจะกระทำได้โดยประกาศพระบรมราชโองการ</span></p>",
+   "text": "มาตรา ๑๒[6]   การถอดหรือการออกจากยศสัญญาบัตรจะกระทำได้โดยประกาศพระบรมราชโองการ"
+  },
+  {
+   "id": "sec-4255651",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255651",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S13\"></span><span>มาตรา ๑๓</span><span>  การให้ออกจากว่าที่ยศสัญญาบัตร หรือการถอด หรือการออกจากยศประทวน ให้ผู้มีอำนาจแต่งตั้งสั่งได้</span></p>",
+   "text": "มาตรา ๑๓  การให้ออกจากว่าที่ยศสัญญาบัตร หรือการถอด หรือการออกจากยศประทวน ให้ผู้มีอำนาจแต่งตั้งสั่งได้"
+  },
+  {
+   "id": "sec-4255652",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255652",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"S14\"></span><span>มาตรา ๑๔</span><span>  ให้รัฐมนตรีว่าการกระทรวงกลาโหมมีหน้าที่รักษาการให้เป็นไปตามพระราชบัญญัตินี้ และให้มีอำนาจออกกฎกระทรวงเพื่อปฏิบัติการตามพระราชบัญญัตินี้</span></p><p style=\"text-indent:72.0pt;\"><span>กฎกระทรวงนั้นเมื่อได้ประกาศในราชกิจจานุเบกษาแล้วให้ใช้บังคับได้</span></p>",
+   "text": "มาตรา ๑๔  ให้รัฐมนตรีว่าการกระทรวงกลาโหมมีหน้าที่รักษาการให้เป็นไปตามพระราชบัญญัตินี้ และให้มีอำนาจออกกฎกระทรวงเพื่อปฏิบัติการตามพระราชบัญญัตินี้\n\nกฎกระทรวงนั้นเมื่อได้ประกาศในราชกิจจานุเบกษาแล้วให้ใช้บังคับได้"
+  },
+  {
+   "id": "sec-4255653",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255653",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>ผู้รับสนองพระบรมราชโองการ</span></p><p><span>พ.อ. พหลพลพยุหเสนา</span></p><p><span>นายกรัฐมนตรี</span></p>",
+   "text": "ผู้รับสนองพระบรมราชโองการ\n\nพ.อ. พหลพลพยุหเสนา\n\nนายกรัฐมนตรี"
+  },
+  {
+   "id": "sec-4255654",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255654",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span style=\"color: rgb(13, 60, 97); font-family: var(--font-family);\">พระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙ พุทธศักราช </span><span style=\"color: rgb(13, 60, 97); font-family: var(--font-family);\"><span href=\"#foot-549e67ec-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๔๘๔</span><a href=\"#foot-549e67ec-74ab-11ef-9d78-fa163e58ef71-7\"><sup id=\"ref-549e67ec-74ab-11ef-9d78-fa163e58ef71-7\">[7]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span> </span></p>",
+   "text": "พระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙ พุทธศักราช ๒๔๘๔[7]  "
+  },
+  {
+   "id": "sec-4255655",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255655",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span>มาตรา ๔  ให้รัฐมนตรีว่าการกระทรวงกลาโหมรักษาการให้เป็นไปตามพระราชกำหนดนี้</span></p>",
+   "text": "มาตรา ๔  ให้รัฐมนตรีว่าการกระทรวงกลาโหมรักษาการให้เป็นไปตามพระราชกำหนดนี้"
+  },
+  {
+   "id": "sec-4255656",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255656",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>หมายเหตุ :- พระราชกำหนดนี้ได้ยกเลิกมาตรา ๕ แห่งพระราชบัญญัติยศทหาร พ.ศ. ๒๔๗๙ (ราชกิจจานุเบกษา เล่ม ๕๗ ตอนที่ ๔๓  หน้า ๕๓๑) แก้ไขใหม่เป็นความว่า สำหรับผู้ได้รับพระราชทานยศเป็นนายทหารสัญญาบัตรอยู่แล้ว ไปรับราชการในสังกัดใหม่ กองทัพใด ก็ให้มียศในสังกัดใหม่ในชั้นเดียวกับยศเดิมนับแต่วันที่มีคำสั่ง โดยไม่ต้องโปรดเกล้าฯ แต่งตั้งอีก</span></p>",
+   "text": "หมายเหตุ :- พระราชกำหนดนี้ได้ยกเลิกมาตรา ๕ แห่งพระราชบัญญัติยศทหาร พ.ศ. ๒๔๗๙ (ราชกิจจานุเบกษา เล่ม ๕๗ ตอนที่ ๔๓  หน้า ๕๓๑) แก้ไขใหม่เป็นความว่า สำหรับผู้ได้รับพระราชทานยศเป็นนายทหารสัญญาบัตรอยู่แล้ว ไปรับราชการในสังกัดใหม่ กองทัพใด ก็ให้มียศในสังกัดใหม่ในชั้นเดียวกับยศเดิมนับแต่วันที่มีคำสั่ง โดยไม่ต้องโปรดเกล้าฯ แต่งตั้งอีก"
+  },
+  {
+   "id": "sec-4255657",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255657",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>พระราชบัญญัติอนุมัติพระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร</span> <span>พุทธศักราช</span> <span>๒๔๗๙</span> <span>พุทธศักราช</span> <span><span href=\"#foot-549e6888-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๔๘๔</span><a href=\"#foot-549e6888-74ab-11ef-9d78-fa163e58ef71-8\"><sup id=\"ref-549e6888-74ab-11ef-9d78-fa163e58ef71-8\">[8]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span></span></p>",
+   "text": "พระราชบัญญัติอนุมัติพระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙ พุทธศักราช ๒๔๘๔[8] "
+  },
+  {
+   "id": "sec-4255658",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255658",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>พระราชบัญญัติยศทหาร (ฉบับที่ ๓) พุทธศักราช </span><span><span href=\"#foot-549e6966-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๔๘๕</span><a href=\"#foot-549e6966-74ab-11ef-9d78-fa163e58ef71-9\"><sup id=\"ref-549e6966-74ab-11ef-9d78-fa163e58ef71-9\">[9]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span></span></p>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๓) พุทธศักราช ๒๔๘๕[9] "
+  },
+  {
+   "id": "sec-4255659",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255659",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"CS3\"></span><span>มาตรา ๓</span><span>  ในกฎหมายว่าด้วยยศทหารและบรรดากฎหมายอื่นใด ซึ่งมีคำว่า </span><span>“</span><span>นาย</span><span>”</span><span> ประกอบยศทหารอยู่ด้วยนั้น ให้ตัดคำว่า </span><span>“</span><span>นาย</span><span>”</span><span> ออกทั้งสิ้น</span></p><p style=\"text-indent:72.0pt;\"><span>ถ้าผู้ที่ได้รับยศทหารเป็นหญิง ให้เติมคำว่า </span><span>“</span><span>หญิง</span><span>”</span><span> ท้ายยศนั้น ๆ ด้วย</span></p>",
+   "text": "มาตรา ๓  ในกฎหมายว่าด้วยยศทหารและบรรดากฎหมายอื่นใด ซึ่งมีคำว่า “นาย” ประกอบยศทหารอยู่ด้วยนั้น ให้ตัดคำว่า “นาย” ออกทั้งสิ้น\n\nถ้าผู้ที่ได้รับยศทหารเป็นหญิง ให้เติมคำว่า “หญิง” ท้ายยศนั้น ๆ ด้วย"
+  },
+  {
+   "id": "sec-4255660",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255660",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p style=\"text-indent:72.0pt;\"><span id=\"CS4\"></span><span>มาตรา ๔</span><span>  ให้รัฐมนตรีว่าการกระทรวงกลาโหมรักษาการตามพระราชบัญญัตินี้</span></p>",
+   "text": "มาตรา ๔  ให้รัฐมนตรีว่าการกระทรวงกลาโหมรักษาการตามพระราชบัญญัตินี้"
+  },
+  {
+   "id": "sec-4255661",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255661",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>พระราชบัญญัติยศทหาร (ฉบับที่ ๔) พ.ศ. </span><span><span href=\"#foot-549e69fd-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๔๙๔</span><a href=\"#foot-549e69fd-74ab-11ef-9d78-fa163e58ef71-10\"><sup id=\"ref-549e69fd-74ab-11ef-9d78-fa163e58ef71-10\">[10]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span></span></p>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๔) พ.ศ. ๒๔๙๔[10] "
+  },
+  {
+   "id": "sec-4255662",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255662",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>พระราชบัญญัติยศทหาร (ฉบับที่ ๕) พ.ศ. </span><span><span href=\"#foot-549e6aaa-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๔๙๗</span><a href=\"#foot-549e6aaa-74ab-11ef-9d78-fa163e58ef71-11\"><sup id=\"ref-549e6aaa-74ab-11ef-9d78-fa163e58ef71-11\">[11]</sup></a></span><span style=\"margin-left: -0.25em\"> </span><span> </span></p>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๕) พ.ศ. ๒๔๙๗[11]  "
+  },
+  {
+   "id": "sec-4255663",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255663",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ เนื่องจากยศจอมพล จอมพลเรือ และจอมพลอากาศ เป็นยศสูงสุดของทหาร นายทหารที่มียศนี้จะต้องเป็นผู้ที่ได้กระทำประโยชน์อันยิ่งใหญ่แก่ประเทศชาติ หรือได้ประกอบคุณงามความดีในเมื่อมีการรบหรือการสงคราม ทั้งเป็นผู้มีความรู้ความสามารถสูงอยู่ในขั้นที่จะรับใช้ประเทศชาติทุกขณะ จึงเป็นการสมควรที่จะให้ได้รับราชการอยู่จนตลอดชีวิต</span></p>",
+   "text": "หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ เนื่องจากยศจอมพล จอมพลเรือ และจอมพลอากาศ เป็นยศสูงสุดของทหาร นายทหารที่มียศนี้จะต้องเป็นผู้ที่ได้กระทำประโยชน์อันยิ่งใหญ่แก่ประเทศชาติ หรือได้ประกอบคุณงามความดีในเมื่อมีการรบหรือการสงคราม ทั้งเป็นผู้มีความรู้ความสามารถสูงอยู่ในขั้นที่จะรับใช้ประเทศชาติทุกขณะ จึงเป็นการสมควรที่จะให้ได้รับราชการอยู่จนตลอดชีวิต"
+  },
+  {
+   "id": "sec-4255664",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255664",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span>พระราชบัญญัติยศทหาร (ฉบับที่ ๖) พ.ศ. </span><span><span href=\"#foot-549e6b24-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๕๐๑</span><a href=\"#foot-549e6b24-74ab-11ef-9d78-fa163e58ef71-12\"><sup id=\"ref-549e6b24-74ab-11ef-9d78-fa163e58ef71-12\">[12]</sup></a></span><span style=\"margin-left: -0.25em\"> </span></p>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๖) พ.ศ. ๒๕๐๑[12] "
+  },
+  {
+   "id": "sec-4255665",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255665",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span style=\"font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">หมายเหตุ\n:- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือตามที่มาตรา ๑๒\nแห่งพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙</span><span style=\"font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">&nbsp; </span><span style=\"font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">ซึ่งได้แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร\n(ฉบับที่ ๕) พ.ศ. ๒๔๙๗ บัญญัติให้นายทหารที่มียศจอมพล จอมพลเรือ จอมพลอากาศ\nรับราชการอยู่จนตลอดชีวิตนั้นไม่เหมาะสม\nสมควรแก้ไขเพิ่มเติมกฎหมายในเรื่องนี้เพื่อให้นายทหารดังกล่าวรับราชการเช่นเดียวกับข้าราชการทั่วไป</span><span> </span></p>",
+   "text": "หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือตามที่มาตรา ๑๒ แห่งพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙  ซึ่งได้แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๕) พ.ศ. ๒๔๙๗ บัญญัติให้นายทหารที่มียศจอมพล จอมพลเรือ จอมพลอากาศ รับราชการอยู่จนตลอดชีวิตนั้นไม่เหมาะสม สมควรแก้ไขเพิ่มเติมกฎหมายในเรื่องนี้เพื่อให้นายทหารดังกล่าวรับราชการเช่นเดียวกับข้าราชการทั่วไป "
+  },
+  {
+   "id": "sec-4255666",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255666",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<div style=\"line-height: 0px;\"><p lang=\"TH\">พระราชบัญญัติยศทหาร (ฉบับที่ ๗) พ.ศ. <span lang=\"TH\"><span href=\"#foot-549e6bcd-74ab-11ef-9d78-fa163e58ef71\" class=\"footnote-detect\">๒๕๐๕</span><a href=\"#foot-549e6bcd-74ab-11ef-9d78-fa163e58ef71-13\"><sup id=\"ref-549e6bcd-74ab-11ef-9d78-fa163e58ef71-13\">[13]</sup></a></span><span style=\"margin-left: -0.25em\"> </span> </p></div>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๗) พ.ศ. ๒๕๐๕[13]  "
+  },
+  {
+   "id": "sec-4255667",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255667",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span style=\"font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">หมายเหตุ\n:- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ\nเนื่องจากพระราชบัญญัติจัดระเบียบราชการกระทรวงกลาโหม พ.ศ. ๒๕๐๓\nได้บัญญัติให้กองทัพบก กองทัพเรือ และกองทัพอากาศ\nเป็นส่วนราชการขึ้นตรงต่อกองบัญชาการทหารสูงสุด\nจึงเป็นเหตุให้ผู้บัญชาการทั้งสามกองทัพ แต่งตั้งยศนายทหารประทวนไม่ได้\nสมควรแก้ไขเพิ่มเติมกฎหมายในเรื่องนี้เพื่อให้ผู้บัญชาการทหารบก\nผู้บัญชาการทหารเรือ ผู้บัญชาการทหารอากาศ แต่งตั้งยศนายทหารประทวนได้ดังเดิม\nกับสมควรให้ผู้บังคับบัญชาชั้นแม่ทัพซึ่งเป็นหัวหน้าส่วนราชการที่ขึ้นตรงต่อกระทรวงกลาโหม\nแต่งตั้งยศนายทหารประทวนได้ด้วย</span><span> </span></p>",
+   "text": "หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ เนื่องจากพระราชบัญญัติจัดระเบียบราชการกระทรวงกลาโหม พ.ศ. ๒๕๐๓ ได้บัญญัติให้กองทัพบก กองทัพเรือ และกองทัพอากาศ เป็นส่วนราชการขึ้นตรงต่อกองบัญชาการทหารสูงสุด จึงเป็นเหตุให้ผู้บัญชาการทั้งสามกองทัพ แต่งตั้งยศนายทหารประทวนไม่ได้ สมควรแก้ไขเพิ่มเติมกฎหมายในเรื่องนี้เพื่อให้ผู้บัญชาการทหารบก ผู้บัญชาการทหารเรือ ผู้บัญชาการทหารอากาศ แต่งตั้งยศนายทหารประทวนได้ดังเดิม กับสมควรให้ผู้บังคับบัญชาชั้นแม่ทัพซึ่งเป็นหัวหน้าส่วนราชการที่ขึ้นตรงต่อกระทรวงกลาโหม แต่งตั้งยศนายทหารประทวนได้ด้วย "
+  },
+  {
+   "id": "sec-4255885",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255885",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<div style=\"line-height: 0px;\"><p lang=\"TH\">พระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. <span lang=\"TH\"><span href=\"#foot-50073ae7-3a48-4412-88f9-789e7193f376\" class=\"footnote-detect\">๒๕๕๖</span><a href=\"#foot-50073ae7-3a48-4412-88f9-789e7193f376-14\"><sup id=\"ref-50073ae7-3a48-4412-88f9-789e7193f376-14\">[14]</sup></a></span><span style=\"margin-left: -0.25em\"> </span> </p></div>",
+   "text": "พระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. ๒๕๕๖[14]  "
+  },
+  {
+   "id": "sec-4255886",
+   "cls": "pt-2 ng-star-inserted",
+   "html": "",
+   "text": ""
+  },
+  {
+   "id": "sec-content-4255886",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<p><span style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ โดยที่หน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์มีภารกิจในการถวายอารักขาและถวายพระเกียรติองค์พระมหากษัตริย์\nพระราชินี พระรัชทายาท และพระบรมวงศานุวงศ์\nรวมทั้งปฏิบัติหน้าที่ในพระราชพิธีตามที่ได้รับมอบหมาย\nและรักษาความสงบเรียบร้อยภายในเขตพระราชฐาน ตลอดจนวางแผน อำนวยการ ประสานงาน\nดำเนินการ และกำกับงานในหน้าที่ของสมเด็จพระบรมโอรสาธิราชฯ สยามมกุฎราชกุมาร\nสมควรให้การแต่งตั้งว่าที่ยศนายทหารสัญญาบัตรชั่วคราวและการออกประทวนแต่งตั้งนายทหารประทวนของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์\nอยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์ </span><span style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">&nbsp;</span><span style=\"color: black; font-family: &quot;TH SarabunPSK&quot;, sans-serif; font-size: 16pt; white-space: normal;\">จึงจำเป็นต้องตราพระราชบัญญัตินี้</span><span> </span></p>",
+   "text": "หมายเหตุ :- เหตุผลในการประกาศใช้พระราชบัญญัติฉบับนี้ คือ โดยที่หน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์มีภารกิจในการถวายอารักขาและถวายพระเกียรติองค์พระมหากษัตริย์ พระราชินี พระรัชทายาท และพระบรมวงศานุวงศ์ รวมทั้งปฏิบัติหน้าที่ในพระราชพิธีตามที่ได้รับมอบหมาย และรักษาความสงบเรียบร้อยภายในเขตพระราชฐาน ตลอดจนวางแผน อำนวยการ ประสานงาน ดำเนินการ และกำกับงานในหน้าที่ของสมเด็จพระบรมโอรสาธิราชฯ สยามมกุฎราชกุมาร สมควรให้การแต่งตั้งว่าที่ยศนายทหารสัญญาบัตรชั่วคราวและการออกประทวนแต่งตั้งนายทหารประทวนของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์ อยู่ในพระราชวินิจฉัยของผู้บัญชาการหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์  จึงจำเป็นต้องตราพระราชบัญญัตินี้ "
+  },
+  {
+   "id": "",
+   "cls": "pt-2 preview-html ng-star-inserted",
+   "html": "<hr width=\"33%\" style=\"margin-top: 18px;margin-bottom: 10px; height: 1.3px !important;\"><p id=\"foot-549e64c1-74ab-11ef-9d78-fa163e58ef71-1\"><a href=\"#ref-549e64c1-74ab-11ef-9d78-fa163e58ef71-1\"><sup>[1]</sup></a> ราชกิจจานุเบกษา เล่ม ๕๓/หน้า ๕๓๑/๘ พฤศจิกายน ๒๔๗๙ </p><p id=\"foot-549e6539-74ab-11ef-9d78-fa163e58ef71-2\"><a href=\"#ref-549e6539-74ab-11ef-9d78-fa163e58ef71-2\"><sup>[2]</sup></a> มาตรา ๔ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๔) พ.ศ. ๒๔๙๔ </p><p id=\"foot-549e6594-74ab-11ef-9d78-fa163e58ef71-3\"><a href=\"#ref-549e6594-74ab-11ef-9d78-fa163e58ef71-3\"><sup>[3]</sup></a> มาตรา ๕ แก้ไขเพิ่มเติมโดยพระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙ พุทธศักราช ๒๔๘๔ </p><p id=\"foot-796557e0-e2dc-4a9b-aa0f-678077747d22-4\"><a href=\"#ref-796557e0-e2dc-4a9b-aa0f-678077747d22-4\"><sup>[4]</sup></a> มาตรา ๗ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. ๒๕๕๖ </p><p id=\"foot-48edf842-fafe-4bd8-bbf7-d9601f40804f-5\"><a href=\"#ref-48edf842-fafe-4bd8-bbf7-d9601f40804f-5\"><sup>[5]</sup></a> มาตรา ๘ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. ๒๕๕๖ </p><p id=\"foot-549e6731-74ab-11ef-9d78-fa163e58ef71-6\"><a href=\"#ref-549e6731-74ab-11ef-9d78-fa163e58ef71-6\"><sup>[6]</sup></a> มาตรา ๑๒ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๖) พ.ศ. ๒๕๐๑ </p><p id=\"foot-549e67ec-74ab-11ef-9d78-fa163e58ef71-7\"><a href=\"#ref-549e67ec-74ab-11ef-9d78-fa163e58ef71-7\"><sup>[7]</sup></a> ราชกิจจานุเบกษา เล่ม ๕๘/-/หน้า ๓๖๗/๑๑ มีนาคม ๒๔๘๔ </p><p id=\"foot-549e6888-74ab-11ef-9d78-fa163e58ef71-8\"><a href=\"#ref-549e6888-74ab-11ef-9d78-fa163e58ef71-8\"><sup>[8]</sup></a> ราชกิจจานุเบกษา เล่ม ๕๘/-/หน้า ๘๙๘/๘ กรกฎาคม ๒๔๘๔ </p><p id=\"foot-549e6966-74ab-11ef-9d78-fa163e58ef71-9\"><a href=\"#ref-549e6966-74ab-11ef-9d78-fa163e58ef71-9\"><sup>[9]</sup></a> ราชกิจจานุเบกษา เล่ม ๕๙/ตอน ๗๖/หน้า ๒๓๕๙/๘ ธันวาคม ๒๔๘๕ </p><p id=\"foot-549e69fd-74ab-11ef-9d78-fa163e58ef71-10\"><a href=\"#ref-549e69fd-74ab-11ef-9d78-fa163e58ef71-10\"><sup>[10]</sup></a> ราชกิจจานุเบกษา เล่ม ๖๘/ตอนที่ ๘๐/ฉบับพิเศษ หน้า ๑๘/๓๑ ธันวาคม ๒๔๙๔ </p><p id=\"foot-549e6aaa-74ab-11ef-9d78-fa163e58ef71-11\"><a href=\"#ref-549e6aaa-74ab-11ef-9d78-fa163e58ef71-11\"><sup>[11]</sup></a> ราชกิจจานุเบกษา เล่ม ๗๑/ตอนที่ ๑๖/หน้า ๔๔๑/๙ มีนาคม ๒๔๙๗ </p><p id=\"foot-549e6b24-74ab-11ef-9d78-fa163e58ef71-12\"><a href=\"#ref-549e6b24-74ab-11ef-9d78-fa163e58ef71-12\"><sup>[12]</sup></a> ราชกิจจานุเบกษา เล่ม ๗๕/ตอนที่ ๕๐/หน้า ๒๘๙/๑ กรกฎาคม ๒๕๐๑ </p><p id=\"foot-549e6bcd-74ab-11ef-9d78-fa163e58ef71-13\"><a href=\"#ref-549e6bcd-74ab-11ef-9d78-fa163e58ef71-13\"><sup>[13]</sup></a> ราชกิจจานุเบกษา เล่ม ๗๙/ตอนที่ ๒๕/หน้า ๒๙๗/๑๓ มีนาคม ๒๕๐๕ </p><p id=\"foot-50073ae7-3a48-4412-88f9-789e7193f376-14\"><a href=\"#ref-50073ae7-3a48-4412-88f9-789e7193f376-14\"><sup>[14]</sup></a> ราชกิจจานุเบกษา เล่ม ๑๓๐/ตอนที่ ๑๐๙ ก/หน้า ๕/๒๐ พฤศจิกายน ๒๕๕๖ </p>",
+   "text": "[1] ราชกิจจานุเบกษา เล่ม ๕๓/หน้า ๕๓๑/๘ พฤศจิกายน ๒๔๗๙ \n\n[2] มาตรา ๔ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๔) พ.ศ. ๒๔๙๔ \n\n[3] มาตรา ๕ แก้ไขเพิ่มเติมโดยพระราชกำหนดแก้ไขเพิ่มเติมพระราชบัญญัติยศทหาร พุทธศักราช ๒๔๗๙ พุทธศักราช ๒๔๘๔ \n\n[4] มาตรา ๗ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. ๒๕๕๖ \n\n[5] มาตรา ๘ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๘) พ.ศ. ๒๕๕๖ \n\n[6] มาตรา ๑๒ แก้ไขเพิ่มเติมโดยพระราชบัญญัติยศทหาร (ฉบับที่ ๖) พ.ศ. ๒๕๐๑ \n\n[7] ราชกิจจานุเบกษา เล่ม ๕๘/-/หน้า ๓๖๗/๑๑ มีนาคม ๒๔๘๔ \n\n[8] ราชกิจจานุเบกษา เล่ม ๕๘/-/หน้า ๘๙๘/๘ กรกฎาคม ๒๔๘๔ \n\n[9] ราชกิจจานุเบกษา เล่ม ๕๙/ตอน ๗๖/หน้า ๒๓๕๙/๘ ธันวาคม ๒๔๘๕ \n\n[10] ราชกิจจานุเบกษา เล่ม ๖๘/ตอนที่ ๘๐/ฉบับพิเศษ หน้า ๑๘/๓๑ ธันวาคม ๒๔๙๔ \n\n[11] ราชกิจจานุเบกษา เล่ม ๗๑/ตอนที่ ๑๖/หน้า ๔๔๑/๙ มีนาคม ๒๔๙๗ \n\n[12] ราชกิจจานุเบกษา เล่ม ๗๕/ตอนที่ ๕๐/หน้า ๒๘๙/๑ กรกฎาคม ๒๕๐๑ \n\n[13] ราชกิจจานุเบกษา เล่ม ๗๙/ตอนที่ ๒๕/หน้า ๒๙๗/๑๓ มีนาคม ๒๕๐๕ \n\n[14] ราชกิจจานุเบกษา เล่ม ๑๓๐/ตอนที่ ๑๐๙ ก/หน้า ๕/๒๐ พฤศจิกายน ๒๕๕๖ "
+  }
+ ]
+}
