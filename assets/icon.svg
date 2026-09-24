@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>พานรัฐธรรมนูญ</title>
+  <g fill="#d4af37">
+    <path d="M17 9h30a2 2 0 0 1 2 2v13H15V11a2 2 0 0 1 2-2z"/>
+    <path d="M8 26h48l-5 7H13z"/>
+    <rect x="27" y="33" width="10" height="3"/>
+    <path d="M29 36h6l2 8h-10z"/>
+    <path d="M17 44h30l5 9H12z"/>
+  </g>
+  <g stroke="#2b2110" stroke-width="1.6" stroke-linecap="round">
+    <path d="M20 14h24M20 18h24"/>
+    <path d="M32 9v15" opacity=".5"/>
+  </g>
+</svg>

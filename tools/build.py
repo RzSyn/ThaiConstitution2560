@@ -1,0 +1,367 @@
+# -*- coding: utf-8 -*-
+"""Build index.html from data/constitution.json + data/glossary.json.
+
+Official text is only ever copied from constitution.json (which comes from the
+OCS dump). Everything written here by hand is page furniture or explanatory
+text, and every explanatory block carries the class rc-explain so it is styled
+and labelled as "not the official text".
+
+Run: python tools/build.py
+"""
+import difflib
+import hashlib
+import html
+import io
+import json
+import os
+import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+ROOT =os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TH_DIGITS = '๐๑๒๓๔๕๖๗๘๙'
+TH_MONTHS = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม',
+             'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
+REPO_URL = 'https://github.com/RzSyn/ThaiConstitution2560'
+
+
+def th(n):
+    return ''.join(TH_DIGITS[int(c)] if c.isdigit() else c for c in str(n))
+
+
+def th2int(s):
+    return int(''.join(str(TH_DIGITS.index(c)) for c in s))
+
+
+def th_date(iso):
+    y, m, d = (int(x) for x in iso.split('-'))
+    return '%s %s %s' % (th(d), TH_MONTHS[m - 1], th(y + 543))
+
+
+def esc(s):
+    return html.escape(s, quote=False)
+
+
+def attr(s):
+    return html.escape(s, quote=True)
+
+
+def load(name):
+    with io.open(os.path.join(ROOT, 'data', name), encoding='utf-8') as f:
+        return json.load(f)
+
+
+def asset_stamp(name):
+    with open(os.path.join(ROOT, 'assets', name), 'rb') as f:
+        return hashlib.sha1(f.read()).hexdigest()[:10]
+
+
+# ── cross-references ─────────────────────────────────────────────────────
+REF_RE = re.compile(r'มาตรา\s*([๐-๙]+)')
+OWN_LAW = re.compile(r'\s*ของรัฐธรรมนูญแห่งราชอาณาจักรไทย(?!\s*\(ฉบับชั่วคราว\))')
+N_SECTIONS = 279
+
+
+def linkify(text):
+    """Escape text and turn "มาตรา ๘๓" into links, unless it points into another law."""
+    s = esc(text)
+    out, last = [], 0
+    for m in REF_RE.finditer(s):
+        n = th2int(m.group(1))
+        after = s[m.end():m.end() + 80]
+        if re.match(r'\s*(ของ|แห่ง)', after) and not OWN_LAW.match(after):
+            continue
+        if not 1 <= n <= N_SECTIONS:
+            continue
+        out.append(s[last:m.start()])
+        out.append('<a class="rc-xref" href="#s%d" data-n="%d">%s</a>' % (n, n, m.group(0)))
+        last = m.end()
+    out.append(s[last:])
+    return ''.join(out)
+
+
+def para_html(paras, link=True):
+    out = []
+    for i, p in enumerate(paras):
+        cls = 'rc-item' if re.match(r'^\([๐-๙]+\)', p) else ('rc-p1' if i == 0 else 'rc-p')
+        out.append('<p class="%s">%s</p>' % (cls, linkify(p) if link else esc(p)))
+    return ''.join(out)
+
+
+# ── diff of old vs new wording (explanatory highlighting) ────────────────
+CLUSTER = re.compile(r'[^ัิ-ฺ็-๎][ัิ-ฺ็-๎]*')
+SEP = ' '
+
+
+def tokens(paras):
+    out = []
+    for p in paras:
+        out += re.findall(r'\S+|\s+', p) + [SEP]
+    return out
+
+
+def mark_side(a, b):
+    """Return [(text, marked)] for old side a and new side b (token lists)."""
+    left, right = [], []
+    sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == 'equal':
+            left += [(t, False) for t in a[i1:i2]]
+            right += [(t, False) for t in b[j1:j2]]
+            continue
+        sa, sb = ''.join(a[i1:i2]), ''.join(b[j1:j2])
+        if op == 'replace' and SEP not in sa and SEP not in sb:
+            ca, cb = CLUSTER.findall(sa), CLUSTER.findall(sb)
+            sub = difflib.SequenceMatcher(None, ca, cb, autojunk=False)
+            if ''.join(ca) == sa and ''.join(cb) == sb and sub.ratio() >= 0.6:
+                for op2, k1, k2, l1, l2 in sub.get_opcodes():
+                    left.append((''.join(ca[k1:k2]), op2 != 'equal'))
+                    right.append((''.join(cb[l1:l2]), op2 != 'equal'))
+                continue
+        left += [(t, True) for t in a[i1:i2]]
+        right += [(t, True) for t in b[j1:j2]]
+    return left, right
+
+
+def render_marked(parts, tag):
+    paras, cur = [], []
+    for text, marked in parts:
+        pieces = text.split(SEP)
+        for k, piece in enumerate(pieces):
+            if k:
+                paras.append(cur)
+                cur = []
+            if piece:
+                cur.append((piece, marked))
+    if cur:
+        paras.append(cur)
+    out = []
+    for para in paras:
+        buf, run = [], None
+        for piece, marked in para:
+            if marked and not piece.strip():
+                marked = run == 'm'   # keep spaces inside a run, never start one with a space
+            state = 'm' if marked else 'p'
+            if state != run:
+                if run == 'm':
+                    buf.append('</%s>' % tag)
+                if state == 'm':
+                    buf.append('<%s>' % tag)
+                run = state
+            buf.append(esc(piece))
+        if run == 'm':
+            buf.append('</%s>' % tag)
+        text = ''.join(buf).strip()
+        if text:
+            cls = 'rc-item' if re.match(r'^(<%s>)?\([๐-๙]+\)' % tag, text) else 'rc-p'
+            out.append('<p class="%s">%s</p>' % (cls, text))
+    return ''.join(out)
+
+
+def compare_html(before, after):
+    left, right = mark_side(tokens(before), tokens(after))
+    return render_marked(left, 'del'), render_marked(right, 'ins')
+
+
+# ── page parts ───────────────────────────────────────────────────────────
+def gazette_label(g):
+    """'ราชกิจจานุเบกษา เล่ม ๑๓๔/ตอนที่ ๔๐ ก/หน้า ๑/๖ เมษายน ๒๕๖๐' → readable form (same facts)."""
+    m = re.match(r'ราชกิจจานุเบกษา (เล่ม [๐-๙]+)/(ตอนที่ .+?)/(หน้า [๐-๙]+)/(.+)$', g)
+    if not m:
+        raise SystemExit('unexpected gazette string: ' + g)
+    return 'ราชกิจจานุเบกษา %s %s %s วันที่ %s' % m.groups(), m.group(4)
+
+
+def section_html(sec, amends):
+    n = sec['no']
+    hist = sec.get('history', [])
+    cls = 'rc-sec' + (' is-amended' if hist else '')
+    meta, extra = '', ''
+    if hist:
+        a = amends[hist[-1]['by']]
+        meta = ('<div class="rc-sec-meta"><span class="rc-tag">แก้ไขเพิ่มเติมโดยฉบับที่ %s (พ.ศ. %s)</span>'
+                '<button class="rc-sec-act" type="button" data-act="compare" aria-expanded="false" '
+                'aria-controls="cmp%d">เทียบถ้อยคำเดิม</button></div>') % (a['no'], a['year'], n)
+        old, new = compare_html(hist[-1]['before'], sec['paras'])
+        extra = ('<div class="rc-compare" id="cmp%d" hidden>'
+                 '<div class="rc-pane"><h4>ถ้อยคำเดิม <small>(ฉบับ พ.ศ. ๒๕๖๐ ก่อนแก้ไข)</small></h4>%s</div>'
+                 '<div class="rc-pane is-new"><h4>ถ้อยคำปัจจุบัน <small>(แก้ไขโดยฉบับที่ %s พ.ศ. %s)</small></h4>%s</div>'
+                 '<p class="rc-explain rc-explain-sm"><b>คำอธิบาย</b> ทั้งสองช่องเป็นตัวบทจริง '
+                 'ส่วน<del>ขีดฆ่า</del>และ<ins>ไฮไลต์</ins>เป็นการเทียบความต่างโดยอัตโนมัติของเว็บไซต์นี้ ไม่ใช่ส่วนหนึ่งของตัวบท</p>'
+                 '</div>') % (n, old, a['no'], a['year'], new)
+    return ('<article class="%s" id="s%d" data-n="%d">'
+            '<a class="rc-sec-no" href="#s%d" title="ลิงก์ถาวรของมาตรา %s"><span>มาตรา</span><b>%s</b></a>'
+            '<div class="rc-sec-main">%s<div class="rc-sec-body">%s</div>%s</div>'
+            '<button class="rc-copy" type="button" data-act="copy" aria-label="คัดลอกลิงก์มาตรา %s" title="คัดลอกลิงก์">'
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></svg>'
+            '</button></article>') % (cls, n, n, n, sec['th'], sec['th'], meta, para_html(sec['paras']), extra, sec['th'])
+
+
+def chapter_id(ch):
+    return 'chT' if ch['no'] is None else 'ch%d' % ch['no']
+
+
+def build():
+    d = load('constitution.json')
+    g = load('glossary.json')
+    secs = {s['no']: s for s in d['sections']}
+    amends = {a['id']: a for a in d['amendments']}
+    chapters = d['chapters']
+    numbered = [c for c in chapters if c['no'] is not None]
+    amended_secs = [s['no'] for s in d['sections'] if s.get('history')]
+    meta = d['meta']
+    gz_label, gz_date = gazette_label(meta['gazette'])
+    enacted = re.search(r'ตราไว้ ณ วันที่ (.+)$', ' '.join(meta['royal'])).group(1)
+    retrieved = th_date(meta['source']['retrieved'])
+    css_v, js_v = asset_stamp('site.css'), asset_stamp('site.js')
+
+    # ── TOC and hub ──
+    toc, hub = [], []
+    toc.append('<a class="rc-toc-link" href="#preamble"><span class="rc-toc-name">คำปรารภ</span></a>')
+    for c in chapters:
+        cid = chapter_id(c)
+        rng = 'ม. %s–%s' % (th(c['first']), th(c['last'])) if c['first'] != c['last'] else 'ม. %s' % th(c['first'])
+        label = c['label'] if c['no'] is not None else 'บทเฉพาะกาล'
+        name = c['title'] if c['no'] is not None else ''
+        toc.append('<a class="rc-toc-link" href="#%s" data-ch="%s"><span class="rc-toc-no">%s</span>'
+                   '<span class="rc-toc-range">%s</span>%s</a>' % (
+                       cid, cid, esc(label), rng, '<span class="rc-toc-name">%s</span>' % esc(name) if name else ''))
+        if c['parts']:
+            toc.append('<div class="rc-toc-parts">' + ''.join(
+                '<a href="#%s-p%d">%s %s</a>' % (cid, p['no'], esc(p['label']), esc(p['title'])) for p in c['parts']) + '</div>')
+        count = c['last'] - c['first'] + 1
+        am_here = [n for n in amended_secs if c['first'] <= n <= c['last']]
+        hub.append('<a class="rc-card%s" href="#%s"><span class="rc-card-no">%s</span>'
+                   '<span class="rc-card-name">%s</span><span class="rc-card-meta">%s · %s มาตรา%s%s</span></a>' % (
+                       ' is-amended' if am_here else '', cid,
+                       esc('หมวด ' + th(c['no'])) if c['no'] is not None else 'บทเฉพาะกาล',
+                       esc(c['title']) if c['no'] is not None else 'บทบัญญัติช่วงเปลี่ยนผ่าน',
+                       rng, th(count), ' · %s ส่วน' % th(len(c['parts'])) if c['parts'] else '',
+                       ' · <b>มีมาตราที่แก้ไข</b>' if am_here else ''))
+
+    # ── document body ──
+    body = []
+    for c in chapters:
+        cid = chapter_id(c)
+        head = ('<header class="rc-ch-head"><div class="rc-ch-no">%s</div><h2>%s</h2></header>' % (
+            esc(c['label']), esc(c['title'])) if c['no'] is not None else
+            '<header class="rc-ch-head is-trans"><h2>บทเฉพาะกาล</h2></header>')
+        parts_by_first = {p['first']: p for p in c['parts']}
+        inner = []
+        for n in range(c['first'], c['last'] + 1):
+            if n in parts_by_first:
+                p = parts_by_first[n]
+                inner.append('<h3 class="rc-part" id="%s-p%d"><span>%s</span> %s</h3>' % (cid, p['no'], esc(p['label']), esc(p['title'])))
+            inner.append(section_html(secs[n], amends))
+        body.append('<section class="rc-chapter" id="%s" data-ch="%s" data-label="%s">%s%s</section>' % (
+            cid, cid, attr(c['label'] + ('' if c['no'] is None else ' ' + c['title'])), head, ''.join(inner)))
+
+    preamble = ''.join('<p>%s</p>' % esc(p) for p in d['preamble'])
+    royal = ''.join('<p>%s</p>' % esc(p) for p in meta['royal'])
+    countersign = ''.join('<p>%s</p>' % esc(p) for p in d['countersign'])
+
+    # ── amendment history ──
+    hist = []
+    for a in d['amendments']:
+        a_gz, a_date = gazette_label(a['gazette'])
+        given = re.sub(r'^ให้ไว้ ณ วันที่ ', '', a['given'])
+        changes = ' '.join('<a class="rc-xref" href="#s%d" data-n="%d">มาตรา %s</a>' % (n, n, th(n)) for n in a['changes'])
+        act = []
+        act.append('<div class="rc-act-title">%s</div>' % esc(a['title']))
+        act.append('<div class="rc-act-royal">%s</div>' % ''.join('<p>%s</p>' % esc(p) for p in a['royal']))
+        act.append(''.join('<p class="rc-p">%s</p>' % esc(p) for p in a['enacting']))
+        for s in a['sections']:
+            act.append('<div class="rc-act-sec"><b>มาตรา %s</b> %s</div>' % (s['th'], para_html(s['paras'])))
+        act.append('<div class="rc-act-sign">%s</div>' % ''.join('<p>%s</p>' % esc(p) for p in a['countersign']))
+        act.append('<p class="rc-act-note">%s</p>' % esc(a['note']))
+        rows = []
+        for n in a['changes']:
+            s = secs[n]
+            old, new = compare_html(s['history'][-1]['before'], s['paras'])
+            rows.append('<div class="rc-h-cmp"><h4><a class="rc-xref" href="#s%d" data-n="%d">มาตรา %s</a></h4>'
+                        '<div class="rc-compare"><div class="rc-pane"><h5>ถ้อยคำเดิม</h5>%s</div>'
+                        '<div class="rc-pane is-new"><h5>ถ้อยคำใหม่</h5>%s</div></div></div>' % (n, n, s['th'], old, new))
+        hist.append(
+            '<li class="rc-tl-item"><div class="rc-tl-dot"></div><div class="rc-tl-body">'
+            '<p class="rc-tl-date">ให้ไว้ ณ วันที่ %s · ประกาศในราชกิจจานุเบกษา %s</p>'
+            '<h3>%s</h3><p class="rc-tl-src">%s</p>'
+            '<p class="rc-tl-changes">มาตราที่แก้ไข: %s</p>'
+            '<div class="rc-explain"><b>สรุปสาระ (คำอธิบายโดยผู้จัดทำ ไม่ใช่ตัวบท)</b>'
+            '<ul><li>มาตรา ๘๓ สภาผู้แทนราษฎรยังมีสมาชิกห้าร้อยคน แต่เปลี่ยนจากแบบแบ่งเขตเลือกตั้งสามร้อยห้าสิบคนกับบัญชีรายชื่อหนึ่งร้อยห้าสิบคน '
+            'เป็นแบบแบ่งเขตเลือกตั้งสี่ร้อยคนกับแบบบัญชีรายชื่อหนึ่งร้อยคน และเพิ่มวรรคให้ใช้บัตรเลือกตั้งแบบละหนึ่งใบ</li>'
+            '<li>มาตรา ๘๖ ใช้จำนวนสี่ร้อยคน (แทนสามร้อยห้าสิบคน) เป็นฐานคำนวณจำนวนสมาชิกที่แต่ละจังหวัดพึงมี</li>'
+            '<li>มาตรา ๙๑ ยกเลิกวิธีคำนวณเดิม (๕ อนุมาตรา) และกำหนดให้คำนวณผู้ได้รับเลือกแบบบัญชีรายชื่อเป็นสัดส่วนโดยตรงกับคะแนนที่แต่ละพรรคได้รับรวมกันทั้งประเทศ '
+            'รายละเอียดให้เป็นไปตามพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร</li>'
+            '<li>มาตรา ๖ ของฉบับแก้ไข (บทเฉพาะกาล) กำหนดว่ามาตราทั้งสามที่แก้ไขยังไม่ใช้บังคับจนกว่าจะมีการเลือกตั้งสมาชิกสภาผู้แทนราษฎรเป็นการทั่วไปครั้งแรกภายหลังประกาศใช้</li></ul>'
+            '<p>เหตุผลอย่างเป็นทางการอยู่ใน “หมายเหตุ” ท้ายตัวบทฉบับแก้ไขด้านล่าง</p></div>'
+            '%s'
+            '<details class="rc-act"><summary>ตัวบทฉบับแก้ไขเพิ่มเติมทั้งฉบับ (ตัวบททางการ)</summary><div class="rc-act-in">%s</div></details>'
+            '</div></li>' % (esc(given), esc(a_date), esc(a['title']), esc(a_gz), changes, ''.join(rows), ''.join(act)))
+
+    # ── glossary ──
+    indep = [p['title'] for p in next(c for c in chapters if c['no'] == 12)['parts'] if p['title'] != 'บททั่วไป']
+    fill = {'{sections}': th(len(d['sections'])), '{chapters}': th(len(numbered)),
+            '{independent}': ' '.join(indep[:-1]) + ' และ' + indep[-1]}
+    gl = []
+    for t in g['terms']:
+        text = t['def']
+        for k, v in fill.items():
+            text = text.replace(k, v)
+        found = []
+        for s in d['sections']:
+            if any(f in p for f in t['find'] for p in s['paras']):
+                found.append(s['no'])
+        if t['find']:
+            assert found, 'glossary term not found in text: ' + t['term']
+        where = ''
+        if 'chapter' in t:
+            c = next(c for c in chapters if (c['no'] if c['no'] is not None else 'T') == t['chapter'])
+            where = '<a href="#%s">%s</a>' % (chapter_id(c), esc(c['label'] if c['no'] is not None else 'บทเฉพาะกาล'))
+        if found:
+            shown = ' '.join('<a class="rc-xref" href="#s%d" data-n="%d">%s</a>' % (n, n, th(n)) for n in found[:8])
+            more = ' และอีก %s มาตรา' % th(len(found) - 8) if len(found) > 8 else ''
+            where += ('%sพบในมาตรา %s%s' % (' · ' if where else '', shown, more))
+        gl.append('<div class="rc-g-item" data-term="%s"><dt>%s</dt><dd><p>%s</p>%s</dd></div>' % (
+            attr(t['term']), esc(t['term']), linkify(text), '<p class="rc-g-where">%s</p>' % where if where else ''))
+
+    tl_steps = ' → '.join(esc(x) for x in meta['source']['timeline'])
+    n_am = len(d['amendments'])
+    am_sources = ''.join('<li>ฉบับแก้ไขเพิ่มเติม %s: %s</li>' % (esc(a['short']), esc(gazette_label(a['gazette'])[0])) for a in d['amendments'])
+    changed = ' '.join('<a class="rc-xref" href="#s%d" data-n="%d">มาตรา %s</a>' % (n, n, th(n)) for n in amended_secs)
+
+    # the Royal Gazette comparison is re-run on every build, so the claim on the page is always current
+    import verify_gazette
+    a_txt, b_txt = verify_gazette.norm(verify_gazette.ocs_original()), verify_gazette.norm(verify_gazette.gazette_text())
+    if a_txt == b_txt:
+        verify_msg = ('ตรวจเทียบฉบับหลัก (พ.ศ. ๒๕๖๐) กับไฟล์ PDF จากราชกิจจานุเบกษาด้วยโปรแกรมแล้ว ตรงกันทุกตัวอักษร '
+                      '(%s ตัวอักษร ไม่นับช่องว่างและการขึ้นบรรทัด)' % th('{:,}'.format(len(a_txt))))
+    else:
+        raise SystemExit('OCS original text differs from the Royal Gazette PDF — run tools/verify_gazette.py')
+
+    page = TEMPLATE
+    repl = {
+        '{{CSS_V}}': css_v, '{{JS_V}}': js_v,
+        '{{N_CH}}': th(len(numbered)), '{{N_SEC}}': th(len(d['sections'])),
+        '{{N_AM}}': th(n_am), '{{N_AMSEC}}': th(len(amended_secs)),
+        '{{ENACTED}}': esc(enacted), '{{GAZETTE}}': esc(gz_label), '{{GZ_DATE}}': esc(gz_date),
+        '{{RETRIEVED}}': retrieved, '{{SRC_URL}}': attr(meta['source']['url']), '{{SRC_NAME}}': esc(meta['source']['name']),
+        '{{TL_STEPS}}': tl_steps, '{{LATEST}}': esc(d['amendments'][-1]['short']),
+        '{{TOC}}': ''.join(toc), '{{HUB}}': ''.join(hub), '{{ROYAL}}': royal, '{{PREAMBLE}}': preamble,
+        '{{BODY}}': ''.join(body), '{{COUNTERSIGN}}': countersign, '{{HISTORY}}': ''.join(hist),
+        '{{GLOSSARY}}': ''.join(gl), '{{N_GLOSS}}': th(len(g['terms'])), '{{REPO}}': REPO_URL,
+        '{{AM_SOURCES}}': am_sources, '{{CHANGED}}': changed, '{{VERIFY_GAZETTE}}': verify_msg,
+    }
+    for k, v in repl.items():
+        page = page.replace(k, v)
+    left = re.findall(r'\{\{[A-Z_]+\}\}', page)
+    assert not left, left
+    with io.open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(page)
+    print('index.html', len(page.encode('utf-8')) // 1024, 'KB')
+
+
+with io.open(os.path.join(ROOT, 'tools', 'template.html'), encoding='utf-8') as _f:
+    TEMPLATE = _f.read()
+
+if __name__ == '__main__':
+    build()
