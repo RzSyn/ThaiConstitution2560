@@ -401,13 +401,25 @@ def ext_parties():
 EXT = {'cabinet': ext_cabinet, 'parties': ext_parties}
 
 
+def flag_img(name):
+    f = ext('flag_images')['files'][name]
+    return ('<img src="%s" alt="" loading="lazy" width="150" height="100">'
+            '<a class="tp-credit" href="%s" rel="noopener" target="_blank">ภาพ: Wikimedia Commons · %s</a>') % (
+                attr(f['src']), attr(f['page']), esc(f['license']))
+
+
 def render_topic(t, secs):
     body = t['body']
 
     # 1. every data-check="N:phrase;law:NAME:N:phrase" must be literally in that section, then the attribute is dropped
     def check(m):
         for pair in m.group(1).split(';'):
-            if pair.startswith('law:'):
+            if pair.startswith('ext:'):   # phrase must appear in a saved snapshot of a web page
+                _, name, phrase = pair.split(':', 2)
+                text, where = json.dumps(ext(name)['data'], ensure_ascii=False), 'snapshot ' + name
+                if name.startswith('wiki_'):   # compare with the wiki markup removed: [[a|b]] → b, [[a]] → a, ''' → nothing
+                    text = re.sub(r"'{2,}", '', re.sub(r'\[\[(?:[^|\]]*\|)?([^\]]+)\]\]', r'\1', ext(name)['data']['wikitext']))
+            elif pair.startswith('law:'):
                 _, name, n, phrase = pair.split(':', 3)
                 text, where = ' '.join(law(name)['secs'][law_key(n)]), '%s ม.%s' % (name, n)
             else:
@@ -442,6 +454,7 @@ def render_topic(t, secs):
     body = re.sub(r'\{\{lawtitle:([\w-]+)\}\}', lambda m: esc(law(m.group(1))['title']), body)
     body = re.sub(r'\{\{lawurl:([\w-]+)\}\}', lambda m: attr(law(m.group(1))['url']), body)
     body = re.sub(r'\{\{ext:([\w-]+)\}\}', lambda m: EXT[m.group(1)](), body)
+    body = re.sub(r'\{\{flagimg:([^}]+)\}\}', lambda m: flag_img(m.group(1)), body)
     left = re.findall(r'\{\{[^}]*\}\}', body)
     assert not left, 'unknown placeholder in %s: %s' % (t['id'], left)
 
