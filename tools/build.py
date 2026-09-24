@@ -347,13 +347,35 @@ def ext_cabinet():
     for r in rows:
         if r['name'] not in people:
             people.append(r['name'])
-    body = ''.join('<tr><td>%s</td><td>%s</td></tr>' % (esc(r['position']), esc(r['name'])) for r in rows)
+    photos = ext('cabinet_photos')['photos']
+    cards = []
+    for name in people:
+        posts = [r['position'] for r in rows if r['name'] == name]
+        p = photos.get(name)
+        if p:
+            credit = '<a href="%s" rel="noopener" target="_blank">ภาพ: %s · %s</a>' % (
+                attr(p['page']), esc(p['artist'] or 'Wikimedia Commons'), esc(p['license']))
+            fig = '<img src="%s" alt="%s" loading="lazy" width="120" height="160">' % (attr(p['src']), attr(name))
+        else:
+            credit = '<span>ไม่พบภาพที่ใช้ได้โดยเสรี</span>'
+            # first consonant of the given name (skip the title and any leading vowel such as เ in เอกนิติ)
+            initials = re.search(r'[ก-ฮ]', re.sub(r'^(นางสาว|นาง|นาย|พลตำรวจโท|พลโท)\s*', '', name)).group(0)
+            fig = '<span class="tp-noimg" aria-hidden="true">%s</span>' % esc(initials)
+        cards.append('<div class="tp-person">%s<div><b>%s</b><ul>%s</ul><small>%s</small></div></div>' % (
+            fig, esc(name), ''.join('<li>%s</li>' % esc(x) for x in posts), credit))
+    kinds = [('รองนายกรัฐมนตรี', r'^รองนายกรัฐมนตรี'), ('รัฐมนตรีประจำสำนักนายกรัฐมนตรี', r'^รัฐมนตรีประจำสำนักนายกรัฐมนตรี'),
+             ('รัฐมนตรีว่าการกระทรวง', r'^รัฐมนตรีว่าการ'), ('รัฐมนตรีช่วยว่าการกระทรวง', r'^รัฐมนตรีช่วยว่าการ')]
+    counted = sum(1 for r in rows if any(re.match(p, r['position']) for _, p in kinds)) + sum(1 for r in rows if r['position'] == 'นายกรัฐมนตรี')
+    assert counted == len(rows), 'a cabinet position did not fit any kind'
+    breakdown = ''.join('<li><b>%s</b> %s ตำแหน่ง</li>' % (esc(k), th(sum(1 for r in rows if re.match(p, r['position'])))) for k, p in kinds)
+    body = '<ul class="tp-breakdown">%s</ul><div class="tp-people">%s</div>' % (breakdown, ''.join(cards))
     return ('<div class="tp-stats">'
             '<div class="tp-stat"><b>คนที่ %s</b><span>%s นายกรัฐมนตรี</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
             '<div class="tp-stat"><b>%s</b><span>ตำแหน่งในคณะรัฐมนตรี (บางคนดำรงสองตำแหน่ง)</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
-            '<div class="tp-stat"><b>%s คน</b><span>จำนวนบุคคล (นับไม่ซ้ำ)</span><small>คำนวณจากรายชื่อ</small></div></div>'
-            '<table class="tp-table"><thead><tr><th>ตำแหน่ง</th><th>ชื่อ</th></tr></thead><tbody>%s</tbody></table>') % (
-                th(pm['number']), esc(pm['name']), th(len(rows)), th(len(people)), body)
+            '<div class="tp-stat"><b>%s คน</b><span>จำนวนบุคคล (นับไม่ซ้ำ)</span><small>คำนวณจากรายชื่อ</small></div>'
+            '<div class="tp-stat"><b>%s คน</b><span>มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons</span><small>ภาพดึง %s</small></div></div>'
+            '%s') % (th(pm['number']), esc(pm['name']), th(len(rows)), th(len(people)),
+                     th(sum(1 for n in people if n in photos)), th_date(ext('cabinet_photos')['retrieved']), body)
 
 
 def ext_parties():
