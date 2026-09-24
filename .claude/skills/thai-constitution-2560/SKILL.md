@@ -63,6 +63,28 @@ panel is labelled as explanation; build.py enforces the facts:
 - Facts from outside the constitution (law titles, people, dates) must come
   from an official page you actually read this session. Name it in `sources`.
 
+### Other sources inside topics
+
+- **Other laws:** `tools/scrape_ocs.mjs <docId> <dir> latest` → `data/source-ocs/laws/<name>.json`
+  (+ `_index.json`). Use `{{law:NAME:N[:a-b]}}`, `{{lawitems:NAME:N}}`,
+  `{{ranktable:NAME:N:k}}`, `{{lawtitle:NAME}}`, check with `law:NAME:N:phrase`.
+- **Official web pages:** `node tools/scrape_js.mjs URL tools/scrapers/X.js data/external/NAME.json`
+  saves exactly what the page shows (thaigov cabinet/PM/news, hris MP list).
+  Render with `{{ext:NAME}}` (renderer in build.py `EXT`). Check with
+  `ext:NAME:phrase`. Cite with `{"ext": "NAME", "t": "…"}` in sources.
+- **Secondary sources** (Wikipedia, only when no official page is reachable):
+  snapshot a fixed revision (`data/external/wiki_*.json`, url with `oldid`).
+  Check with `ext:wiki_…:phrase` (wiki markup is stripped first) and label each
+  such item `<span class="tp-src-tag">ทุติยภูมิ</span>`.
+- **Photos:** `tools/fetch_photos.py` matches each cabinet name to a Wikidata item
+  by exact Thai label or alias, Thai citizen, with P18, and keeps it only under
+  a free Commons licence; the credit goes under the photo. `tools/fetch_flags.py`
+  does the same for flag SVGs. Never copy photos from government sites:
+  government works are copyrighted (พ.ร.บ.ลิขสิทธิ์ ม.๑๔); ม.๗ exempts only laws,
+  news facts, orders and similar.
+- soc.go.th (Cabinet Secretariat) is behind the same Cloudflare check as
+  ratchakitcha. thaigov.go.th and parliament.go.th / hris.parliament.go.th work.
+
 ## Adding a new amendment (ฉบับที่ ๒ …)
 
 1. Find it on OCS: `https://www.ocs.go.th/searchlaw-law?q=รัฐธรรมนูญแห่งราชอาณาจักรไทย`,
