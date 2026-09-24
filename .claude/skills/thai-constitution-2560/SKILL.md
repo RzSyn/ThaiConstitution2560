@@ -95,6 +95,16 @@ editing `assets/site.css` or `assets/site.js`.
    202 challenge; `grep -oE '.{0,220}pattern'` on a 1.5 MB minified bundle ran
    past 120 s — use Python for that. The Gazette PDF text layer writes sara am
    as U+0E4D U+0E32 and breaks lines mid-word; compare whitespace-free.
+9. **Garuda emblem request (2026-09-24).** The user wrote "ตราครุฑสิ". I checked
+   the OCS text first: พระราชบัญญัติเครื่องหมายราชการ พุทธศักราช ๒๔๘๒ ม.๖ forbids
+   using a เครื่องหมายราชการ without permission, ม.๗ forbids imitating one, and
+   ม.๘ sets the penalty. A Garuda would also make this unofficial site look like
+   a government one. I advised against it. The user replied that the current icon
+   already is the Garuda and must not change. The icon is actually the
+   พานรัฐธรรมนูญ SVG in `assets/icon.svg`, and it stays as is. Rule: never add the
+   Garuda or any other government emblem, and do not redesign the icon unless
+   asked. (Near-miss: from memory I had the Act as พ.ศ. ๒๕๑๑; the OCS title says
+   ๒๔๘๒.)
 8. **Headless profile keeps localStorage between runs:** the mobile screenshot
    came out in the "paper" theme set by the desktop run. Reset state explicitly
    in screenshot specs before judging a theme.
