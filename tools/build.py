@@ -401,6 +401,84 @@ def ext_parties():
             '<tbody>%s</tbody></table>') % (th(len(rows)), esc(th(d['heading'])), th(nd), th(nl), th(len(parties)), body)
 
 
+TITLE = re.compile(r'^(นางสาว|นาง|นาย|ว่าที่ร้อยตรีหญิง|ว่าที่ร้อยตรี|ว่าที่ร้อยโท|ว่าที่|พลตำรวจเอก|พลตำรวจโท|พลตำรวจตรี|พันตำรวจเอก|พันตำรวจโท|'
+                   r'พลเอก|พลโท|พลตรี|พันเอก|พันโท|พันตรี|ร้อยตำรวจเอก|ร้อยเอก|ร้อยโท|ร้อยตรี|จ่าสิบเอก|หม่อมราชวงศ์|หม่อมหลวง|'
+                   r'ศาสตราจารย์|รองศาสตราจารย์|ผู้ช่วยศาสตราจารย์|ดร\.|แพทย์หญิง|นายแพทย์|ทันตแพทย์หญิง|ทันตแพทย์|เภสัชกรหญิง|เภสัชกร)\s*')
+
+
+def person_fig(name, photos, private):
+    """Photo box for a member card: a free Commons photo already vetted for the cabinet list, else the
+    initial of the given name with an optional personal-use photo that site.js swaps in on this computer."""
+    p = photos.get(name)
+    if p:
+        fig = '<img src="%s" alt="%s" loading="lazy" width="120" height="160">' % (attr(p['src']), attr(name))
+        credit = '<a href="%s" rel="noopener" target="_blank">ภาพ: %s · %s</a>' % (
+            attr(p['page']), esc(p['artist'] or 'Wikimedia Commons'), esc(p['license']))
+        return fig, credit
+    bare, prev = name, None
+    while prev != bare:
+        prev, bare = bare, TITLE.sub('', bare)
+    initial = (re.search(r'[ก-ฮ]', bare) or re.search(r'[ก-ฮ]', name)).group(0)
+    return ('<span class="tp-noimg" aria-hidden="true" data-private="%s">%s</span>' % (attr(private), esc(initial)),
+            '<span>ไม่พบภาพที่ใช้ได้โดยเสรี</span>')
+
+
+def member_cards(rows, photos, folder, line2):
+    cards = []
+    for r in rows:
+        fig, credit = person_fig(r['name'], photos, 'assets/img/private/%s/%s.jpg' % (folder, r['name']))
+        extra, key = line2(r)
+        cards.append('<div class="tp-person tp-member" data-key="%s" data-q="%s">%s<div><b>%s</b><ul>%s</ul><small>%s</small></div></div>' % (
+            attr(key), attr((r['name'] + ' ' + ' '.join(extra)).lower()), fig, esc(r['name']),
+            ''.join('<li>%s</li>' % esc(x) for x in extra), credit))
+    return ''.join(cards)
+
+
+def member_tools(label, keys, counts):
+    opts = ''.join('<option value="%s">%s (%s)</option>' % (attr(k), esc(k), th(counts[k])) for k in keys)
+    return ('<div class="tp-mtools"><select class="tp-mkey" aria-label="%s"><option value="">%sทั้งหมด</option>%s</select>'
+            '<input class="tp-mq" type="search" placeholder="ค้นหาชื่อ จังหวัด…" aria-label="ค้นหาชื่อ">'
+            '<span class="tp-mcount" aria-live="polite"></span></div>') % (attr(label), esc(label), opts)
+
+
+def ext_members():
+    d = ext('mps')['data']
+    rows = d['rows']
+    photos = ext('cabinet_photos')['photos']
+    counts = {}
+    for r in rows:
+        counts[r['party']] = counts.get(r['party'], 0) + 1
+    parties = sorted(counts, key=lambda k: (-counts[k], k))
+    mp_cards = member_cards(rows, photos, 'mps', lambda r: ([r['party'], th(r['seat'].replace('สมาชิกสภาผู้แทนราษฎร', '').strip())], r['party']))
+    n_photo = sum(1 for r in rows if r['name'] in photos)
+    mp = ('<p class="tp-note">%s ตามระบบสารสนเทศสมาชิก สำนักงานเลขาธิการสภาผู้แทนราษฎร ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> '
+          'เรียงตามเลขประจำตัวสมาชิก ชื่อ เขต และพรรคสะกดตามต้นฉบับ มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons %s คน</p>%s'
+          '<div class="tp-people tp-members">%s</div>') % (
+        esc(th(d['heading'])), th_date(ext('mps')['retrieved']), th(len(rows)), th(n_photo),
+        member_tools('พรรค', parties, counts), mp_cards)
+    spath = os.path.join(ROOT, 'data', 'external', 'senators.json')
+    if os.path.exists(spath):
+        s = ext('senators')['data']
+        srows = s['rows']
+        gcount = {}
+        for r in srows:
+            gcount[r['group']] = gcount.get(r['group'], 0) + 1
+        groups = sorted(gcount, key=lambda k: (int(re.search(r'\d+', k).group(0)) if re.search(r'\d+', k) else 999, k))
+        sw = ('<p class="tp-note">%s ตามเว็บไซต์ของรัฐสภา ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> สมาชิกวุฒิสภาไม่สังกัดพรรคการเมือง '
+              'จึงแสดงกลุ่มที่ได้รับเลือกแทน</p>%s<div class="tp-people tp-members">%s</div>') % (
+            esc(th(s['heading'])), th_date(ext('senators')['retrieved']), th(len(srows)),
+            member_tools('กลุ่ม', groups, gcount),
+            member_cards(srows, photos, 'senators', lambda r: ([th(r['group'])], r['group'])))
+    else:
+        sw = ('<div class="rc-explain"><b>ยังไม่มีรายชื่อสมาชิกวุฒิสภาในหน้านี้</b> รายชื่อต้องดึงจากเว็บไซต์ของรัฐสภาโดยตรง '
+              'ซึ่งยังไม่ได้ดึงมา หน้านี้จึงยังไม่แสดงรายชื่อที่พิมพ์ขึ้นเอง</div>')
+    return ('<div class="tp-chambers" role="tablist">'
+            '<button type="button" role="tab" class="tp-filter is-on" data-chamber="mp" aria-selected="true">สส. · สภาผู้แทนราษฎร (%s)</button>'
+            '<button type="button" role="tab" class="tp-filter" data-chamber="sw" aria-selected="false">สว. · วุฒิสภา</button></div>'
+            '<div class="tp-chamber" data-chamber="mp">%s</div><div class="tp-chamber" data-chamber="sw" hidden>%s</div>') % (
+        th(len(rows)), mp, sw)
+
+
 THMON = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
 
 
@@ -571,7 +649,7 @@ def ext_pm_hall():
                 json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
 
 
-EXT = {'cabinet': ext_cabinet, 'parties': ext_parties, 'pm_table': ext_pm_table, 'pm_hall': ext_pm_hall}
+EXT = {'cabinet': ext_cabinet, 'parties': ext_parties, 'pm_table': ext_pm_table, 'pm_hall': ext_pm_hall, 'members': ext_members}
 
 
 def flag_img(name):

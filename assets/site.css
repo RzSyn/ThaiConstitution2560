@@ -257,6 +257,13 @@ button, input { font: inherit; }
 @media (max-width: 520px) { .tp-flagtl > li { grid-template-columns: 1fr; } }
 .tp-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
 .tp-filter { height: 32px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--text-2); font: 500 13.5px var(--sans); cursor: pointer; }
+.tp-chambers { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.tp-mtools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 12px; }
+.tp-mtools select, .tp-mtools input { height: 36px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-size: 14px; max-width: 100%; }
+.tp-mtools input { width: min(260px, 100%); }
+.tp-mtools select:focus, .tp-mtools input:focus { outline: none; border-color: var(--acc); }
+.tp-mcount { font-size: 13px; color: var(--text-3); }
+.tp-member[hidden] { display: none; }
 .tp-filter.is-on { background: var(--acc); border-color: var(--acc); color: var(--on-acc); }
 .tp-scroll { overflow-x: auto; }
 #t-pm-list .tp-body { max-width: none; }

@@ -321,6 +321,28 @@
     });
   });
 
+  /* ── สส./สว. list: chamber tabs, party/group select, name search ──── */
+  $$('.tp-chambers').forEach(function (bar) {
+    bar.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-chamber]'); if (!b) return;
+      $$('[data-chamber]', bar).forEach(function (x) { x.classList.toggle('is-on', x === b); x.setAttribute('aria-selected', String(x === b)); });
+      $$('.tp-chamber', bar.parentNode).forEach(function (c) { c.hidden = c.dataset.chamber !== b.dataset.chamber; });
+    });
+  });
+  $$('.tp-mtools').forEach(function (tools) {
+    var sel = $('.tp-mkey', tools), q = $('.tp-mq', tools), out = $('.tp-mcount', tools);
+    var cards = $$('.tp-member', tools.parentNode);
+    function apply() {
+      var k = sel.value, s = q.value.trim().toLowerCase(), n = 0;
+      cards.forEach(function (c) {
+        var on = (!k || c.dataset.key === k) && (!s || c.dataset.q.indexOf(s) >= 0);
+        c.hidden = !on; if (on) n++;
+      });
+      out.textContent = 'แสดง ' + String(n).replace(/\d/g, function (d) { return '๐๑๒๓๔๕๖๗๘๙'[d]; }) + ' คน';
+    }
+    sel.addEventListener('change', apply); q.addEventListener('input', apply); apply();
+  });
+
   /* ── knowledge topics: one panel at a time in the stage ────────────── */
   var tpBtns = $$('.tp-btn'), tpPanels = $$('.tp-panel');
   var tpOrder = tpBtns.map(function (b) { return b.dataset.topic; });
