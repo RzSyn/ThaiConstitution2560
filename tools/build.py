@@ -25,6 +25,16 @@ TH_MONTHS = ['มกราคม', 'กุมภาพันธ์', 'มีน�
 REPO_URL = 'https://github.com/RzSyn/ThaiConstitution2560'
 
 
+def repo_live():
+    """True once the GitHub repo exists and is public — until then the page must not link to it (404)."""
+    import subprocess
+    try:
+        r = subprocess.run(['git', 'ls-remote', REPO_URL + '.git'], capture_output=True, timeout=30)
+        return r.returncode == 0
+    except Exception:
+        return False
+
+
 def th(n):
     return ''.join(TH_DIGITS[int(c)] if c.isdigit() else c for c in str(n))
 
@@ -338,6 +348,8 @@ def build():
     else:
         raise SystemExit('OCS original text differs from the Royal Gazette PDF — run tools/verify_gazette.py')
 
+    live = repo_live()
+    print('GitHub repo reachable:', live, '(links to it are %s)' % ('included' if live else 'left out'))
     page = TEMPLATE
     repl = {
         '{{CSS_V}}': css_v, '{{JS_V}}': js_v,
@@ -349,6 +361,9 @@ def build():
         '{{TOC}}': ''.join(toc), '{{HUB}}': ''.join(hub), '{{ROYAL}}': royal, '{{PREAMBLE}}': preamble,
         '{{BODY}}': ''.join(body), '{{COUNTERSIGN}}': countersign, '{{HISTORY}}': ''.join(hist),
         '{{GLOSSARY}}': ''.join(gl), '{{N_GLOSS}}': th(len(g['terms'])), '{{REPO}}': REPO_URL,
+        '{{REPO_ABOUT}}': ' ดูได้ที่ <a href="%s" rel="noopener" target="_blank">GitHub</a>' % REPO_URL if live else '',
+        '{{REPO_FOOT}}': ' · <a href="%s" rel="noopener" target="_blank">ซอร์สโค้ด</a>' % REPO_URL if live else '',
+        '{{REPO_REPORT}}': 'หากพบข้อผิดพลาด โปรดแจ้งผ่าน <a href="%s/issues" rel="noopener" target="_blank">GitHub</a> ' % REPO_URL if live else '',
         '{{AM_SOURCES}}': am_sources, '{{CHANGED}}': changed, '{{VERIFY_GAZETTE}}': verify_msg,
     }
     for k, v in repl.items():

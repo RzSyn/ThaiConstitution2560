@@ -109,6 +109,13 @@ editing `assets/site.css` or `assets/site.js`.
    it back; (c) because of it, the "ไม่ใช่เว็บไซต์ของหน่วยงานรัฐ" disclaimers on
    the page must stay prominent. (Near-miss: from memory I had the Act as
    พ.ศ. ๒๕๑๑; the OCS title says ๒๔๘๒.)
+10. **Linked to a repo that did not exist yet (user found the 404).** The footer's
+    "ซอร์สโค้ด" and the about cards linked to github.com/RzSyn/ThaiConstitution2560
+    before the user had created it. The fix: build.py now runs `git ls-remote`
+    on the repo and leaves the GitHub links out until it answers. **Rebuild after
+    the repo is created and pushed** so the links come back. Rule: every link
+    must point to something that exists at the moment of the build. Check
+    external links, not only in-page anchors.
 8. **Headless profile keeps localStorage between runs:** the mobile screenshot
    came out in the "paper" theme set by the desktop run. Reset state explicitly
    in screenshot specs before judging a theme.
