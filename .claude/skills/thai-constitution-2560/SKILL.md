@@ -102,6 +102,9 @@ editing `assets/site.css` or `assets/site.js`.
    202 challenge; `grep -oE '.{0,220}pattern'` on a 1.5 MB minified bundle ran
    past 120 s — use Python for that. The Gazette PDF text layer writes sara am
    as U+0E4D U+0E32 and breaks lines mid-word; compare whitespace-free.
+8. **Headless profile keeps localStorage between runs:** the mobile screenshot
+   came out in the "paper" theme set by the desktop run. Reset state explicitly
+   in screenshot specs before judging a theme.
 9. **Garuda emblem request (2026-09-24).** The user wrote "ตราครุฑสิ". I checked
    the OCS text first: พระราชบัญญัติเครื่องหมายราชการ พุทธศักราช ๒๔๘๒ ม.๖ forbids
    using a เครื่องหมายราชการ without permission, ม.๗ forbids imitating one, and
@@ -123,6 +126,9 @@ editing `assets/site.css` or `assets/site.js`.
     the repo is created and pushed** so the links come back. Rule: every link
     must point to something that exists at the moment of the build. Check
     external links, not only in-page anchors.
-8. **Headless profile keeps localStorage between runs:** the mobile screenshot
-   came out in the "paper" theme set by the desktop run. Reset state explicitly
-   in screenshot specs before judging a theme.
+11. **Pages status said "errored" but the site was live.** Two pushes in quick
+    succession started two Pages runs, and the first was cancelled. After that
+    `gh api repos/…/pages` kept reporting `status: errored` even though the
+    second run deployed fine and the URL returned 200. Rule: judge a deploy by
+    `gh run watch <id> --exit-status` and by fetching the live URL, not by
+    the Pages status field.
