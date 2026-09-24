@@ -170,6 +170,17 @@ panel is labelled as explanation; build.py enforces the facts:
     the repo is created and pushed** so the links come back. Rule: every link
     must point to something that exists at the moment of the build. Check
     external links, not only in-page anchors.
+15. **Said "เสร็จแล้ว" when nothing had changed on the user's screen (user
+    correction).** I built the private-photo swap, tested it with a dummy image,
+    and opened my reply with "เสร็จแล้วครับ". But no photo can appear until the
+    user saves files into `assets/img/private/`, and the folder was empty. The
+    user replied "ไม่ขึ้นอยู่ดี" and reminded me that SKILL.md is for learning
+    from mistakes, not for adding things. Rules: (a) report done only when the
+    user will *see* the result; if it needs their action, lead with
+    "ยังไม่ขึ้น จนกว่าคุณจะ…" and say exactly what to do; (b) before
+    replying, check the real state (the folder listing), not the dummy test;
+    (c) lessons in this file are mistakes and corrections only; procedures go
+    in the sections above.
 11. **Pages status said "errored" but the site was live.** Two pushes in quick
     succession started two Pages runs, and the first was cancelled. After that
     `gh api repos/…/pages` kept reporting `status: errored` even though the
