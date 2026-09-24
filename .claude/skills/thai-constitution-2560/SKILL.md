@@ -148,3 +148,17 @@ panel is labelled as explanation; build.py enforces the facts:
     second run deployed fine and the URL returned 200. Rule: judge a deploy by
     `gh run watch <id> --exit-status` and by fetching the live URL, not by
     the Pages status field.
+12. **Amending acts overwrote the law's own sections.** An OCS "ฉบับปรับปรุงล่าสุด"
+    dump appends every amending act, with its own มาตรา ๑, ๒, ๓…, after the
+    countersignature. The first law parser kept the *last* "มาตรา ๕", which came
+    from an amending act. A data-check on the ministries topic failed and caught
+    it. The parser now stops at the first "ผู้รับสนอง…" block and keeps the
+    first occurrence. Rule: never key sections by number across a whole dump.
+13. **Token waste when peeking at law text:** a loose filter printed 44 KB and
+    then 32 KB of Thai text. Rule: first print section numbers and lengths only,
+    then print exactly the sections you need. Also edit big files with the Edit
+    tool rather than sed/python rewrites, which echo the whole file back as a
+    change notice.
+14. **Law references inside topics:** "มาตรา N" in topic text is auto-linked to
+    the *constitution*. For other laws, write "ม. ๕" (the linker ignores it), and
+    law quotes are rendered with `link=False`.
