@@ -282,17 +282,36 @@
 
   /* ── personal-use photos: only when a local file exists (the folder is never published) ── */
   if (location.protocol === 'file:') {
+    $$('img[data-private]').forEach(function (im) {
+      var probe = new Image();
+      probe.onload = function () {
+        im.src = probe.src;
+        var row = im.closest('.tp-pm-row, .tp-person'), credit = row && row.querySelector('.tp-credit, small');
+        if (credit) credit.outerHTML = '<span class="tp-credit">ภาพส่วนตัวในเครื่องนี้ (ไม่ได้เผยแพร่)</span>';
+      };
+      probe.src = im.getAttribute('data-private');
+    });
     $$('.tp-noimg[data-private]').forEach(function (span) {
       var img = new Image();
       img.onload = function () {
         img.className = 'is-private'; img.alt = ''; img.width = 120; img.height = 160;
-        var card = span.closest('.tp-person'), note = card && card.querySelector('small');
+        var card = span.closest('.tp-person, .tp-pm-row'), note = card && card.querySelector('small, .tp-credit');
         span.replaceWith(img);
         if (note) note.textContent = 'ภาพส่วนตัวในเครื่องนี้ (ไม่ได้เผยแพร่)';
       };
       img.src = span.getAttribute('data-private');
     });
   }
+
+  /* ── filter buttons (ทำเนียบนายกรัฐมนตรี) ─────────────────────────────── */
+  $$('.tp-filters').forEach(function (bar) {
+    bar.addEventListener('click', function (e) {
+      var b = e.target.closest('.tp-filter'); if (!b) return;
+      $$('.tp-filter', bar).forEach(function (x) { x.classList.toggle('is-on', x === b); });
+      var era = b.dataset.era;
+      $$('.tp-pm-row', bar.parentNode).forEach(function (r) { r.hidden = era !== 'all' && r.dataset.era !== era; });
+    });
+  });
 
   /* ── knowledge topics: one panel at a time in the stage ────────────── */
   var tpBtns = $$('.tp-btn'), tpPanels = $$('.tp-panel');

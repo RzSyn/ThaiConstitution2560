@@ -181,6 +181,30 @@ panel is labelled as explanation; build.py enforces the facts:
     replying, check the real state (the folder listing), not the dummy test;
     (c) lessons in this file are mistakes and corrections only; procedures go
     in the sections above.
+16. **Portrait hall stuttered (user: "โคตรกระตุก").** The canvas hall drew each
+    full-size portrait (official files up to 1–2 MP) in up to 44 perspective
+    strips, twice per portrait (the "soft" and "sharp" copies were the same
+    file), on every frame. My headless test only checked that it rendered, not
+    how smoothly it moved. Fix: shrink each portrait once into a ≤420 px canvas
+    when it loads, and draw it once. Rule: anything drawn per frame must use
+    pre-scaled bitmaps; judge animation by moving it, not by one screenshot.
+17. **"รูปแบบเหมือน website_new.html" was not followed (user correction).** For
+    the PM list I built my own simpler table: number, photo, name. The
+    reference table has ลำดับ · รูปนายก (220×275 gold frame) · ชื่อ (+ second
+    line) · พรรค · ปีที่เป็นนายก · รัฐธรรมนูญฉบับ (era badge) · ผลงาน, plus
+    era filter buttons. Rule: when the user says "รูปแบบเหมือน X", open X,
+    list its columns and parts, and reproduce every one of them (with real,
+    sourced data). If a part cannot be filled truthfully, say which one before
+    building. Do not quietly drop it.
+18. **A rule for "which constitution was in force" left one PM blank.** First
+    rule: drop the earlier charter if a coup ended the previous term. That was
+    right for Thanin (1976: the 2517 charter was abolished on 6 Oct, and his
+    term began before the 2519 charter). It was wrong for Pote Sarasin (1957:
+    the coup kept the 2495 charter), whose row came out empty. Rule: print every
+    row after writing such a rule and read the edge cases. The rule now also
+    requires a new charter within 30 days of the term's start.
+19. **Heredoc with a large Thai Python payload failed** ("unexpected EOF").
+    Write big scripts with the Write tool, then run them.
 11. **Pages status said "errored" but the site was live.** Two pushes in quick
     succession started two Pages runs, and the first was cancelled. After that
     `gh api repos/…/pages` kept reporting `status: errored` even though the

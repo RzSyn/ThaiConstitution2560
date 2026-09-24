@@ -401,7 +401,158 @@ def ext_parties():
             '<tbody>%s</tbody></table>') % (th(len(rows)), esc(th(d['heading'])), th(nd), th(nl), th(len(parties)), body)
 
 
-EXT = {'cabinet': ext_cabinet, 'parties': ext_parties}
+THMON = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
+
+
+def wiki_date(s):
+    """'28 มิถุนายน พ.ศ. 2475' → '2475-06-28'; 'ปัจจุบัน' → None"""
+    m = re.match(r'(\d+) (\S+) (?:พ\.ศ\. )?(\d{4})', s)
+    return '%s-%02d-%02d' % (m.group(3), THMON.index(m.group(2)) + 1, int(m.group(1))) if m else None
+
+
+def days(a, b):
+    """days between two B.E. 'YYYY-MM-DD' dates"""
+    import datetime
+    f = lambda s: datetime.date(int(s[:4]) - 543, int(s[5:7]), int(s[8:10]))
+    return (f(b) - f(a)).days
+
+
+def pm_rows():
+    """Official list (E-Museum) joined with terms (Wikipedia, secondary), charters (OCS + 4 from Wikipedia),
+    notes (checked against the Wikipedia leads) and photos."""
+    hist = sorted(ext('pm_history')['data'], key=lambda x: x['number'])
+    assert [x['number'] for x in hist] == list(range(1, len(hist) + 1)), 'PM numbers not continuous'
+    assert hist[-1]['number'] == ext('pm')['data']['number'], 'E-Museum list and current-PM page disagree'
+    photos = ext('pm_photos')['photos']
+    leads = ext('wiki_pm_leads')['data']
+    notes = load('pm_notes.json')
+    charters = ext('constitutions')['data']
+    y, m, d = ext('pm')['retrieved'].split('-')
+    today = '%d-%s-%s' % (int(y) + 543, m, d)
+    seen, terms = set(), []
+    for t in ext('pm_terms')['data']['terms']:
+        key = (t['pm'], t['cabinet'], t['start'], t['end'])
+        if key not in seen:
+            seen.add(key)
+            terms.append(dict(t, s=wiki_date(t['start']), e=wiki_date(t['end']) or today,
+                              party=re.sub(r'\[[a-z0-9]+\]', '', t['party']).strip()))
+    terms.sort(key=lambda t: t['s'])
+    rows = []
+    for x in hist:
+        n = x['number']
+        mine = [t for t in terms if t['pm'] == n]
+        assert mine, 'no terms for PM %d' % n
+        note = notes['notes'][str(n)]
+        for phrase in note['check']:
+            if phrase not in leads[str(n)]['lead']:
+                raise SystemExit('PM %d note: lead does not contain “%s”' % (n, phrase))
+        # year spans: a new span starts when someone else held office in between
+        spans = []
+        for t in mine:
+            i = terms.index(t)
+            ys, ye = int(t['s'][:4]), int(t['e'][:4])
+            if spans and i and terms[i - 1]['pm'] == n:
+                spans[-1][1] = max(spans[-1][1], ye)
+            else:
+                spans.append([ys, ye])
+        # charters in force: the one in force at each term's start (unless that one predates a coup
+        # that ended the previous term — then none was in force yet) plus any promulgated during the term
+        used = []
+        for t in mine:
+            i = terms.index(t)
+            before = [c for c in charters if c['date'] <= t['s']]
+            prev = terms[i - 1] if i else None
+            pre = before[-1] if before else None
+            soon = [c for c in charters if t['s'] < c['date'] <= t['e'] and days(t['s'], c['date']) <= 30]
+            # the term began in the gap after a coup that abolished the old charter (e.g. 6 Oct 2519):
+            # only then is the charter from before the coup not the one in force
+            if pre and prev and 'รัฐประหาร' in prev['end_how'] and pre['date'] < prev['e'] and soon:
+                pre = None
+            for c in ([pre] if pre else []) + [c for c in charters if t['s'] < c['date'] <= t['e']]:
+                if c not in used:
+                    used.append(c)
+        parties = []
+        for t in mine:
+            if t['party'] and t['party'] not in parties:
+                parties.append(t['party'])
+        rows.append(dict(n=n, name=re.sub(r'\s+', ' ', x['name']),
+                         link=next((t['href'] for t in x['terms']), 'https://archives.thaigov.go.th/th/history/prime-minister'),
+                         photo=photos.get(str(n)), private='assets/img/private/pm/%d.jpg' % n,
+                         terms=mine, spans=spans, charters=used, parties=parties, note=note['text'],
+                         lead=leads[str(n)], black=n in notes['black'], current=mine[-1]['end'].startswith('ปัจจุบัน'),
+                         era=0 if spans[0][0] < 2500 else (1 if spans[0][0] < 2540 else 2)))
+    return rows
+
+
+ERAS = [('era-1', 'พ.ศ. ๒๔๗๕–๒๔๙๙'), ('era-2', 'พ.ศ. ๒๕๐๐–๒๕๓๙'), ('era-3', 'พ.ศ. ๒๕๔๐–ปัจจุบัน')]
+
+
+def charter_short(c):
+    t = c['title']
+    if 'แก้ไขเพิ่มเติม' in t:
+        return 'รัฐธรรมนูญ ๒๔๗๕ แก้ไข ๒๔๙๕'
+    ys = re.findall(r'[๐-๙]{4}', t)
+    kind = 'ธรรมนูญการปกครอง' if 'ธรรมนูญการปกครอง' in t else ('รัฐธรรมนูญชั่วคราว' if 'ชั่วคราว' in t else 'รัฐธรรมนูญ')
+    return '%s %s' % (kind, ys[-1] if ys else th(c['date'][:4]))
+
+
+def span_text(r):
+    parts = [th(a) if a == b else '%s–%s' % (th(a), th(b)) for a, b in r['spans']]
+    if r['current']:
+        parts[-1] = th(r['spans'][-1][0]) + '–ปัจจุบัน'
+    return parts
+
+
+def ext_pm_table():
+    rows = pm_rows()
+    btns = '<button type="button" class="tp-filter is-on" data-era="all">แสดงทั้งหมด</button>' + ''.join(
+        '<button type="button" class="tp-filter" data-era="%s">%s</button>' % e for e in ERAS)
+    body = []
+    for r in rows:
+        p = r['photo']
+        if p:
+            pic = '<img src="%s" data-private="%s" alt="%s" loading="lazy">' % (attr(p['src']), attr(r['private']), attr(r['name']))
+            credit = '<a class="tp-credit" href="%s" rel="noopener" target="_blank">ภาพ: %s · %s</a>' % (
+                attr(p['page']), esc(p['artist'] or 'Wikimedia Commons'), esc(p['license']))
+        else:
+            pic = '<span class="tp-noimg" data-private="%s" aria-hidden="true">%s</span>' % (attr(r['private']), th(r['n']))
+            credit = '<span class="tp-credit">ไม่พบภาพที่ใช้ได้โดยเสรี</span>'
+        cab = ', '.join(dict.fromkeys(t['cabinet'] for t in r['terms']))
+        badges = ''.join('<a class="tp-era-badge tp-%s" href="%s"%s title="%s">%s</a>' % (
+            ERAS[r['era']][0], attr(c['url']), '' if c['url'].startswith('#') else ' rel="noopener" target="_blank"',
+            attr(c['title'] + (' — วันที่จากวิกิพีเดีย' if c['src'] == 'wiki' else ' — ' + c['ref'])), esc(charter_short(c)))
+            for c in r['charters'])
+        body.append(
+            '<tr class="tp-pm-row" data-n="%d" data-era="%s">'
+            '<td class="tp-pm-no">%s</td>'
+            '<td class="tp-c"><div class="tp-pm-frame%s">%s</div>%s</td>'
+            '<td><b class="tp-pm-name">%s</b><span class="tp-pm-sub">คณะรัฐมนตรีคณะที่ %s</span>'
+            '<span class="tp-pill">%s คณะรัฐมนตรี</span> <a class="tp-pm-link" href="%s" rel="noopener" target="_blank">ประวัติทางการ ↗</a></td>'
+            '<td class="tp-c">%s</td><td class="tp-c tp-years">%s</td><td>%s</td>'
+            '<td class="tp-pm-note">%s</td></tr>' % (
+                r['n'], ERAS[r['era']][0], th(r['n']), ' is-black' if r['black'] else '', pic, credit,
+                esc(r['name']), esc(th(cab)), th(len(dict.fromkeys(t['cabinet'] for t in r['terms']))), attr(r['link']),
+                ''.join('<span class="tp-party">%s</span>' % esc(x) for x in r['parties']) or '–',
+                '<br>'.join(span_text(r)), badges, esc(r['note'])))
+    return ('<div class="tp-filters" role="group" aria-label="กรองตามช่วงเวลา">%s</div>'
+            '<div class="tp-scroll"><table class="tp-table tp-pm"><thead><tr>'
+            '<th class="tp-c">ลำดับ</th><th class="tp-c">รูปนายก</th><th>ชื่อของนายก</th><th class="tp-c">พรรคที่อยู่</th>'
+            '<th class="tp-c">ปีที่เป็นนายก</th><th>รัฐธรรมนูญฉบับ</th><th>ผลงาน / บทบาทสำคัญ</th></tr></thead>'
+            '<tbody>%s</tbody></table></div>') % (btns, ''.join(body))
+
+
+def ext_pm_hall():
+    rows = pm_rows()
+    data = {'title': 'นายกรัฐมนตรีแห่งราชอาณาจักรไทย', 'rail': 'นายกรัฐมนตรีคนที่ ๑–%s' % th(len(rows)),
+            'items': [{'label': 'นายกรัฐมนตรีคนที่ %s' % th(r['n']), 'name': r['name'], 'note': ' · '.join(span_text(r)),
+                       'frame': 'black' if r['black'] else 'wood',
+                       'src': r['photo']['src'] if r['photo'] else None, 'private': r['private']} for r in rows]}
+    return ('<script type="application/json" id="hallData">%s</script>'
+            '<portrait-hall class="tp-hall" data-src="hallData" aria-label="หอภาพเหมือนนายกรัฐมนตรี"></portrait-hall>') % (
+                json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
+
+
+EXT = {'cabinet': ext_cabinet, 'parties': ext_parties, 'pm_table': ext_pm_table, 'pm_hall': ext_pm_hall}
 
 
 def flag_img(name):
@@ -643,7 +794,7 @@ def build():
     print('GitHub repo reachable:', live, '(links to it are %s)' % ('included' if live else 'left out'))
     page = TEMPLATE
     repl = {
-        '{{CSS_V}}': css_v, '{{JS_V}}': js_v,
+        '{{CSS_V}}': css_v, '{{JS_V}}': js_v, '{{HALL_V}}': asset_stamp('portrait-hall.js'),
         '{{N_CH}}': th(len(numbered)), '{{N_SEC}}': th(len(d['sections'])),
         '{{N_AM}}': th(n_am), '{{N_AMSEC}}': th(len(amended_secs)),
         '{{ENACTED}}': esc(enacted), '{{GAZETTE}}': esc(gz_label), '{{GZ_DATE}}': esc(gz_date),

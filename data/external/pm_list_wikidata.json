@@ -1,0 +1,412 @@
+{
+ "url": "https://query.wikidata.org/",
+ "title": "Wikidata — holders of Prime Minister of Thailand (Q12376089)",
+ "retrieved": "2026-09-24",
+ "query": "SELECT ?p ?pLabel ?start ?end ?ord ?img WHERE {\n ?p p:P39 ?st . ?st ps:P39 wd:Q12376089 .\n OPTIONAL{?st pq:P580 ?start} OPTIONAL{?st pq:P582 ?end} OPTIONAL{?st pq:P1545 ?ord}\n OPTIONAL{?p wdt:P18 ?img}\n SERVICE wikibase:label { bd:serviceParam wikibase:language \"th,en\". } } ORDER BY ?start",
+ "data": {
+  "rows": [
+   {
+    "p": "http://www.wikidata.org/entity/Q983541",
+    "start": "1932-06-28T00:00:00Z",
+    "end": "1933-06-20T00:00:00Z",
+    "ord": "1",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Kon%20Hutasing.jpg",
+    "pLabel": "พระยามโนปกรณ์นิติธาดา"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q301290",
+    "start": "1933-06-21T00:00:00Z",
+    "end": "1938-12-16T00:00:00Z",
+    "ord": "2",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Pahol.jpg",
+    "pLabel": "พระยาพหลพลพยุหเสนา"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q152777",
+    "start": "1938-12-16T00:00:00Z",
+    "end": "1944-08-01T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Field%20Marshal%20Plaek%20Phibunsongkhram.jpg",
+    "pLabel": "แปลก พิบูลสงคราม"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q719235",
+    "start": "1944-08-01T00:00:00Z",
+    "end": "1945-08-01T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%84%E0%B8%A7%E0%B8%87%20%E0%B8%AD%E0%B8%A0%E0%B8%B1%E0%B8%A2%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C%20%E0%B8%AD%E0%B8%AA%E0%B8%8A.jpg",
+    "pLabel": "ควง อภัยวงศ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q719235",
+    "start": "1946-01-01T00:00:00Z",
+    "end": "1946-03-01T00:00:00Z",
+    "ord": "6",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%84%E0%B8%A7%E0%B8%87%20%E0%B8%AD%E0%B8%A0%E0%B8%B1%E0%B8%A2%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C%20%E0%B8%AD%E0%B8%AA%E0%B8%8A.jpg",
+    "pLabel": "ควง อภัยวงศ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q714934",
+    "start": "1946-03-24T00:00:00Z",
+    "end": "1946-08-23T00:00:00Z",
+    "ord": "7",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Pridi%20Panomyong%20%28Scholar%29.jpg",
+    "pLabel": "ปรีดี พนมยงค์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q1373905",
+    "start": "1946-08-23T00:00:00Z",
+    "end": "1947-11-08T00:00:00Z",
+    "ord": "8",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thawal%20Thamrong%20Navaswadhi.jpg",
+    "pLabel": "ถวัลย์ ธำรงนาวาสวัสดิ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q719235",
+    "start": "1947-11-01T00:00:00Z",
+    "end": "1949-04-01T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%84%E0%B8%A7%E0%B8%87%20%E0%B8%AD%E0%B8%A0%E0%B8%B1%E0%B8%A2%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C%20%E0%B8%AD%E0%B8%AA%E0%B8%8A.jpg",
+    "pLabel": "ควง อภัยวงศ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q152777",
+    "start": "1948-04-08T00:00:00Z",
+    "end": "1957-09-16T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Field%20Marshal%20Plaek%20Phibunsongkhram.jpg",
+    "pLabel": "แปลก พิบูลสงคราม"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q152777",
+    "start": "1952-03-24T00:00:00Z",
+    "end": "1957-03-21T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Field%20Marshal%20Plaek%20Phibunsongkhram.jpg",
+    "pLabel": "แปลก พิบูลสงคราม"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q982335",
+    "start": "1957-09-21T00:00:00Z",
+    "end": "1957-12-26T00:00:00Z",
+    "ord": "9",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Pote%20Sarasin%2C%20Ambassador%20of%20Thailand.jpg",
+    "pLabel": "พจน์ สารสิน"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q439990",
+    "start": "1958-01-01T00:00:00Z",
+    "end": "1958-10-20T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thanom%20Kittikachorn.jpg",
+    "pLabel": "ถนอม กิตติขจร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q975621",
+    "start": "1958-10-20T00:00:00Z",
+    "end": "1963-12-08T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarit%20Thanarat%20portrait.jpg",
+    "pLabel": "สฤษดิ์ ธนะรัชต์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q975621",
+    "start": "1959-02-10T00:00:00Z",
+    "end": "1963-12-08T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarit%20Thanarat%20portrait.jpg",
+    "pLabel": "สฤษดิ์ ธนะรัชต์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q439990",
+    "start": "1963-12-09T00:00:00Z",
+    "end": "1971-11-17T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thanom%20Kittikachorn.jpg",
+    "pLabel": "ถนอม กิตติขจร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q439990",
+    "start": "1963-12-11T00:00:00Z",
+    "end": "1969-03-11T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thanom%20Kittikachorn.jpg",
+    "pLabel": "ถนอม กิตติขจร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q439990",
+    "start": "1972-12-18T00:00:00Z",
+    "end": "1973-10-14T00:00:00Z",
+    "ord": "10",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thanom%20Kittikachorn.jpg",
+    "pLabel": "ถนอม กิตติขจร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q974619",
+    "start": "1973-10-16T00:00:00Z",
+    "end": "1974-05-22T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sanya%20Dharmasakti%201974%20%28cropped%29.jpg",
+    "pLabel": "สัญญา ธรรมศักดิ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q974619",
+    "start": "1974-05-30T00:00:00Z",
+    "end": "1975-02-21T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sanya%20Dharmasakti%201974%20%28cropped%29.jpg",
+    "pLabel": "สัญญา ธรรมศักดิ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q714042",
+    "start": "1975-02-21T00:00:00Z",
+    "end": "1975-03-17T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Senipramoj%20Cropped.jpg",
+    "pLabel": "หม่อมราชวงศ์เสนีย์ ปราโมช"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q959588",
+    "start": "1975-03-17T00:00:00Z",
+    "end": "1976-01-12T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Kukrit%20Pramoj%201974%20%28cropped%29.jpg",
+    "pLabel": "คึกฤทธิ์ ปราโมช"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q714042",
+    "start": "1976-10-05T00:00:00Z",
+    "end": "1976-10-06T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Senipramoj%20Cropped.jpg",
+    "pLabel": "หม่อมราชวงศ์เสนีย์ ปราโมช"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q74861",
+    "start": "1976-10-08T00:00:00Z",
+    "end": "1977-10-19T00:00:00Z",
+    "ord": "14",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Tanin2011.jpg",
+    "pLabel": "ธานินทร์ กรัยวิเชียร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q561177",
+    "start": "1977-11-11T00:00:00Z",
+    "end": "1980-03-03T00:00:00Z",
+    "ord": "15",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Kriangsak%20Chomanan%201976.jpg",
+    "pLabel": "เกรียงศักดิ์ ชมะนันทน์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q379827",
+    "start": "1980-03-03T00:00:00Z",
+    "end": "1988-08-04T00:00:00Z",
+    "ord": "16",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Prem%20Tinsulanonda%201984.jpg",
+    "pLabel": "เปรม ติณสูลานนท์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q379827",
+    "start": "1986-08-05T00:00:00Z",
+    "end": "1988-04-29T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Prem%20Tinsulanonda%201984.jpg",
+    "pLabel": "เปรม ติณสูลานนท์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q701841",
+    "start": "1988-08-04T00:00:00Z",
+    "end": "1991-02-23T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chatichai%20Choonhavan.jpg",
+    "pLabel": "ชาติชาย ชุณหะวัณ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q485702",
+    "start": "1991-03-02T00:00:00Z",
+    "end": "1992-04-07T00:00:00Z",
+    "ord": "18",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Anand%20Panyarachun.jpg",
+    "pLabel": "อานันท์ ปันยารชุน"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q959614",
+    "start": "1992-04-07T00:00:00Z",
+    "end": "1992-05-24T00:00:00Z",
+    "ord": "19",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Suchinda%20Kraprayoon%20early%201970s.jpg",
+    "pLabel": "สุจินดา คราประยูร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q485702",
+    "start": "1992-06-10T00:00:00Z",
+    "end": "1992-10-01T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Anand%20Panyarachun.jpg",
+    "pLabel": "อานันท์ ปันยารชุน"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q464301",
+    "start": "1992-09-20T00:00:00Z",
+    "end": "1995-07-13T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chuan%20Leekpai.jpg",
+    "pLabel": "ชวน หลีกภัย"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q464301",
+    "start": "1992-09-23T00:00:00Z",
+    "end": "1995-05-19T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chuan%20Leekpai.jpg",
+    "pLabel": "ชวน หลีกภัย"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q111980",
+    "start": "1995-07-13T00:00:00Z",
+    "end": "1996-11-24T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Banharn%20Silpa-archa%20%28cropped%29.jpg",
+    "pLabel": "บรรหาร ศิลปอาชา"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q1068511",
+    "start": "1996-11-25T00:00:00Z",
+    "end": "1997-11-08T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chavalit%20Yongchaiyudh.jpg",
+    "pLabel": "ชวลิต ยงใจยุทธ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q464301",
+    "start": "1997-11-09T00:00:00Z",
+    "end": "2001-02-09T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chuan%20Leekpai.jpg",
+    "pLabel": "ชวน หลีกภัย"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q164373",
+    "start": "2001-02-09T00:00:00Z",
+    "end": "2005-03-11T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Thaksin%20DOD%2020050915%20%28crop%29.jpg",
+    "pLabel": "ทักษิณ ชินวัตร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q334722",
+    "start": "2006-09-19T00:00:00Z",
+    "end": "2006-10-01T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Sonthi%20Boonyaratglin%20%28cropped%29.png",
+    "pLabel": "สนธิ บุญยรัตกลิน"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q298079",
+    "start": "2006-10-01T00:00:00Z",
+    "end": "2008-01-29T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/General%20Surayud%20Chulanont.jpg",
+    "pLabel": "สุรยุทธ์ จุลานนท์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q243623",
+    "start": "2008-01-29T00:00:00Z",
+    "end": "2008-09-09T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Samak%20Sundaravej.JPG",
+    "pLabel": "สมัคร สุนทรเวช"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q243623",
+    "start": "2008-02-06T00:00:00Z",
+    "end": "2008-09-08T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Samak%20Sundaravej.JPG",
+    "pLabel": "สมัคร สุนทรเวช"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q298088",
+    "start": "2008-09-18T00:00:00Z",
+    "end": "2008-12-02T00:00:00Z",
+    "ord": "26",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Prime%20Minister%20of%20Thailand%2C%20Mr.%20Somchai%20Wangsawat%20meeting%20the%20Prime%20Minister%2C%20Dr.%20Manmohan%20Singh%2C%20in%20New%20Delhi%20on%20November%2013%2C%202008%20%28cropped%29%20%28cropped%29.jpg",
+    "pLabel": "สมชาย วงศ์สวัสดิ์"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q529433",
+    "start": "2008-12-02T00:00:00Z",
+    "end": "2008-12-17T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Chaovarat%20Chanweerakul%20%28cropped%29.jpg",
+    "pLabel": "ชวรัตน์ ชาญวีรกูล"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q174267",
+    "start": "2008-12-17T00:00:00Z",
+    "end": "2011-08-05T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Abhisit%20royal.jpg",
+    "pLabel": "อภิสิทธิ์ เวชชาชีวะ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q174267",
+    "start": "2008-12-17T00:00:00Z",
+    "end": "2011-08-05T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Abhisit%20Vejjajiva%202012%20cropped.jpg",
+    "pLabel": "อภิสิทธิ์ เวชชาชีวะ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q174267",
+    "start": "2008-12-17T00:00:00Z",
+    "end": "2011-08-05T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AA%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%B1%E0%B9%88%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF%20-%20Flickr%20-%20Abhisit%20Vejjajiva%20%2863%29%20%28cropped%29.jpg",
+    "pLabel": "อภิสิทธิ์ เวชชาชีวะ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q57670",
+    "start": "2011-08-05T00:00:00Z",
+    "end": "2014-05-07T00:00:00Z",
+    "ord": "28",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/THAI%20PRIME%20MINISTER%20YINGLUCK%20SHINAWATRA%20in%202013%20%28cropped%29.jpg",
+    "pLabel": "ยิ่งลักษณ์ ชินวัตร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q2108126",
+    "start": "2014-08-24T00:00:00Z",
+    "end": "2023-08-22T00:00:00Z",
+    "ord": "29",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Fumio%20Kishida%20and%20Prayut%20Chan-o-cha%20at%20the%20Prime%20Minister%27s%20Office%202022%20%281%29%20%28altered%29.jpg",
+    "pLabel": "ประยุทธ์ จันทร์โอชา"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q15724737",
+    "start": "2022-08-24T00:00:00Z",
+    "end": "2022-09-30T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Prawit%20Wongsuwan%20%282018%29%20%28cropped%29.jpg",
+    "pLabel": "ประวิตร วงษ์สุวรรณ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q118213697",
+    "start": "2023-08-22T00:00:00Z",
+    "end": "2024-08-16T00:00:00Z",
+    "ord": "30",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/PM%20Srettha%20Thavisin%202023%20%28cropped%29.jpg",
+    "pLabel": "เศรษฐา ทวีสิน"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q13018661",
+    "start": "2024-08-14T00:00:00Z",
+    "end": "2024-08-16T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Phumtham%20Wechayachai%2030%20May%202025.jpg",
+    "pLabel": "ภูมิธรรม เวชยชัย"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q13026319",
+    "start": "2024-08-16T00:00:00Z",
+    "end": "2025-07-01T00:00:00Z",
+    "ord": "31",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/PM%20Paetongtarn%20of%20Thailand%20%282024%29%20%28cropped-4%29.jpg",
+    "pLabel": "แพทองธาร ชินวัตร"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q4918594",
+    "start": "2025-07-01T00:00:00Z",
+    "end": "2025-07-03T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Suriya%20Juangroongruangkit%2C%2013%20January%202023.jpg",
+    "pLabel": "สุริยะ จึงรุ่งเรืองกิจ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q4918594",
+    "start": "2025-07-01T00:00:00Z",
+    "end": "2025-07-03T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Suriya%20Juangroongruangkit.jpg",
+    "pLabel": "สุริยะ จึงรุ่งเรืองกิจ"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q13018661",
+    "start": "2025-07-03T00:00:00Z",
+    "end": "2025-09-07T00:00:00Z",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Phumtham%20Wechayachai%2030%20May%202025.jpg",
+    "pLabel": "ภูมิธรรม เวชยชัย"
+   },
+   {
+    "p": "http://www.wikidata.org/entity/Q16139757",
+    "start": "2025-09-07T00:00:00Z",
+    "ord": "32",
+    "img": "http://commons.wikimedia.org/wiki/Special:FilePath/2025%20Anutin%20Charnvirakul%20%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%97%E0%B8%B4%E0%B8%99%20%E0%B8%8A%E0%B8%B2%E0%B8%8D%E0%B8%A7%E0%B8%B5%E0%B8%A3%E0%B8%81%E0%B8%B9%E0%B8%A5%20%282568%29%20%28cropped%29.jpg",
+    "pLabel": "อนุทิน ชาญวีรกูล"
+   }
+  ]
+ }
+}
