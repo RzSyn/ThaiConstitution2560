@@ -11,1201 +11,1401 @@
     "no": "001",
     "name": "นายกมล รอดคล้าย",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690511_122917.jpg"
    },
    {
     "no": "002",
     "name": "นายกมล สุขคะสมบัติ",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_105147.jpg"
    },
    {
     "no": "003",
     "name": "ว่าที่พันตรี กรพด รุ่งหิรัญวัฒน์",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671112_102143.jpg"
    },
    {
     "no": "004",
     "name": "นายกฤษณุ เหลืองพิบูลกิจ",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690709_092911.jpg"
    },
    {
     "no": "005",
     "name": "พันตำรวจเอก กอบ อัจนากิตติ",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671029_143842.jpg"
    },
    {
     "no": "006",
     "name": "นายกัมพล ทองชิว",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680529_093557.jpg"
    },
    {
     "no": "007",
     "name": "นายกัมพล สุภาแพ่ง",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671021_155137.png"
    },
    {
     "no": "008",
     "name": "นางกัลยา ใหญ่ประสาน",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_113502.jpg"
    },
    {
     "no": "009",
     "name": "นางกานต์เปรมปรีด์ ชิตานนท์",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_125618.jpg"
    },
    {
     "no": "010",
     "name": "นายกิตติพันธ์ อนันตกูลจิรโชติ",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690421_084209.jpg"
    },
    {
     "no": "011",
     "name": "นายกิติศักดิ์ หมื่นศรี",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690427_092611.jpg"
    },
    {
     "no": "012",
     "name": "พลเอก เกรียงไกร ศรีรักษ์",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690518_083915.jpg"
    },
    {
     "no": "013",
     "name": "นายธีระศักดิ์ อรัญพิทักษ์",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690312_144618.jpg"
    },
    {
     "no": "014",
     "name": "นายเกียรติชาย ไมตรีวงษ์",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690428_104105.jpg"
    },
    {
     "no": "015",
     "name": "นายขจรศักดิ์ ศรีวิราช",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_075630.jpg"
    },
    {
     "no": "016",
     "name": "นายขวัญชัย แสนหิรัณย์",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_163513.jpg"
    },
    {
     "no": "017",
     "name": "นางสาวเข็มรัตน์ สุรเมธีมาณพ",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_154055.jpg"
    },
    {
     "no": "018",
     "name": "นายจตุพร เรียงเงิน",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690525_134642.jpg"
    },
    {
     "no": "019",
     "name": "นายจรุณ กลิ่นตลบ",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_131217.jpg"
    },
    {
     "no": "020",
     "name": "นางสาวจารุณี ฤกษ์ปราณี",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_121031.jpg"
    },
    {
     "no": "021",
     "name": "นายจำลอง อนันตสุข",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690511_094623.jpg"
    },
    {
     "no": "022",
     "name": "นายจิระศักดิ์ ชูความดี",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680106_100338.jpg"
    },
    {
     "no": "023",
     "name": "นางจุฑารัตน์ นิลเปรม",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680303_143704.jpg"
    },
    {
     "no": "024",
     "name": "นางเจียระนัย ตั้งกีรติ",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_153945.jpg"
    },
    {
     "no": "025",
     "name": "ร้อยตำรวจเอก ฉลอง ทองนะ",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671022_115019.JPG"
    },
    {
     "no": "026",
     "name": "พลตำรวจตรี ฉัตรวรรษ แสงเพชร",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690401_095526.jpg"
    },
    {
     "no": "027",
     "name": "นางสาวชญาน์นันท์ ติยะตระการชัย",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_145917.jpg"
    },
    {
     "no": "028",
     "name": "นายชวพล วัฒนพรมงคล",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690914_124855.jpg"
    },
    {
     "no": "029",
     "name": "นายชวภณ วัธนเวคิน",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690226_100041.jpg"
    },
    {
     "no": "030",
     "name": "นายชัยธัช เพราะสุนทร",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690323_080928.jpg"
    },
    {
     "no": "031",
     "name": "นายชาญชัย ไชยพิศ",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690515_085227.jpg"
    },
    {
     "no": "032",
     "name": "ศาสตราจารย์ชาญณรงค์ พรรุ่งโรจน์",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690820_133423.jpg"
    },
    {
     "no": "033",
     "name": "นายชาญวิศว์ บรรจงการ",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_094419.jpg"
    },
    {
     "no": "034",
     "name": "นายชินโชติ แสงสังข์",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690821_103004.jpg"
    },
    {
     "no": "035",
     "name": "นายชิบ จิตนิยม",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_121415.jpg"
    },
    {
     "no": "036",
     "name": "นายชีวะภาพ ชีวะธรรม",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_000753.jpg"
    },
    {
     "no": "037",
     "name": "นายชูชาติ อินสว่าง",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690331_101731.jpg"
    },
    {
     "no": "038",
     "name": "นายชูชีพ เอื้อการณ์",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690507_132522.jpg"
    },
    {
     "no": "039",
     "name": "นายโชคชัย กิตติธเนศวร",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_130358.jpg"
    },
    {
     "no": "040",
     "name": "นายโชติชัย บัวดิษ",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670813_111705.jpg"
    },
    {
     "no": "041",
     "name": "นายไชยยงค์ มณีรุ่งสกุล",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_154530.jpg"
    },
    {
     "no": "042",
     "name": "นายณภพ ลายวิเศษกุล",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_131006.jpg"
    },
    {
     "no": "043",
     "name": "นายณรงค์ จิตราช",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25681015_160843.jpg"
    },
    {
     "no": "044",
     "name": "นางณัฏฐินีภรณ์ จันทรโณทัย",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690708_131759.jpg"
    },
    {
     "no": "045",
     "name": "นายณัฐกิตติ์ หนูรอด",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690706_134323.jpg"
    },
    {
     "no": "046",
     "name": "นายเดชา นุตาลัย",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_135148.jpg"
    },
    {
     "no": "047",
     "name": "นางแดง กองมา",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680530_085143.jpg"
    },
    {
     "no": "048",
     "name": "นางสาวตวงคุณ ทรงธรรมวัฒน์",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_084950.jpg"
    },
    {
     "no": "049",
     "name": "นายเตชสิทธิ์ ชูแก้ว",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690421_084257.jpg"
    },
    {
     "no": "050",
     "name": "นายเทวฤทธิ์ มณีฉาย",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_132412.jpg"
    },
    {
     "no": "051",
     "name": "พันเอกหญิง ธณตศกร บุราคม",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_090042.jpg"
    },
    {
     "no": "052",
     "name": "นายธนกร ถาวรชินโชติ",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_153540.jpg"
    },
    {
     "no": "053",
     "name": "นายธนชัย แซ่จึง",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_140259.jpg"
    },
    {
     "no": "054",
     "name": "นายธนภัทร ตวงวิไล",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_123347.jpg"
    },
    {
     "no": "055",
     "name": "นายธวัช สุระบาล",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_094922.jpg"
    },
    {
     "no": "056",
     "name": "นายธัชชญาณ์ณัช เจียรธนัทกานนท์",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690811_100056.jpg"
    },
    {
     "no": "057",
     "name": "นางธารนี ปรีดาสันติ์",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_151336.jpg"
    },
    {
     "no": "058",
     "name": "นางนงลักษณ์ ก้านเขียว",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25681006_112555.jpg"
    },
    {
     "no": "059",
     "name": "นายนพดล พริ้งสกุล",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680530_083934.jpg"
    },
    {
     "no": "060",
     "name": "ผู้ช่วยศาสตราจารย์นพดล อินนา",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690709_091728.jpg"
    },
    {
     "no": "061",
     "name": "นายนรเศรษฐ์ ปรัชญากร",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_114522.jpg"
    },
    {
     "no": "062",
     "name": "นายนฤพล สุคนธชาติ",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670807_100454.jpg"
    },
    {
     "no": "063",
     "name": "นางสาวนวลนิจ หงษ์วิวัฒน์",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680721_160113.jpg"
    },
    {
     "no": "064",
     "name": "นางสาวนันทนา นันทวโรภาส",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_114301.jpg"
    },
    {
     "no": "065",
     "name": "นายนิคม มากรุ่งแจ้ง",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690707_090355.jpg"
    },
    {
     "no": "066",
     "name": "นางสาวนิชาภา สุวรรณนาค",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_100058.jpg"
    },
    {
     "no": "067",
     "name": "นายนิทัศน์ อารีย์วงศ์สกุล",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690701_095442.jpg"
    },
    {
     "no": "068",
     "name": "นายนิพนธ์ เอกวานิช",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_133908.jpg"
    },
    {
     "no": "069",
     "name": "ผู้ช่วยศาสตราจารย์นิฟาริด ระเด่นอาหมัด",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_105654.jpg"
    },
    {
     "no": "070",
     "name": "นายนิรัตน์ อยู่ภักดี",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690831_154307.jpg"
    },
    {
     "no": "071",
     "name": "นายนิรุตติ สุทธินนท์",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670822_085023.jpg"
    },
    {
     "no": "072",
     "name": "นายนิเวศ พันธ์เจริญวรกุล",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_112542.jpg"
    },
    {
     "no": "073",
     "name": "นายนิสิทธิ์ ปนกลิ่น",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680707_132249.jpg"
    },
    {
     "no": "074",
     "name": "พลตำรวจโท บุญจันทร์ นวลสาย",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_105016.jpg"
    },
    {
     "no": "075",
     "name": "นายบุญชอบ สระสมทรัพย์",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690724_132356.jpg"
    },
    {
     "no": "076",
     "name": "นายบุญส่ง น้อยโสภณ",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690204_103831.jpg"
    },
    {
     "no": "077",
     "name": "นางเบ็ญจมาศ อภัยทอง",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690615_085109.jpg"
    },
    {
     "no": "078",
     "name": "นายปฏิมา จีระแพทย์",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671010_100755.png"
    },
    {
     "no": "079",
     "name": "นายประกาสิทธิ์ พลซา",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690508_085237.jpg"
    },
    {
     "no": "080",
     "name": "นางประทุม วงศ์สวัสดิ์",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_161436.jpg"
    },
    {
     "no": "081",
     "name": "นายประเทือง มนตรี",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670724_141722.jpg"
    },
    {
     "no": "082",
     "name": "นายประพนธ์ ตั้งศรีเกียรติกุล",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671022_133419.jpg"
    },
    {
     "no": "083",
     "name": "นายประภาส ปิ่นตบแต่ง",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_144547.jpg"
    },
    {
     "no": "084",
     "name": "นางประไม หอมเทียม",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_115031.jpg"
    },
    {
     "no": "085",
     "name": "นายประหยัด จตุพรพิทักษ์กุล",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_112748.jpg"
    },
    {
     "no": "086",
     "name": "นายปราณีต เกรัมย์",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_113123.jpg"
    },
    {
     "no": "087",
     "name": "นายปริญญา วงษ์เชิดขวัญ",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_055229.jpg"
    },
    {
     "no": "088",
     "name": "นางปวีณา สาระรัมย์",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_033704.jpg"
    },
    {
     "no": "089",
     "name": "นายปิยพัฒน์ สุภาวรรณ",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690914_124749.jpg"
    },
    {
     "no": "090",
     "name": "นางสาวปุณณภา จินดาพงษ์",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_112232.jpg"
    },
    {
     "no": "091",
     "name": "นายเปรมศักดิ์ เพียยุระ",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_104407.jpg"
    },
    {
     "no": "092",
     "name": "นายพงษ์ศักดิ์ เกิดวงศ์บัณฑิต",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_105319.jpg"
    },
    {
     "no": "093",
     "name": "นายพรชัย วิทยเลิศพันธุ์",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670714_200007.jpeg"
    },
    {
     "no": "094",
     "name": "นายพรเพิ่ม ทองศรี",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_110811.jpg"
    },
    {
     "no": "095",
     "name": "นายพละวัต ตันศิริ",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690525_134921.jpg"
    },
    {
     "no": "096",
     "name": "นายพิชาญ พรศิริประทาน",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690519_103539.jpg"
    },
    {
     "no": "097",
     "name": "นายพิบูลย์อัฑฒ์ หฤหรรษ์ปราการ",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670710_220645.jpg"
    },
    {
     "no": "098",
     "name": "นายพิมาย คงทัน",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690511_150451.jpg"
    },
    {
     "no": "099",
     "name": "นายพิศูจน์ รัตนวงศ์",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670903_095946.jpg"
    },
    {
     "no": "100",
     "name": "นายพิสิษฐ์ อภิวัฒนาพงศ์",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690608_104445.png"
    },
    {
     "no": "101",
     "name": "นางเพลินจิต ขันแก้ว",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690623_155731.jpg"
    },
    {
     "no": "102",
     "name": "นายไพบูลย์ ณะบุตรจอม",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690518_123906.jpg"
    },
    {
     "no": "103",
     "name": "นายภมร เชาว์ศิริกุล",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25681006_112657.jpg"
    },
    {
     "no": "104",
     "name": "นายภาณุพงษ์ เต็งวงษ์วัฒนะ",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680901_125109.jpg"
    },
    {
     "no": "105",
     "name": "นางสาวภาวนา ว่องอมรนิธิ",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680107_120106.jpg"
    },
    {
     "no": "106",
     "name": "นายมงคล สุระสัจจะ",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690710_122632.jpg"
    },
    {
     "no": "107",
     "name": "นางสาวมณีรัฐ เขมะวงค์",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690630_120047.jpg"
    },
    {
     "no": "108",
     "name": "นางมยุรี โพธิแสน",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690615_065517.jpg"
    },
    {
     "no": "109",
     "name": "นายมังกร ศรีเจริญกูล",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_091754.jpg"
    },
    {
     "no": "110",
     "name": "นายมานะ มหาสุวีระชัย",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_092917.jpg"
    },
    {
     "no": "111",
     "name": "นางสาวมาเรีย เผ่าประทาน",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_144203.jpg"
    },
    {
     "no": "112",
     "name": "นายยะโก๊ป หีมละ",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_152222.jpg"
    },
    {
     "no": "113",
     "name": "นายยุคล ชนะวัฒน์ปัญญา",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690724_132138.jpg"
    },
    {
     "no": "114",
     "name": "พลตำรวจโท ยุทธนา ไทยภักดี",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690518_101937.jpg"
    },
    {
     "no": "115",
     "name": "นางรจนา เพิ่มพูล",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690622_090618.jpg"
    },
    {
     "no": "116",
     "name": "พลตำรวจตรี รมย์สิทธิ์ วีริยาสรร",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_111944.jpg"
    },
    {
     "no": "117",
     "name": "นางสาวรัชนีกร ทองทิพย์",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670723_142533.jpg"
    },
    {
     "no": "118",
     "name": "นายรุจิภาส มีกุศล",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_100919.jpg"
    },
    {
     "no": "119",
     "name": "นายฤชุ แก้วลาย",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_114919.jpg"
    },
    {
     "no": "120",
     "name": "รองศาสตราจารย์แล ดิลกวิทยรัตน์",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690622_083803.jpg"
    },
    {
     "no": "121",
     "name": "นายวร หินดี",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690604_093353.jpg"
    },
    {
     "no": "122",
     "name": "นางวรรษมนต์ คุณแสน",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671028_094329.jpg"
    },
    {
     "no": "123",
     "name": "นางวราภัสร์ ไพพรรณรัตน์",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680211_083526.jpg"
    },
    {
     "no": "124",
     "name": "ผู้ช่วยศาสตราจารย์วราวุธ ตีระนันทน์",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670716_162235.jpg"
    },
    {
     "no": "125",
     "name": "นางวลีรักษ์ พัชระเมธาพัฒน์",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690407_083751.jpg"
    },
    {
     "no": "126",
     "name": "นายวันชัย แข็งการเขตร",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_130940.jpg"
    },
    {
     "no": "127",
     "name": "พลตำรวจโท วันไชย เอกพรพิชญ์",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_134744.jpg"
    },
    {
     "no": "128",
     "name": "นางวาสนา ยศสอน",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_141324.jpg"
    },
    {
     "no": "129",
     "name": "นายพิสุทธิ์ ทรัพย์วิจิตร",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690206_154207.jpg"
    },
    {
     "no": "130",
     "name": "นางสาววิธาวีร์ ประทุมสวัสดิ์",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690324_124213.jpg"
    },
    {
     "no": "131",
     "name": "นางสาววิภาพร ทองโสด",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680217_115448.jpg"
    },
    {
     "no": "132",
     "name": "นายวิรัตน์ ธรรมบํารุง",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_140537.jpg"
    },
    {
     "no": "133",
     "name": "นายวิรัตน์ รักษ์พันธ์",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690518_084629.jpg"
    },
    {
     "no": "134",
     "name": "นายวิรัตน์ ลิ้มสุวัฒน์",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690623_133806.jpg"
    },
    {
     "no": "135",
     "name": "นายวิวรรธน์ ไกรพิสิทธิ์กุล",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690302_085739.jpg"
    },
    {
     "no": "136",
     "name": "นายวิวัฒน์ รุ้งแก้ว",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_142225.jpg"
    },
    {
     "no": "137",
     "name": "นายวีรยุทธ สร้อยทอง",
     "group": "กลุ่มผู้ประกอบอุตสาหกรรม",
-    "groupid": 161
+    "groupid": 161,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_104522.jpg"
    },
    {
     "no": "138",
     "name": "นายวีระพันธ์ สุวรรณนามัย",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_133020.jpg"
    },
    {
     "no": "139",
     "name": "นายวีระศักดิ์ วิจิตร์แสงศรี",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690519_112902.jpg"
    },
    {
     "no": "140",
     "name": "นายวุฒิชาติ กัลยาณมิตร",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671217_150500.jpg"
    },
    {
     "no": "141",
     "name": "นาวาตรี วุฒิพงศ์ พงศ์สุวรรณ",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671022_103252.jpg"
    },
    {
     "no": "142",
     "name": "นายศรายุทธ ยิ้มยวน",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_094849.jpg"
    },
    {
     "no": "143",
     "name": "นายศุภชัย กิตติภูติกุล",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_131151.jpg"
    },
    {
     "no": "144",
     "name": "นายศุภโชค ศาลากิจ",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690508_141758.jpg"
    },
    {
     "no": "145",
     "name": "นายเศก จุลเกษร",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25681110_134725.jpg"
    },
    {
     "no": "146",
     "name": "นายเศรณี อนิลบล",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690609_141329.jpg"
    },
    {
     "no": "147",
     "name": "พันตำรวจโท สง่า ส่งมหาชัย",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_105836.jpg"
    },
    {
     "no": "148",
     "name": "นายสมชาย นุ่มพูล",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680108_135840.jpg"
    },
    {
     "no": "149",
     "name": "นายธณัชญ์พงศ์ วงศ์มุลาลี",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690629_103310.jpg"
    },
    {
     "no": "150",
     "name": "นายสมดุลย์ บุญไชย",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671217_141627.jpg"
    },
    {
     "no": "151",
     "name": "นายสมทบ ถีระพันธ์",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_084920.jpg"
    },
    {
     "no": "152",
     "name": "นายสมบูรณ์ หนูนวล",
     "group": "กลุ่มการสาธารณสุข",
-    "groupid": 153
+    "groupid": 153,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690831_134537.jpg"
    },
    {
     "no": "153",
     "name": "นางสมพร วรรณชาติ",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_115145.jpg"
    },
    {
     "no": "154",
     "name": "นายสมพาน พละศักดิ์",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690817_113905.jpg"
    },
    {
     "no": "155",
     "name": "นางสมศรี อุรามา",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680318_085554.jpg"
    },
    {
     "no": "156",
     "name": "นายสมศักดิ์ จันทร์แก้ว",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680707_132352.jpg"
    },
    {
     "no": "157",
     "name": "นายสมหมาย ศรีจันทร์",
     "group": "กลุ่มผู้สูงอายุ คนพิการหรือทุพพลภาพ กลุ่มชาติพันธุ์ กลุ่มอัตลักษณ์อื่น",
-    "groupid": 164
+    "groupid": 164,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_091242.jpg"
    },
    {
     "no": "158",
     "name": "นายสรชาติ วิชย สุวรรณพรหม",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690519_103510.jpg"
    },
    {
     "no": "159",
     "name": "พลเอก สวัสดิ์ ทัศนา",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671031_094331.jpg"
    },
    {
     "no": "160",
     "name": "นายสหพันธ์ รุ่งโรจนพณิชย์",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690914_124659.jpg"
    },
    {
     "no": "161",
     "name": "นายสัมพันธ์ ชัยวิเศษจินดา",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690511_114823.jpg"
    },
    {
     "no": "162",
     "name": "นายสากล ภูลศิริกุล",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690519_092255.jpg"
    },
    {
     "no": "163",
     "name": "นายสามารถ รังสรรค์",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690903_104056.jpg"
    },
    {
     "no": "164",
     "name": "นางสาวสายฝน กองแก้ว",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_132745.jpg"
    },
    {
     "no": "165",
     "name": "นายสาลี สิงห์คำ",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690505_131218.jpg"
    },
    {
     "no": "166",
     "name": "นายสิทธิกร ธงยศ",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671021_151052.jpg"
    },
    {
     "no": "167",
     "name": "นายสืบศักดิ์ แววแก้ว",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690330_112108.jpg"
    },
    {
     "no": "168",
     "name": "พลโท สุกิจ ทั่งทอง",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690511_094846.jpg"
    },
    {
     "no": "169",
     "name": "นายสุทนต์ กล้าการขาย",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_151128.jpg"
    },
    {
     "no": "170",
     "name": "นายสุทิน แก้วพนา",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690629_095518.jpg"
    },
    {
     "no": "171",
     "name": "นายสุเทพ สังข์วิเศษ",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690615_132215.jpg"
    },
    {
     "no": "172",
     "name": "พลตำรวจตรี สุนทร ขวัญเพ็ชร",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671028_094543.jpg"
    },
    {
     "no": "173",
     "name": "นายสุนทร เชาว์กิจค้า",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690226_085130.jpg"
    },
    {
     "no": "174",
     "name": "นายสุนทร พฤกษพิพัฒน์",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690629_082012.jpg"
    },
    {
     "no": "175",
     "name": "นางสาวภิญญาพัชญ์ ศันสนียชีวิน",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680318_144844.jpg"
    },
    {
     "no": "176",
     "name": "นายสุพัตรชัย เตียวเจริญโสภา",
     "group": "กลุ่มผู้ประกอบอาชีพด้านวิทยาศาสตร์ เทคโนโลยี การสื่อสาร การพัฒนานวัตกรรม",
-    "groupid": 162
+    "groupid": 162,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_172859.jpg"
    },
    {
     "no": "177",
     "name": "นางสุมิตรา จารุกําเนิดกนก",
     "group": "กลุ่มผู้ประกอบกิจการขนาดกลางและขนาดย่อมตามกฎหมายว่าด้วยการนั้น",
-    "groupid": 158
+    "groupid": 158,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680404_085014.jpg"
    },
    {
     "no": "178",
     "name": "พันตำรวจโท สุริยา บาราสัน",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_094834.jpg"
    },
    {
     "no": "179",
     "name": "นายสุวิช จําปานนท์",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680318_085725.jpg"
    },
    {
     "no": "180",
     "name": "นายสุวิทย์ ขาวดี",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690831_094514.jpg"
    },
    {
     "no": "181",
     "name": "นายโสภณ ผาสุข",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690506_105135.jpg"
    },
    {
     "no": "182",
     "name": "นายโสภณ มะโนมะยา",
     "group": "กลุ่มผู้ประกอบกิจการอื่นนอกจากกิจการ ตามมาตรา 11 (9)",
-    "groupid": 159
+    "groupid": 159,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_113427.jpg"
    },
    {
     "no": "183",
     "name": "นางอจลา ณ ระนอง",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690710_091620.jpg"
    },
    {
     "no": "184",
     "name": "นายอภิชา เศรษฐวราธร",
     "group": "กลุ่มผู้ประกอบอาชีพด้านสิ่งแวดล้อม ผังเมือง อสังหาริมทรัพย์และสาธารณูปโภค ทรัพยากรธรรมชาติ พลังงาน",
-    "groupid": 157
+    "groupid": 157,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680225_081919.jpg"
    },
    {
     "no": "185",
     "name": "นายอภิชาติ งามกมล",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680318_090029.jpg"
    },
    {
     "no": "186",
     "name": "นายอภินันท์ เผือกผ่อง",
     "group": "กลุ่มการบริหารราชการแผ่นดินและความมั่นคง",
-    "groupid": 150
+    "groupid": 150,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690629_102921.jpg"
    },
    {
     "no": "187",
     "name": "นางสาวอมร ศรีบุญนาค",
     "group": "กลุ่มอาชีพทำนา ปลูกพืชล้มลุก",
-    "groupid": 154
+    "groupid": 154,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25680224_095407.jpg"
    },
    {
     "no": "188",
     "name": "นายอมรศักดิ์ กิจธนานันท์",
     "group": "กลุ่มพนักงานหรือลูกจ้างของบุคคลซึ่งมิใช่ส่วนราชการหรือหน่วยงานของรัฐ ผู้ใช้แรงงาน",
-    "groupid": 156
+    "groupid": 156,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670715_083004.jpg"
    },
    {
     "no": "189",
     "name": "ผู้ช่วยศาสตราจารย์พิเศษอลงกต วรกี",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_100646.jpg"
    },
    {
     "no": "190",
     "name": "นายอะมัด อายุเคน",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_122453.jpg"
    },
    {
     "no": "191",
     "name": "นายอัครวินท์ ขำขุด",
     "group": "กลุ่มผู้ประกอบธุรกิจหรืออาชีพด้านการท่องเที่ยว",
-    "groupid": 160
+    "groupid": 160,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690915_100531.png"
    },
    {
     "no": "192",
     "name": "พลตำรวจตรี อังกูร คล้ายคลึง",
     "group": "กลุ่มกฎหมายและกระบวนการยุติธรรม",
-    "groupid": 151
+    "groupid": 151,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671022_105435.jpg"
    },
    {
     "no": "193",
     "name": "นางอังคณา นีละไพจิตร",
     "group": "กลุ่มประชาสังคม องค์กรสาธารณประโยชน์",
-    "groupid": 166
+    "groupid": 166,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_192239.JPG"
    },
    {
     "no": "194",
     "name": "นางสาวอัจฉรพรรณ หอมรส",
     "group": "กลุ่มสตรี",
-    "groupid": 163
+    "groupid": 163,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670710_222815.jpg"
    },
    {
     "no": "195",
     "name": "นายอัษฎางค์ แสวงการ",
     "group": "กลุ่มการศึกษา",
-    "groupid": 152
+    "groupid": 152,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_131137.jpg"
    },
    {
     "no": "196",
     "name": "นางอารีย์ บรรจงธุระการ",
     "group": "กลุ่มสื่อสารมวลชน ผู้สร้างสรรค์วรรณกรรม",
-    "groupid": 167
+    "groupid": 167,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670712_095530.jpg"
    },
    {
     "no": "197",
     "name": "นายอิสระ บุญสองชั้น",
     "group": "กลุ่มอาชีพทำสวน ป่าไม้ ปศุสัตว์ ประมง",
-    "groupid": 155
+    "groupid": 155,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25671022_143306.jpg"
    },
    {
     "no": "198",
     "name": "นายเอกชัย เรืองรัตน์",
     "group": "กลุ่มอื่น ๆ",
-    "groupid": 169
+    "groupid": 169,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25670711_114208.jpg"
    },
    {
     "no": "199",
     "name": "นายเอนก วีระพจนานันท์",
     "group": "กลุ่มผู้ประกอบวิชาชีพ ผู้ประกอบอาชีพอิสระ",
-    "groupid": 168
+    "groupid": 168,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690623_155702.jpg"
    },
    {
     "no": "200",
     "name": "นางเอมอร ศรีกงพาน",
     "group": "กลุ่มศิลปะ วัฒนธรรม ดนตรี การแสดงและบันเทิง นักกีฬา",
-    "groupid": 165
+    "groupid": 165,
+    "photo": "https://www.senate.go.th/v2/files/person/pictures/25690525_153307.jpg"
    }
   ]
  }

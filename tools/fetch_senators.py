@@ -5,7 +5,7 @@ The page https://www.senate.go.th/view/1/senator_v2/TH-TH is plain HTML: one
 <div class="card-tiles" data-groupid=… data-group=…> per senator with the name, "เลขที่ NNN"
 and the occupational group. The page also shows the total ("จำนวนสมาชิก"); the script stops if
 the number of cards differs from it or a member number repeats.
-Photos on that page are government works (copyrighted) and are NOT saved.
+The photo URL of each card is kept (tools/fetch_official_photos.py downloads a small copy).
 
 Run: python tools/fetch_senators.py   → data/external/senators.json
 """
@@ -15,6 +15,7 @@ import io
 import json
 import os
 import re
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,7 +37,9 @@ def main():
         no = re.search(r'เลขที่ (\d+)', body).group(1)
         shown = text(re.search(r'<span class="career"\s*>.*?<span>กลุ่มอาชีพ :</span>\s*<span>(.*?)</span>', body, re.S).group(1))
         assert shown == text(group), (no, shown, group)
-        rows.append({'no': no, 'name': name, 'group': shown, 'groupid': int(gid)})
+        img = re.search(r'<img[^>]*class="member-img"[^>]*src="([^"]+)"', body) or re.search(r'<img[^>]*src="([^"]+)"', body)
+        rows.append({'no': no, 'name': name, 'group': shown, 'groupid': int(gid),
+                     'photo': urllib.parse.urljoin(URL, html.unescape(img.group(1))) if img else None})
     assert len(rows) == total, 'cards %d != total on page %d' % (len(rows), total)
     assert len({r['no'] for r in rows}) == len(rows), 'a member number repeats'
     title = text(re.search(r'<title>(.*?)</title>', page, re.S).group(1))

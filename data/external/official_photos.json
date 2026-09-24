@@ -1,0 +1,1633 @@
+{
+ "retrieved": "2026-09-24",
+ "sets": {
+  "senators": {
+   "นายกมล รอดคล้าย": {
+    "src": "assets/img/official/senators/001.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690511_122917.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกมล สุขคะสมบัติ": {
+    "src": "assets/img/official/senators/002.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_105147.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ว่าที่พันตรี กรพด รุ่งหิรัญวัฒน์": {
+    "src": "assets/img/official/senators/003.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671112_102143.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกฤษณุ เหลืองพิบูลกิจ": {
+    "src": "assets/img/official/senators/004.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690709_092911.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พันตำรวจเอก กอบ อัจนากิตติ": {
+    "src": "assets/img/official/senators/005.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671029_143842.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกัมพล ทองชิว": {
+    "src": "assets/img/official/senators/006.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680529_093557.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกัมพล สุภาแพ่ง": {
+    "src": "assets/img/official/senators/007.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671021_155137.png",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางกัลยา ใหญ่ประสาน": {
+    "src": "assets/img/official/senators/008.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_113502.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางกานต์เปรมปรีด์ ชิตานนท์": {
+    "src": "assets/img/official/senators/009.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_125618.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกิตติพันธ์ อนันตกูลจิรโชติ": {
+    "src": "assets/img/official/senators/010.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690421_084209.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายกิติศักดิ์ หมื่นศรี": {
+    "src": "assets/img/official/senators/011.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690427_092611.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลเอก เกรียงไกร ศรีรักษ์": {
+    "src": "assets/img/official/senators/012.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690518_083915.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธีระศักดิ์ อรัญพิทักษ์": {
+    "src": "assets/img/official/senators/013.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690312_144618.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเกียรติชาย ไมตรีวงษ์": {
+    "src": "assets/img/official/senators/014.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690428_104105.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายขจรศักดิ์ ศรีวิราช": {
+    "src": "assets/img/official/senators/015.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_075630.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายขวัญชัย แสนหิรัณย์": {
+    "src": "assets/img/official/senators/016.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_163513.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวเข็มรัตน์ สุรเมธีมาณพ": {
+    "src": "assets/img/official/senators/017.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_154055.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายจตุพร เรียงเงิน": {
+    "src": "assets/img/official/senators/018.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690525_134642.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายจรุณ กลิ่นตลบ": {
+    "src": "assets/img/official/senators/019.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_131217.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวจารุณี ฤกษ์ปราณี": {
+    "src": "assets/img/official/senators/020.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_121031.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายจำลอง อนันตสุข": {
+    "src": "assets/img/official/senators/021.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690511_094623.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายจิระศักดิ์ ชูความดี": {
+    "src": "assets/img/official/senators/022.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680106_100338.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางจุฑารัตน์ นิลเปรม": {
+    "src": "assets/img/official/senators/023.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680303_143704.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางเจียระนัย ตั้งกีรติ": {
+    "src": "assets/img/official/senators/024.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_153945.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ร้อยตำรวจเอก ฉลอง ทองนะ": {
+    "src": "assets/img/official/senators/025.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671022_115019.JPG",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจตรี ฉัตรวรรษ แสงเพชร": {
+    "src": "assets/img/official/senators/026.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690401_095526.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวชญาน์นันท์ ติยะตระการชัย": {
+    "src": "assets/img/official/senators/027.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_145917.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชวพล วัฒนพรมงคล": {
+    "src": "assets/img/official/senators/028.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690914_124855.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชวภณ วัธนเวคิน": {
+    "src": "assets/img/official/senators/029.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690226_100041.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชัยธัช เพราะสุนทร": {
+    "src": "assets/img/official/senators/030.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690323_080928.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชาญชัย ไชยพิศ": {
+    "src": "assets/img/official/senators/031.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690515_085227.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ศาสตราจารย์ชาญณรงค์ พรรุ่งโรจน์": {
+    "src": "assets/img/official/senators/032.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690820_133423.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชาญวิศว์ บรรจงการ": {
+    "src": "assets/img/official/senators/033.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_094419.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชินโชติ แสงสังข์": {
+    "src": "assets/img/official/senators/034.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690821_103004.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชิบ จิตนิยม": {
+    "src": "assets/img/official/senators/035.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_121415.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชีวะภาพ ชีวะธรรม": {
+    "src": "assets/img/official/senators/036.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_000753.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชูชาติ อินสว่าง": {
+    "src": "assets/img/official/senators/037.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690331_101731.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายชูชีพ เอื้อการณ์": {
+    "src": "assets/img/official/senators/038.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690507_132522.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายโชคชัย กิตติธเนศวร": {
+    "src": "assets/img/official/senators/039.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_130358.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายโชติชัย บัวดิษ": {
+    "src": "assets/img/official/senators/040.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670813_111705.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายไชยยงค์ มณีรุ่งสกุล": {
+    "src": "assets/img/official/senators/041.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_154530.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายณภพ ลายวิเศษกุล": {
+    "src": "assets/img/official/senators/042.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_131006.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายณรงค์ จิตราช": {
+    "src": "assets/img/official/senators/043.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25681015_160843.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางณัฏฐินีภรณ์ จันทรโณทัย": {
+    "src": "assets/img/official/senators/044.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690708_131759.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายณัฐกิตติ์ หนูรอด": {
+    "src": "assets/img/official/senators/045.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690706_134323.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเดชา นุตาลัย": {
+    "src": "assets/img/official/senators/046.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_135148.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางแดง กองมา": {
+    "src": "assets/img/official/senators/047.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680530_085143.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวตวงคุณ ทรงธรรมวัฒน์": {
+    "src": "assets/img/official/senators/048.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_084950.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเตชสิทธิ์ ชูแก้ว": {
+    "src": "assets/img/official/senators/049.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690421_084257.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเทวฤทธิ์ มณีฉาย": {
+    "src": "assets/img/official/senators/050.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_132412.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พันเอกหญิง ธณตศกร บุราคม": {
+    "src": "assets/img/official/senators/051.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_090042.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธนกร ถาวรชินโชติ": {
+    "src": "assets/img/official/senators/052.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_153540.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธนชัย แซ่จึง": {
+    "src": "assets/img/official/senators/053.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_140259.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธนภัทร ตวงวิไล": {
+    "src": "assets/img/official/senators/054.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_123347.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธวัช สุระบาล": {
+    "src": "assets/img/official/senators/055.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_094922.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธัชชญาณ์ณัช เจียรธนัทกานนท์": {
+    "src": "assets/img/official/senators/056.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690811_100056.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางธารนี ปรีดาสันติ์": {
+    "src": "assets/img/official/senators/057.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_151336.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางนงลักษณ์ ก้านเขียว": {
+    "src": "assets/img/official/senators/058.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25681006_112555.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนพดล พริ้งสกุล": {
+    "src": "assets/img/official/senators/059.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680530_083934.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ผู้ช่วยศาสตราจารย์นพดล อินนา": {
+    "src": "assets/img/official/senators/060.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690709_091728.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนรเศรษฐ์ ปรัชญากร": {
+    "src": "assets/img/official/senators/061.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_114522.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนฤพล สุคนธชาติ": {
+    "src": "assets/img/official/senators/062.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670807_100454.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวนวลนิจ หงษ์วิวัฒน์": {
+    "src": "assets/img/official/senators/063.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680721_160113.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวนันทนา นันทวโรภาส": {
+    "src": "assets/img/official/senators/064.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_114301.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิคม มากรุ่งแจ้ง": {
+    "src": "assets/img/official/senators/065.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690707_090355.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวนิชาภา สุวรรณนาค": {
+    "src": "assets/img/official/senators/066.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_100058.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิทัศน์ อารีย์วงศ์สกุล": {
+    "src": "assets/img/official/senators/067.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690701_095442.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิพนธ์ เอกวานิช": {
+    "src": "assets/img/official/senators/068.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_133908.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ผู้ช่วยศาสตราจารย์นิฟาริด ระเด่นอาหมัด": {
+    "src": "assets/img/official/senators/069.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_105654.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิรัตน์ อยู่ภักดี": {
+    "src": "assets/img/official/senators/070.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690831_154307.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิรุตติ สุทธินนท์": {
+    "src": "assets/img/official/senators/071.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670822_085023.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิเวศ พันธ์เจริญวรกุล": {
+    "src": "assets/img/official/senators/072.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_112542.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายนิสิทธิ์ ปนกลิ่น": {
+    "src": "assets/img/official/senators/073.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680707_132249.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจโท บุญจันทร์ นวลสาย": {
+    "src": "assets/img/official/senators/074.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_105016.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายบุญชอบ สระสมทรัพย์": {
+    "src": "assets/img/official/senators/075.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690724_132356.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายบุญส่ง น้อยโสภณ": {
+    "src": "assets/img/official/senators/076.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690204_103831.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางเบ็ญจมาศ อภัยทอง": {
+    "src": "assets/img/official/senators/077.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690615_085109.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายปฏิมา จีระแพทย์": {
+    "src": "assets/img/official/senators/078.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671010_100755.png",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายประกาสิทธิ์ พลซา": {
+    "src": "assets/img/official/senators/079.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690508_085237.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางประทุม วงศ์สวัสดิ์": {
+    "src": "assets/img/official/senators/080.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_161436.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายประเทือง มนตรี": {
+    "src": "assets/img/official/senators/081.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670724_141722.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายประพนธ์ ตั้งศรีเกียรติกุล": {
+    "src": "assets/img/official/senators/082.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671022_133419.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายประภาส ปิ่นตบแต่ง": {
+    "src": "assets/img/official/senators/083.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_144547.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางประไม หอมเทียม": {
+    "src": "assets/img/official/senators/084.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_115031.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายประหยัด จตุพรพิทักษ์กุล": {
+    "src": "assets/img/official/senators/085.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_112748.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายปราณีต เกรัมย์": {
+    "src": "assets/img/official/senators/086.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_113123.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายปริญญา วงษ์เชิดขวัญ": {
+    "src": "assets/img/official/senators/087.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_055229.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางปวีณา สาระรัมย์": {
+    "src": "assets/img/official/senators/088.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_033704.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายปิยพัฒน์ สุภาวรรณ": {
+    "src": "assets/img/official/senators/089.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690914_124749.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวปุณณภา จินดาพงษ์": {
+    "src": "assets/img/official/senators/090.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_112232.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเปรมศักดิ์ เพียยุระ": {
+    "src": "assets/img/official/senators/091.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_104407.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพงษ์ศักดิ์ เกิดวงศ์บัณฑิต": {
+    "src": "assets/img/official/senators/092.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_105319.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพรชัย วิทยเลิศพันธุ์": {
+    "src": "assets/img/official/senators/093.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670714_200007.jpeg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพรเพิ่ม ทองศรี": {
+    "src": "assets/img/official/senators/094.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_110811.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพละวัต ตันศิริ": {
+    "src": "assets/img/official/senators/095.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690525_134921.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิชาญ พรศิริประทาน": {
+    "src": "assets/img/official/senators/096.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690519_103539.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิบูลย์อัฑฒ์ หฤหรรษ์ปราการ": {
+    "src": "assets/img/official/senators/097.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670710_220645.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิมาย คงทัน": {
+    "src": "assets/img/official/senators/098.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690511_150451.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิศูจน์ รัตนวงศ์": {
+    "src": "assets/img/official/senators/099.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670903_095946.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิสิษฐ์ อภิวัฒนาพงศ์": {
+    "src": "assets/img/official/senators/100.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690608_104445.png",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางเพลินจิต ขันแก้ว": {
+    "src": "assets/img/official/senators/101.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690623_155731.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายไพบูลย์ ณะบุตรจอม": {
+    "src": "assets/img/official/senators/102.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690518_123906.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายภมร เชาว์ศิริกุล": {
+    "src": "assets/img/official/senators/103.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25681006_112657.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายภาณุพงษ์ เต็งวงษ์วัฒนะ": {
+    "src": "assets/img/official/senators/104.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680901_125109.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวภาวนา ว่องอมรนิธิ": {
+    "src": "assets/img/official/senators/105.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680107_120106.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายมงคล สุระสัจจะ": {
+    "src": "assets/img/official/senators/106.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690710_122632.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวมณีรัฐ เขมะวงค์": {
+    "src": "assets/img/official/senators/107.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690630_120047.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางมยุรี โพธิแสน": {
+    "src": "assets/img/official/senators/108.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690615_065517.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายมังกร ศรีเจริญกูล": {
+    "src": "assets/img/official/senators/109.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_091754.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายมานะ มหาสุวีระชัย": {
+    "src": "assets/img/official/senators/110.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_092917.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวมาเรีย เผ่าประทาน": {
+    "src": "assets/img/official/senators/111.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_144203.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายยะโก๊ป หีมละ": {
+    "src": "assets/img/official/senators/112.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_152222.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายยุคล ชนะวัฒน์ปัญญา": {
+    "src": "assets/img/official/senators/113.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690724_132138.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจโท ยุทธนา ไทยภักดี": {
+    "src": "assets/img/official/senators/114.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690518_101937.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางรจนา เพิ่มพูล": {
+    "src": "assets/img/official/senators/115.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690622_090618.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจตรี รมย์สิทธิ์ วีริยาสรร": {
+    "src": "assets/img/official/senators/116.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_111944.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวรัชนีกร ทองทิพย์": {
+    "src": "assets/img/official/senators/117.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670723_142533.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายรุจิภาส มีกุศล": {
+    "src": "assets/img/official/senators/118.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_100919.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายฤชุ แก้วลาย": {
+    "src": "assets/img/official/senators/119.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_114919.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "รองศาสตราจารย์แล ดิลกวิทยรัตน์": {
+    "src": "assets/img/official/senators/120.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690622_083803.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวร หินดี": {
+    "src": "assets/img/official/senators/121.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690604_093353.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางวรรษมนต์ คุณแสน": {
+    "src": "assets/img/official/senators/122.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671028_094329.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางวราภัสร์ ไพพรรณรัตน์": {
+    "src": "assets/img/official/senators/123.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680211_083526.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ผู้ช่วยศาสตราจารย์วราวุธ ตีระนันทน์": {
+    "src": "assets/img/official/senators/124.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670716_162235.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางวลีรักษ์ พัชระเมธาพัฒน์": {
+    "src": "assets/img/official/senators/125.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690407_083751.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวันชัย แข็งการเขตร": {
+    "src": "assets/img/official/senators/126.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_130940.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจโท วันไชย เอกพรพิชญ์": {
+    "src": "assets/img/official/senators/127.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_134744.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางวาสนา ยศสอน": {
+    "src": "assets/img/official/senators/128.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_141324.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายพิสุทธิ์ ทรัพย์วิจิตร": {
+    "src": "assets/img/official/senators/129.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690206_154207.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาววิธาวีร์ ประทุมสวัสดิ์": {
+    "src": "assets/img/official/senators/130.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690324_124213.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาววิภาพร ทองโสด": {
+    "src": "assets/img/official/senators/131.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680217_115448.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวิรัตน์ ธรรมบํารุง": {
+    "src": "assets/img/official/senators/132.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_140537.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวิรัตน์ รักษ์พันธ์": {
+    "src": "assets/img/official/senators/133.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690518_084629.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวิรัตน์ ลิ้มสุวัฒน์": {
+    "src": "assets/img/official/senators/134.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690623_133806.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวิวรรธน์ ไกรพิสิทธิ์กุล": {
+    "src": "assets/img/official/senators/135.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690302_085739.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวิวัฒน์ รุ้งแก้ว": {
+    "src": "assets/img/official/senators/136.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_142225.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวีรยุทธ สร้อยทอง": {
+    "src": "assets/img/official/senators/137.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_104522.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวีระพันธ์ สุวรรณนามัย": {
+    "src": "assets/img/official/senators/138.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_133020.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวีระศักดิ์ วิจิตร์แสงศรี": {
+    "src": "assets/img/official/senators/139.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690519_112902.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายวุฒิชาติ กัลยาณมิตร": {
+    "src": "assets/img/official/senators/140.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671217_150500.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นาวาตรี วุฒิพงศ์ พงศ์สุวรรณ": {
+    "src": "assets/img/official/senators/141.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671022_103252.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายศรายุทธ ยิ้มยวน": {
+    "src": "assets/img/official/senators/142.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_094849.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายศุภชัย กิตติภูติกุล": {
+    "src": "assets/img/official/senators/143.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_131151.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายศุภโชค ศาลากิจ": {
+    "src": "assets/img/official/senators/144.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690508_141758.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเศก จุลเกษร": {
+    "src": "assets/img/official/senators/145.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25681110_134725.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเศรณี อนิลบล": {
+    "src": "assets/img/official/senators/146.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690609_141329.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พันตำรวจโท สง่า ส่งมหาชัย": {
+    "src": "assets/img/official/senators/147.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_105836.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมชาย นุ่มพูล": {
+    "src": "assets/img/official/senators/148.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680108_135840.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายธณัชญ์พงศ์ วงศ์มุลาลี": {
+    "src": "assets/img/official/senators/149.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690629_103310.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมดุลย์ บุญไชย": {
+    "src": "assets/img/official/senators/150.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671217_141627.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมทบ ถีระพันธ์": {
+    "src": "assets/img/official/senators/151.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_084920.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมบูรณ์ หนูนวล": {
+    "src": "assets/img/official/senators/152.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690831_134537.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสมพร วรรณชาติ": {
+    "src": "assets/img/official/senators/153.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_115145.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมพาน พละศักดิ์": {
+    "src": "assets/img/official/senators/154.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690817_113905.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสมศรี อุรามา": {
+    "src": "assets/img/official/senators/155.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680318_085554.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมศักดิ์ จันทร์แก้ว": {
+    "src": "assets/img/official/senators/156.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680707_132352.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสมหมาย ศรีจันทร์": {
+    "src": "assets/img/official/senators/157.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_091242.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสรชาติ วิชย สุวรรณพรหม": {
+    "src": "assets/img/official/senators/158.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690519_103510.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลเอก สวัสดิ์ ทัศนา": {
+    "src": "assets/img/official/senators/159.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671031_094331.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสหพันธ์ รุ่งโรจนพณิชย์": {
+    "src": "assets/img/official/senators/160.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690914_124659.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสัมพันธ์ ชัยวิเศษจินดา": {
+    "src": "assets/img/official/senators/161.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690511_114823.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสากล ภูลศิริกุล": {
+    "src": "assets/img/official/senators/162.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690519_092255.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสามารถ รังสรรค์": {
+    "src": "assets/img/official/senators/163.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690903_104056.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวสายฝน กองแก้ว": {
+    "src": "assets/img/official/senators/164.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_132745.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสาลี สิงห์คำ": {
+    "src": "assets/img/official/senators/165.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690505_131218.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสิทธิกร ธงยศ": {
+    "src": "assets/img/official/senators/166.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671021_151052.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสืบศักดิ์ แววแก้ว": {
+    "src": "assets/img/official/senators/167.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690330_112108.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลโท สุกิจ ทั่งทอง": {
+    "src": "assets/img/official/senators/168.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690511_094846.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุทนต์ กล้าการขาย": {
+    "src": "assets/img/official/senators/169.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_151128.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุทิน แก้วพนา": {
+    "src": "assets/img/official/senators/170.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690629_095518.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุเทพ สังข์วิเศษ": {
+    "src": "assets/img/official/senators/171.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690615_132215.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจตรี สุนทร ขวัญเพ็ชร": {
+    "src": "assets/img/official/senators/172.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671028_094543.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุนทร เชาว์กิจค้า": {
+    "src": "assets/img/official/senators/173.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690226_085130.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุนทร พฤกษพิพัฒน์": {
+    "src": "assets/img/official/senators/174.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690629_082012.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวภิญญาพัชญ์ ศันสนียชีวิน": {
+    "src": "assets/img/official/senators/175.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680318_144844.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุพัตรชัย เตียวเจริญโสภา": {
+    "src": "assets/img/official/senators/176.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_172859.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสุมิตรา จารุกําเนิดกนก": {
+    "src": "assets/img/official/senators/177.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680404_085014.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พันตำรวจโท สุริยา บาราสัน": {
+    "src": "assets/img/official/senators/178.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_094834.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุวิช จําปานนท์": {
+    "src": "assets/img/official/senators/179.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680318_085725.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายสุวิทย์ ขาวดี": {
+    "src": "assets/img/official/senators/180.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690831_094514.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายโสภณ ผาสุข": {
+    "src": "assets/img/official/senators/181.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690506_105135.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายโสภณ มะโนมะยา": {
+    "src": "assets/img/official/senators/182.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_113427.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางอจลา ณ ระนอง": {
+    "src": "assets/img/official/senators/183.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690710_091620.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอภิชา เศรษฐวราธร": {
+    "src": "assets/img/official/senators/184.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680225_081919.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอภิชาติ งามกมล": {
+    "src": "assets/img/official/senators/185.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680318_090029.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอภินันท์ เผือกผ่อง": {
+    "src": "assets/img/official/senators/186.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690629_102921.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวอมร ศรีบุญนาค": {
+    "src": "assets/img/official/senators/187.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25680224_095407.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอมรศักดิ์ กิจธนานันท์": {
+    "src": "assets/img/official/senators/188.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670715_083004.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "ผู้ช่วยศาสตราจารย์พิเศษอลงกต วรกี": {
+    "src": "assets/img/official/senators/189.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_100646.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอะมัด อายุเคน": {
+    "src": "assets/img/official/senators/190.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_122453.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอัครวินท์ ขำขุด": {
+    "src": "assets/img/official/senators/191.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690915_100531.png",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "พลตำรวจตรี อังกูร คล้ายคลึง": {
+    "src": "assets/img/official/senators/192.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671022_105435.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางอังคณา นีละไพจิตร": {
+    "src": "assets/img/official/senators/193.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_192239.JPG",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางสาวอัจฉรพรรณ หอมรส": {
+    "src": "assets/img/official/senators/194.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670710_222815.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอัษฎางค์ แสวงการ": {
+    "src": "assets/img/official/senators/195.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_131137.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางอารีย์ บรรจงธุระการ": {
+    "src": "assets/img/official/senators/196.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670712_095530.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายอิสระ บุญสองชั้น": {
+    "src": "assets/img/official/senators/197.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25671022_143306.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเอกชัย เรืองรัตน์": {
+    "src": "assets/img/official/senators/198.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25670711_114208.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นายเอนก วีระพจนานันท์": {
+    "src": "assets/img/official/senators/199.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690623_155702.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "นางเอมอร ศรีกงพาน": {
+    "src": "assets/img/official/senators/200.jpg",
+    "url": "https://www.senate.go.th/v2/files/person/pictures/25690525_153307.jpg",
+    "page": "https://www.senate.go.th/view/1/senator_v2/TH-TH",
+    "artist": "สำนักงานเลขาธิการวุฒิสภา",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   }
+  },
+  "pm": {
+   "1": {
+    "src": "assets/img/official/pm/1.jpg",
+    "url": "https://media.thaigov.go.th/zWOOLB7lXIt-MAL3S2pjDu-B0OI=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302095725000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "2": {
+    "src": "assets/img/official/pm/2.jpg",
+    "url": "https://media.thaigov.go.th/Ynt1SRVCIm3ldgtIdqZR-zyejCc=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302095749000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "3": {
+    "src": "assets/img/official/pm/3.jpg",
+    "url": "https://media.thaigov.go.th/RiVvDsJkj9P1vGan-Jeb4cDo-Cg=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302095856000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "4": {
+    "src": "assets/img/official/pm/4.jpg",
+    "url": "https://media.thaigov.go.th/EPHWpZuHnskDr5SFY_Jl_3fq0dQ=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302095925000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "5": {
+    "src": "assets/img/official/pm/5.jpg",
+    "url": "https://media.thaigov.go.th/C-1e5hyiQr9MzxKtB9P1yXjnMkM=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302100614000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "6": {
+    "src": "assets/img/official/pm/6.jpg",
+    "url": "https://media.thaigov.go.th/xgRThdpwdI7zuygYPH9KC4KGQFs=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302113638000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "7": {
+    "src": "assets/img/official/pm/7.jpg",
+    "url": "https://media.thaigov.go.th/YAnUyH1hDgudZTfMs8EWDJ6wgM8=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302113730000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "8": {
+    "src": "assets/img/official/pm/8.jpg",
+    "url": "https://media.thaigov.go.th/q2QVAKrYL1bTrbf84TSa0IutBwI=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302113833000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "9": {
+    "src": "assets/img/official/pm/9.jpg",
+    "url": "https://media.thaigov.go.th/qu7jFE08v9KKL3q9DbjKEsc28xo=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2018/03/_20180302115148000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "10": {
+    "src": "assets/img/official/pm/10.jpg",
+    "url": "https://media.thaigov.go.th/mNHbjfo7J9kibOZtvtZ9oO9zsaU=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022095546_9043.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "11": {
+    "src": "assets/img/official/pm/11.jpg",
+    "url": "https://media.thaigov.go.th/dcOWFho4t4wK2uVclWFU11m2-7U=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022095753_8806.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "12": {
+    "src": "assets/img/official/pm/12.jpg",
+    "url": "https://media.thaigov.go.th/gwqUpMjNLQDxIr4UuSdqEGmybD0=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022095854_4883.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "13": {
+    "src": "assets/img/official/pm/13.jpg",
+    "url": "https://media.thaigov.go.th/NoyDfACtGwvFqU4JNXnWSmJ_-5s=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022095934_5148.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "14": {
+    "src": "assets/img/official/pm/14.jpg",
+    "url": "https://media.thaigov.go.th/MH9EUlWReKiWQ6aJrc5u3I23acY=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100019_8174.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "15": {
+    "src": "assets/img/official/pm/15.jpg",
+    "url": "https://media.thaigov.go.th/Z112bJh3vIAjDA5iVxztGX78uts=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100058_4383.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "16": {
+    "src": "assets/img/official/pm/16.jpg",
+    "url": "https://media.thaigov.go.th/-ulEMMJIDc3XIo6-J2piGgFdXYk=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100203_9838.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "17": {
+    "src": "assets/img/official/pm/17.jpg",
+    "url": "https://media.thaigov.go.th/jR01njgzTrHTM2TtI4lwClIejRU=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100243_2494.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "18": {
+    "src": "assets/img/official/pm/18.jpg",
+    "url": "https://media.thaigov.go.th/CdWhVsemwhBlxVquoGD0RT8TTiw=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100357_1144.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "19": {
+    "src": "assets/img/official/pm/19.jpg",
+    "url": "https://media.thaigov.go.th/hQBYhOQDCrrlcgo7eXeLOBt4ucI=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100430_8724.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "20": {
+    "src": "assets/img/official/pm/20.jpg",
+    "url": "https://media.thaigov.go.th/jZewBQk8pAi8yADIWixtQV-zNmo=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100644_7316.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "21": {
+    "src": "assets/img/official/pm/21.jpg",
+    "url": "https://media.thaigov.go.th/0W9HvxuaS2J5oLdSPv92K29lhug=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100725_7553.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "22": {
+    "src": "assets/img/official/pm/22.jpg",
+    "url": "https://media.thaigov.go.th/xyikCFtzJhsr0OmxyuSaWpx5VjU=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100802_1643.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "23": {
+    "src": "assets/img/official/pm/23.jpg",
+    "url": "https://media.thaigov.go.th/gGjrnv19CsosgllHeiFPF18KHTE=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022100902_7997.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "24": {
+    "src": "assets/img/official/pm/24.jpg",
+    "url": "https://media.thaigov.go.th/CpU3hz8J1q1U1S3Nu82ei4zP7s4=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022101006_1884.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "25": {
+    "src": "assets/img/official/pm/25.jpg",
+    "url": "https://media.thaigov.go.th/xY7KJ8eCaXsE0Pg3yK0P8iiLz0g=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022101056_7433.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "26": {
+    "src": "assets/img/official/pm/26.jpg",
+    "url": "https://media.thaigov.go.th/GhiHiNTO18N09pmuq_8A1cxZR-I=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022101156_4248.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "27": {
+    "src": "assets/img/official/pm/27.jpg",
+    "url": "https://media.thaigov.go.th/tb8BHLuJ7NoX3236vDznsX01kkU=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022101327_7558.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "28": {
+    "src": "assets/img/official/pm/28.jpg",
+    "url": "https://media.thaigov.go.th/-7rfhm0AxmUsUelIYbGzn5ooTW0=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022102515_5146.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "29": {
+    "src": "assets/img/official/pm/29.jpg",
+    "url": "https://media.thaigov.go.th/a3jKGHj61ntmIrVfPWGnxvWbcKw=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022101823_9022.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "30": {
+    "src": "assets/img/official/pm/30.jpg",
+    "url": "https://media.thaigov.go.th/kgDsaB7y7HJ7XBiyJCOjK_02mHI=/https://archives.thaigov.go.th/uploads/images/288/2025/10/jpg/20251022102719_5038.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "31": {
+    "src": "assets/img/official/pm/31.jpg",
+    "url": "https://media.thaigov.go.th/o3FGdG5ZItoHY78EYxC_QqVqZRk=/https://archives.thaigov.go.th/uploads/thumbnail/terms/2024/09/_20240906205532000000.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   },
+   "32": {
+    "src": "assets/img/official/pm/32.jpg",
+    "url": "https://media.thaigov.go.th/M_vmKRiTiAzUv_rBJTUDc9kTqIM=/https://archives.thaigov.go.th/uploads/images/288/2026/03/jpg/20260319124949_6672.jpg",
+    "page": "https://archives.thaigov.go.th/th/history/prime-minister",
+    "artist": "สำนักเลขาธิการนายกรัฐมนตรี",
+    "license": "ภาพจากเว็บไซต์ทางการ"
+   }
+  }
+ }
+}

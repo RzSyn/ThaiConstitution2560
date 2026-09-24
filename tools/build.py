@@ -339,6 +339,16 @@ def ext(name):
         return json.load(f)
 
 
+def official(*kinds):
+    """official photos (tools/fetch_official_photos.py) of the given sets, keyed by name (pm: by number)"""
+    path = os.path.join(ROOT, 'data', 'external', 'official_photos.json')
+    sets = ext('official_photos')['sets'] if os.path.exists(path) else {}
+    out = {}
+    for k in kinds:
+        out.update(sets.get(k, {}))
+    return out
+
+
 def ext_cabinet():
     d, pm = ext('cabinet')['data'], ext('pm')['data']
     assert d['complete'], 'cabinet scrape did not reach the site total'
@@ -347,7 +357,8 @@ def ext_cabinet():
     for r in rows:
         if r['name'] not in people:
             people.append(r['name'])
-    photos = ext('cabinet_photos')['photos']
+    photos = dict(ext('cabinet_photos')['photos'])
+    photos.update(official('mps', 'senators'))   # a minister who is also a member gets the official photo
     cards = []
     for name in people:
         posts = [r['position'] for r in rows if r['name'] == name]
@@ -357,7 +368,7 @@ def ext_cabinet():
                 attr(p['page']), esc(p['artist'] or 'Wikimedia Commons'), esc(p['license']))
             fig = '<img src="%s" alt="%s" loading="lazy" width="120" height="160">' % (attr(p['src']), attr(name))
         else:
-            credit = '<span>ไม่พบภาพที่ใช้ได้โดยเสรี</span>'
+            credit = '<span>ไม่พบภาพ</span>'
             # first consonant of the given name (skip the title and any leading vowel such as เ in เอกนิติ)
             initials = re.search(r'[ก-ฮ]', re.sub(r'^(นางสาว|นาง|นาย|พลตำรวจโท|พลโท)\s*', '', name)).group(0)
             # a personal-use photo may sit in assets/img/private/<full name>.jpg (git-ignored, never published);
@@ -376,7 +387,7 @@ def ext_cabinet():
             '<div class="tp-stat"><b>คนที่ %s</b><span>%s นายกรัฐมนตรี</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
             '<div class="tp-stat"><b>%s</b><span>ตำแหน่งในคณะรัฐมนตรี (บางคนดำรงสองตำแหน่ง)</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
             '<div class="tp-stat"><b>%s คน</b><span>จำนวนบุคคล (นับไม่ซ้ำ)</span><small>คำนวณจากรายชื่อ</small></div>'
-            '<div class="tp-stat"><b>%s คน</b><span>มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons</span><small>ภาพดึง %s</small></div></div>'
+            '<div class="tp-stat"><b>%s คน</b><span>มีภาพบุคคล</span><small>ภาพดึง %s</small></div></div>'
             '%s') % (th(pm['number']), esc(pm['name']), th(len(rows)), th(len(people)),
                      th(sum(1 for n in people if n in photos)), th_date(ext('cabinet_photos')['retrieved']), body)
 
@@ -407,7 +418,7 @@ TITLE = re.compile(r'^(นางสาว|นาง|นาย|ว่าที่
 
 
 def person_fig(name, photos, private):
-    """Photo box for a member card: a free Commons photo already vetted for the cabinet list, else the
+    """Photo box for a member card: the official photo, else a free Commons photo, else the
     initial of the given name with an optional personal-use photo that site.js swaps in on this computer."""
     p = photos.get(name)
     if p:
@@ -420,7 +431,7 @@ def person_fig(name, photos, private):
         prev, bare = bare, TITLE.sub('', bare)
     initial = (re.search(r'[ก-ฮ]', bare) or re.search(r'[ก-ฮ]', name)).group(0)
     return ('<span class="tp-noimg" aria-hidden="true" data-private="%s">%s</span>' % (attr(private), esc(initial)),
-            '<span>ไม่พบภาพที่ใช้ได้โดยเสรี</span>')
+            '<span>ไม่พบภาพ</span>')
 
 
 def member_cards(rows, photos, folder, line2):
@@ -447,6 +458,7 @@ def ext_members():
     photos = dict(ext('cabinet_photos')['photos'])
     if os.path.exists(os.path.join(ROOT, 'data', 'external', 'member_photos.json')):
         photos.update(ext('member_photos')['photos'])
+    photos.update(official('mps', 'senators'))
     counts = {}
     for r in rows:
         counts[r['party']] = counts.get(r['party'], 0) + 1
@@ -454,7 +466,7 @@ def ext_members():
     mp_cards = member_cards(rows, photos, 'mps', lambda r: ([r['party'], th(r['seat'].replace('สมาชิกสภาผู้แทนราษฎร', '').strip())], r['party']))
     n_photo = sum(1 for r in rows if r['name'] in photos)
     mp = ('<p class="tp-note">%s ตามระบบสารสนเทศสมาชิก สำนักงานเลขาธิการสภาผู้แทนราษฎร ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> '
-          'เรียงตามเลขประจำตัวสมาชิก ชื่อ เขต และพรรคสะกดตามต้นฉบับ มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons %s คน</p>%s'
+          'เรียงตามเลขประจำตัวสมาชิก ชื่อ เขต และพรรคสะกดตามต้นฉบับ มีภาพ %s คน</p>%s'
           '<div class="tp-people tp-members">%s</div>') % (
         esc(th(d['heading'])), th_date(ext('mps')['retrieved']), th(len(rows)), th(n_photo),
         member_tools('พรรค', parties, counts), mp_cards)
@@ -470,7 +482,7 @@ def ext_members():
         groups = sorted(gcount, key=lambda k: gid[k])  # the senate site's own group order
         sw = ('<p class="tp-note">รายชื่อ%sตามเว็บไซต์วุฒิสภา (สำนักงานเลขาธิการวุฒิสภา) ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> ใน %s กลุ่ม '
               'เรียงตามเลขที่ ชื่อและกลุ่มสะกดตามต้นฉบับ สว. ไม่สังกัดพรรคการเมือง จึงแสดงกลุ่มอาชีพที่ได้รับเลือกแทนพรรค '
-              'มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons %s คน</p>'
+              'มีภาพ %s คน</p>'
               '%s<div class="tp-people tp-members">%s</div>') % (
             esc(s['heading']), th_date(ext('senators')['retrieved']), th(len(srows)), th(len(groups)),
             th(sum(1 for r in srows if r['name'] in photos)),
@@ -508,7 +520,8 @@ def pm_rows():
     hist = sorted(ext('pm_history')['data'], key=lambda x: x['number'])
     assert [x['number'] for x in hist] == list(range(1, len(hist) + 1)), 'PM numbers not continuous'
     assert hist[-1]['number'] == ext('pm')['data']['number'], 'E-Museum list and current-PM page disagree'
-    photos = ext('pm_photos')['photos']
+    photos = dict(ext('pm_photos')['photos'])
+    photos.update(official('pm'))
     leads = ext('wiki_pm_leads')['data']
     notes = load('pm_notes.json')
     charters = ext('constitutions')['data']
@@ -620,7 +633,7 @@ def ext_pm_table():
                 attr(p['page']), esc(p['artist'] or 'Wikimedia Commons'), esc(p['license']))
         else:
             pic = '<span class="tp-noimg" data-private="%s" aria-hidden="true">%s</span>' % (attr(r['private']), th(r['n']))
-            credit = '<span class="tp-credit">ไม่พบภาพที่ใช้ได้โดยเสรี</span>'
+            credit = '<span class="tp-credit">ไม่พบภาพ</span>'
         cab = ', '.join(dict.fromkeys(t['cabinet'] for t in r['terms']))
         badges = ''.join('<a class="tp-era-badge tp-%s" href="%s"%s title="%s">%s</a>' % (
             ERAS[r['era']][0], attr(c['url']), '' if c['url'].startswith('#') else ' rel="noopener" target="_blank"',

@@ -79,9 +79,18 @@ panel is labelled as explanation; build.py enforces the facts:
 - **Photos:** `tools/fetch_photos.py` matches each cabinet name to a Wikidata item
   by exact Thai label or alias, Thai citizen, with P18, and keeps it only under
   a free Commons licence; the credit goes under the photo. `tools/fetch_flags.py`
-  does the same for flag SVGs. Never copy photos from government sites:
-  government works are copyrighted (พ.ร.บ.ลิขสิทธิ์ ม.๑๔); ม.๗ exempts only laws,
-  news facts, orders and similar.
+  does the same for flag SVGs. Government works are copyrighted
+  (พ.ร.บ.ลิขสิทธิ์ ม.๑๔; ม.๗ exempts only laws, news facts, orders and similar).
+  **The owner decided on 2026-09-24, after being told this, to publish official
+  photos of people anyway** (see lesson 20): `tools/fetch_official_photos.py`
+  saves ≤240×320 copies to `assets/img/official/<set>/` and
+  `data/external/official_photos.json`; the build prefers them over Commons
+  (cabinet, สส./สว., PM table and hall). Credit the source office under every
+  photo. Photo URLs come from saved official pages (senators.json `photo`,
+  pm_portraits.json, mp_photo_urls.json), never typed by hand.
+- **สส./สว. tab** (`topics/members.html`, `ext:members`): MPs from mps.json (HRIS),
+  senators from `tools/fetch_senators.py` (www.senate.go.th plain HTML, checked
+  against the page total).
 - **Personal-use photos** (the user's choice for people with no free photo, e.g.
   saved from Facebook): the user saves them as
   `assets/img/private/<full name as on thaigov>.jpg`. The folder is git-ignored,
@@ -89,7 +98,12 @@ panel is labelled as explanation; build.py enforces the facts:
   commit or push anything from that folder, and never fetch Facebook images
   yourself.
 - soc.go.th (Cabinet Secretariat) is behind the same Cloudflare check as
-  ratchakitcha. thaigov.go.th and parliament.go.th / hris.parliament.go.th work.
+  ratchakitcha. thaigov.go.th and parliament.go.th / hris.parliament.go.th work
+  from the owner's computer. **From a cloud session** (outside Thailand):
+  hris.parliament.go.th resets the connection, parliament.go.th/view/1 answers
+  401, thaigov.go.th pages show a Cloudflare check; www.senate.go.th and
+  media.thaigov.go.th images work. Headless Chromium there fails on the proxy
+  certificate, so use curl/Python for static pages.
 
 ## Adding a new amendment (ฉบับที่ ๒ …)
 
@@ -205,6 +219,19 @@ panel is labelled as explanation; build.py enforces the facts:
     requires a new charter within 30 days of the term's start.
 19. **Heredoc with a large Thai Python payload failed** ("unexpected EOF").
     Write big scripts with the Write tool, then run them.
+20. **Photo rule overridden by the owner; my Wikidata calls got rate-limited
+    (2026-09-24).** For the สส./สว. tab I searched Wikidata one name at a time
+    (~700 calls) and got HTTP 429 on almost all of them; Commons then refused me
+    too. For bulk matching, use one SPARQL query (`tools/fetch_member_photos.py`).
+    Only ~110 of ~700 members had a free photo. The user asked to "ignore
+    free or not". I explained ม.๑๔ and offered the private folder. The user
+    replied that local-only photos are useless for the public site, that they
+    accept the risk, and asked for official photos for everyone, earlier photos
+    included. Rules: (a) this is the owner's informed choice, like the Garuda
+    icon; do not switch back to free-only photos; (b) never hotlink the
+    full-size files (senate photos are ~600 KB each), store small copies;
+    (c) `pkill -f <name>` also kills the shell running it, so use `pgrep` and
+    then `kill <pid>`.
 11. **Pages status said "errored" but the site was live.** Two pushes in quick
     succession started two Pages runs, and the first was cancelled. After that
     `gh api repos/…/pages` kept reporting `status: errored` even though the
