@@ -503,6 +503,25 @@ def span_text(r):
     return parts
 
 
+def party_cell(name):
+    """Logo box like the reference table: a free Commons logo on the public site, the Thai Wikipedia
+    logo (fair use) only from the private folder on this computer, otherwise a neutral initial badge."""
+    logos = ext('party_logos')['logos']
+    private = 'assets/img/private/parties/%s.png' % name
+    core = re.sub(r'^(พรรค|คณะ|ขบวนการ)', '', name)
+    initial = (re.search(r'[ก-ฮ]', core) or re.search(r'[ก-ฮ]', name)).group(0)
+    lg = logos.get(name)
+    if lg:
+        pic = '<img class="tp-logo" src="%s" data-private="%s" alt="" loading="lazy">' % (attr(lg['src']), attr(private))
+        credit = '<a class="tp-credit" href="%s" rel="noopener" target="_blank">%s</a>' % (attr(lg['page']), esc(lg['license']))
+    elif name == 'อิสระ':
+        pic, credit = '<span class="tp-logo tp-logo-none" aria-hidden="true">–</span>', ''
+    else:
+        pic = '<span class="tp-logo tp-logo-none" data-private="%s" aria-hidden="true">%s</span>' % (attr(private), esc(initial))
+        credit = ''
+    return '<div class="tp-party"><div class="tp-party-box">%s</div><span>%s</span>%s</div>' % (pic, esc(name), credit)
+
+
 def ext_pm_table():
     rows = pm_rows()
     btns = '<button type="button" class="tp-filter is-on" data-era="all">แสดงทั้งหมด</button>' + ''.join(
@@ -532,7 +551,7 @@ def ext_pm_table():
             '<td class="tp-pm-note">%s</td></tr>' % (
                 r['n'], ERAS[r['era']][0], th(r['n']), ' is-black' if r['black'] else '', pic, credit,
                 esc(r['name']), esc(th(cab)), th(len(dict.fromkeys(t['cabinet'] for t in r['terms']))), attr(r['link']),
-                ''.join('<span class="tp-party">%s</span>' % esc(x) for x in r['parties']) or '–',
+                ''.join(party_cell(x) for x in r['parties']) or '–',
                 '<br>'.join(span_text(r)), badges, esc(r['note'])))
     return ('<div class="tp-filters" role="group" aria-label="กรองตามช่วงเวลา">%s</div>'
             '<div class="tp-scroll"><table class="tp-table tp-pm"><thead><tr>'

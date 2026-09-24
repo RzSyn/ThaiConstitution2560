@@ -282,7 +282,15 @@
 
   /* ── personal-use photos: only when a local file exists (the folder is never published) ── */
   if (location.protocol === 'file:') {
-    $$('img[data-private]').forEach(function (im) {
+    $$('.tp-logo[data-private]').forEach(function (el) {          // party logos: swap only the picture
+      var probe = new Image();
+      probe.onload = function () {
+        if (el.tagName === 'IMG') { el.src = probe.src; }
+        else { var im = document.createElement('img'); im.className = 'tp-logo'; im.alt = ''; im.src = probe.src; el.replaceWith(im); }
+      };
+      probe.src = el.getAttribute('data-private');
+    });
+    $$('img[data-private]:not(.tp-logo)').forEach(function (im) {
       var probe = new Image();
       probe.onload = function () {
         im.src = probe.src;
@@ -291,7 +299,7 @@
       };
       probe.src = im.getAttribute('data-private');
     });
-    $$('.tp-noimg[data-private]').forEach(function (span) {
+    $$('.tp-noimg[data-private]:not(.tp-logo)').forEach(function (span) {
       var img = new Image();
       img.onload = function () {
         img.className = 'is-private'; img.alt = ''; img.width = 120; img.height = 160;

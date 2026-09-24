@@ -1,0 +1,37 @@
+{
+ "retrieved": "2026-09-24",
+ "logos": {
+  "พรรคกิจสังคม": {
+   "qid": "Q1127730",
+   "src": "assets/img/parties/Q1127730.png",
+   "page": "https://commons.wikimedia.org/wiki/File:252509_%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A1_(2515).png",
+   "license": "Public domain",
+   "file": "252509 พรรคกิจสังคม (2515).png",
+   "artist": "พรรคกิจสังคม (2525)"
+  },
+  "พรรคเพื่อไทย": {
+   "qid": "Q1142913",
+   "src": "assets/img/parties/Q1142913.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Pheu_Thai_Party_Logo_(2020).svg",
+   "license": "Public domain",
+   "file": "Pheu Thai Party Logo (2020).svg",
+   "artist": "Pheu Thai Party"
+  },
+  "คณะรักษาความสงบแห่งชาติ": {
+   "qid": "Q16919521",
+   "src": "assets/img/parties/Q16919521.png",
+   "page": "https://commons.wikimedia.org/wiki/File:%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%AA%E0%B8%8A.svg",
+   "license": "Public domain",
+   "file": "โลโก้ของคสช.svg",
+   "artist": "National Council for Peace and Order of Thailand (2014-2019)"
+  },
+  "พรรคชาติไทย": {
+   "qid": null,
+   "src": "assets/img/parties/chartthai.png",
+   "page": "https://commons.wikimedia.org/wiki/File:%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%84%E0%B8%97%E0%B8%A2.png",
+   "license": "CC BY-SA 4.0",
+   "file": "โลโก้พรรคชาติไทย.png",
+   "artist": "พรรคชาติไทย"
+  }
+ }
+}
