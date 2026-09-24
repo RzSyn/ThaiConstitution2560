@@ -82,6 +82,12 @@ panel is labelled as explanation; build.py enforces the facts:
   does the same for flag SVGs. Never copy photos from government sites:
   government works are copyrighted (พ.ร.บ.ลิขสิทธิ์ ม.๑๔); ม.๗ exempts only laws,
   news facts, orders and similar.
+- **Personal-use photos** (the user's choice for people with no free photo, e.g.
+  saved from Facebook): the user saves them as
+  `assets/img/private/<full name as on thaigov>.jpg`. The folder is git-ignored,
+  and site.js swaps a photo in only on `file:` pages when the file exists. Never
+  commit or push anything from that folder, and never fetch Facebook images
+  yourself.
 - soc.go.th (Cabinet Secretariat) is behind the same Cloudflare check as
   ratchakitcha. thaigov.go.th and parliament.go.th / hris.parliament.go.th work.
 

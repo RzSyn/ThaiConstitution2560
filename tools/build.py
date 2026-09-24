@@ -360,7 +360,10 @@ def ext_cabinet():
             credit = '<span>ไม่พบภาพที่ใช้ได้โดยเสรี</span>'
             # first consonant of the given name (skip the title and any leading vowel such as เ in เอกนิติ)
             initials = re.search(r'[ก-ฮ]', re.sub(r'^(นางสาว|นาง|นาย|พลตำรวจโท|พลโท)\s*', '', name)).group(0)
-            fig = '<span class="tp-noimg" aria-hidden="true">%s</span>' % esc(initials)
+            # a personal-use photo may sit in assets/img/private/<full name>.jpg (git-ignored, never published);
+            # site.js swaps it in only if the file loads, so the public site keeps the initial
+            fig = '<span class="tp-noimg" aria-hidden="true" data-private="assets/img/private/%s.jpg">%s</span>' % (
+                attr(name), esc(initials))
         cards.append('<div class="tp-person">%s<div><b>%s</b><ul>%s</ul><small>%s</small></div></div>' % (
             fig, esc(name), ''.join('<li>%s</li>' % esc(x) for x in posts), credit))
     kinds = [('รองนายกรัฐมนตรี', r'^รองนายกรัฐมนตรี'), ('รัฐมนตรีประจำสำนักนายกรัฐมนตรี', r'^รัฐมนตรีประจำสำนักนายกรัฐมนตรี'),

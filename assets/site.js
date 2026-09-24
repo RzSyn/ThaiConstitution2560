@@ -280,6 +280,20 @@
   fitPadding();
   onScroll();
 
+  /* ── personal-use photos: only when a local file exists (the folder is never published) ── */
+  if (location.protocol === 'file:') {
+    $$('.tp-noimg[data-private]').forEach(function (span) {
+      var img = new Image();
+      img.onload = function () {
+        img.className = 'is-private'; img.alt = ''; img.width = 120; img.height = 160;
+        var card = span.closest('.tp-person'), note = card && card.querySelector('small');
+        span.replaceWith(img);
+        if (note) note.textContent = 'ภาพส่วนตัวในเครื่องนี้ (ไม่ได้เผยแพร่)';
+      };
+      img.src = span.getAttribute('data-private');
+    });
+  }
+
   /* ── knowledge topics: one panel at a time in the stage ────────────── */
   var tpBtns = $$('.tp-btn'), tpPanels = $$('.tp-panel');
   var tpOrder = tpBtns.map(function (b) { return b.dataset.topic; });

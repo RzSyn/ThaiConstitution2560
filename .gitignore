@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# personal-use photos (e.g. saved from Facebook) — shown only when the page is opened on this computer, never published
+assets/img/private/
