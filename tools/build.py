@@ -333,6 +333,52 @@ def rank_table(name, n, which=None):
     return ''.join(out)
 
 
+# ── snapshots of official web pages (data/external/*.json, made by tools/scrape_js.mjs) ──
+def ext(name):
+    with io.open(os.path.join(ROOT, 'data', 'external', name + '.json'), encoding='utf-8') as f:
+        return json.load(f)
+
+
+def ext_cabinet():
+    d, pm = ext('cabinet')['data'], ext('pm')['data']
+    assert d['complete'], 'cabinet scrape did not reach the site total'
+    rows = d['rows']
+    people = []
+    for r in rows:
+        if r['name'] not in people:
+            people.append(r['name'])
+    body = ''.join('<tr><td>%s</td><td>%s</td></tr>' % (esc(r['position']), esc(r['name'])) for r in rows)
+    return ('<div class="tp-stats">'
+            '<div class="tp-stat"><b>คนที่ %s</b><span>%s นายกรัฐมนตรี</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
+            '<div class="tp-stat"><b>%s</b><span>ตำแหน่งในคณะรัฐมนตรี (บางคนดำรงสองตำแหน่ง)</span><small>ตามเว็บไซต์รัฐบาลไทย</small></div>'
+            '<div class="tp-stat"><b>%s คน</b><span>จำนวนบุคคล (นับไม่ซ้ำ)</span><small>คำนวณจากรายชื่อ</small></div></div>'
+            '<table class="tp-table"><thead><tr><th>ตำแหน่ง</th><th>ชื่อ</th></tr></thead><tbody>%s</tbody></table>') % (
+                th(pm['number']), esc(pm['name']), th(len(rows)), th(len(people)), body)
+
+
+def ext_parties():
+    d = ext('mps')['data']
+    rows = d['rows']
+    parties = {}
+    for r in rows:
+        p = parties.setdefault(r['party'], {'d': 0, 'l': 0})
+        p['l' if 'บัญชีรายชื่อ' in r['seat'] else 'd'] += 1
+    order = sorted(parties.items(), key=lambda kv: (-(kv[1]['d'] + kv[1]['l']), kv[0]))
+    top = order[0][1]['d'] + order[0][1]['l']
+    body = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td><td><b>%s</b></td><td class="tp-bar-cell"><i style="width:%.1f%%"></i></td></tr>' % (
+        esc(name), th(v['d']), th(v['l']), th(v['d'] + v['l']), 100.0 * (v['d'] + v['l']) / top) for name, v in order)
+    nd, nl = sum(v['d'] for v in parties.values()), sum(v['l'] for v in parties.values())
+    return ('<div class="tp-stats">'
+            '<div class="tp-stat"><b>%s</b><span>สมาชิกที่มีรายชื่อในระบบ (%s)</span><small>ระบบสารสนเทศสมาชิก สภาผู้แทนราษฎร</small></div>'
+            '<div class="tp-stat"><b>%s + %s</b><span>แบ่งเขตเลือกตั้ง + บัญชีรายชื่อ</span><small>นับจากรายชื่อ</small></div>'
+            '<div class="tp-stat"><b>%s</b><span>พรรคที่มีสมาชิก</span><small>นับจากรายชื่อ</small></div></div>'
+            '<table class="tp-table tp-parties"><thead><tr><th>พรรค</th><th>แบ่งเขต</th><th>บัญชีรายชื่อ</th><th>รวม</th><th aria-hidden="true"></th></tr></thead>'
+            '<tbody>%s</tbody></table>') % (th(len(rows)), esc(th(d['heading'])), th(nd), th(nl), th(len(parties)), body)
+
+
+EXT = {'cabinet': ext_cabinet, 'parties': ext_parties}
+
+
 def render_topic(t, secs):
     body = t['body']
 
@@ -373,10 +419,15 @@ def render_topic(t, secs):
     body = re.sub(r'\{\{ranktable:([\w-]+):([0-9๐-๙/]+)(?::(\d))?\}\}', lambda m: rank_table(m.group(1), m.group(2), m.group(3)), body)
     body = re.sub(r'\{\{lawtitle:([\w-]+)\}\}', lambda m: esc(law(m.group(1))['title']), body)
     body = re.sub(r'\{\{lawurl:([\w-]+)\}\}', lambda m: attr(law(m.group(1))['url']), body)
+    body = re.sub(r'\{\{ext:([\w-]+)\}\}', lambda m: EXT[m.group(1)](), body)
     left = re.findall(r'\{\{[^}]*\}\}', body)
     assert not left, 'unknown placeholder in %s: %s' % (t['id'], left)
 
     for s in t['sources']:
+        if s.get('ext'):   # {"ext": "cabinet", "t": "…"} → the snapshot's own URL and retrieval date
+            E = ext(s['ext'])
+            s['t'] = '%s — ดึงข้อมูล %s' % (s['t'], th_date(E['retrieved']))
+            s['u'] = E['url']
         if s.get('law'):   # {"law": "flag"} → the scraped law's own title and OCS link
             L = law(s['law'])
             s['t'] = '%s (ฉบับปรับปรุงล่าสุด) — ระบบฐานข้อมูลกฎหมาย สำนักงานคณะกรรมการกฤษฎีกา ดึงข้อมูล %s' % (L['title'], th_date(L['retrieved']))

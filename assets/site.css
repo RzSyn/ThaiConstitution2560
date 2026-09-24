@@ -231,6 +231,9 @@ button, input { font: inherit; }
 .tp-rank-cols h5 { margin: 0 0 6px; font: 600 15px var(--serif); color: var(--acc-2); }
 .tp-rank-cols ol { margin: 0; padding-left: 1.4em; color: var(--text); }
 .tp-ranks td { color: var(--text); }
+.tp-bar-cell { width: 34%; }
+.tp-bar-cell i { display: block; height: 10px; border-radius: 5px; background: linear-gradient(90deg, var(--acc-2), var(--acc)); min-width: 3px; }
+.tp-parties td:nth-child(n+2):nth-child(-n+4) { text-align: right; }
 .tp-src { margin-top: 24px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 13.5px; color: var(--text-3); }
 .tp-src ul { margin: 4px 0 0; padding-left: 1.2em; }
 
