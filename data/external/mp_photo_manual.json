@@ -1,0 +1,110 @@
+{
+ "retrieved": "2026-09-24",
+ "note": "MP photos chosen by hand from news articles about that MP, only when no election or party photo could be reached; each was looked at before use. crop = [left, top, right, bottom] in the source image.",
+ "data": {
+  "135": {
+   "name": "นายปิติ ปิตุเตชะ",
+   "src": "https://mpics2.mgronline.com/pics/Images/569000003538801.JPEG",
+   "page": "https://mgronline.com/politics/detail/9690000034870",
+   "credit": "ผู้จัดการออนไลน์",
+   "crop": [
+    590,
+    40,
+    930,
+    493
+   ],
+   "why": "ข่าว ปิติ เลื่อนเป็น สส. แทน ไตรศุลี ภาพซ้ายเป็นผู้หญิง (ไตรศุลี) ภาพขวาเป็นผู้ชาย (ปิติ)"
+  },
+  "182": {
+   "name": "นายนิกร จำนง",
+   "src": "https://static.thairath.co.th/media/dFQROr7oWzulq5Fa7HHCVFi6kSiiB7TT8yjtdqLmssxEGzK3ySg1AfEDOzD80WxuLwb.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2924656",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    365,
+    30,
+    755,
+    550
+   ],
+   "why": "ภาพหลักของบทความประวัติ มีชื่อบนภาพ บุคคลเดียว"
+  },
+  "211": {
+   "name": "นายจักรภพ เพ็ญแข",
+   "src": "https://static.thairath.co.th/media/B6FtNKtgSqRqbnNsbSHIhel6YyCT06A87zyv4Khrw0xiaGEg6lD4mZx1en80aYetbAdCZ.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2944865",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    430,
+    50,
+    810,
+    556
+   ],
+   "why": "ภาพหลักของบทความประวัติ มีชื่อบนภาพ"
+  },
+  "330": {
+   "name": "นางพูนสุข โพธิ์สุ",
+   "src": "https://www.dailynews.co.th/wp-content/uploads/2026/07/136.jpg",
+   "page": "https://www.dailynews.co.th/news/6023970/",
+   "credit": "เดลินิวส์",
+   "crop": [
+    165,
+    40,
+    525,
+    520
+   ],
+   "why": "ข่าวพูนสุขเลื่อนเป็น สส. ผู้หญิงในภาพตรงกับภาพข่าวอมรินทร์ที่ใช้พาดหัว \"พูนสุข\""
+  },
+  "375": {
+   "name": "นายพงศกร อรรณนพพร",
+   "src": "https://static.thairath.co.th/media/dFQROr7oWzulq5Fa7HHDM06PpKs72FesQKjP59FcVQgyG3bwmXvrRTJArAbZ2q759bW.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2927036",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    410,
+    20,
+    800,
+    540
+   ],
+   "why": "ภาพหลักของบทความประวัติ มีชื่อบนภาพ บุคคลหลักกลางภาพ"
+  },
+  "433": {
+   "name": "นางสาวขัตติยา สวัสดิผล",
+   "src": "https://static.thairath.co.th/media/dFQROr7oWzulq5Fa7HCIsrko7EQqHNDjPVyHyCA9qPYYgrfPLV7gBYPgg2qpZO2oqkv.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2930310",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    500,
+    10,
+    890,
+    530
+   ],
+   "why": "ภาพหลักของข่าวเลื่อนเป็น สส. บุคคลเดียวในภาพที่ชัด"
+  },
+  "470": {
+   "name": "นายอรรถวิชช์ สุวรรณภักดี",
+   "src": "https://static.thairath.co.th/media/dFQROr7oWzulq5Fa7HSpbanukyMIrPpOrlVYDlhwlWPtuWC1itfQWdiBPJC1CzcCJBB.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2903558",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    450,
+    20,
+    840,
+    540
+   ],
+   "why": "ภาพหลักของบทความประวัติ มีชื่อบนภาพ บุคคลเดียว"
+  },
+  "493": {
+   "name": "นางศิริวรรณ ปราศจากศัตรู",
+   "src": "https://static.thairath.co.th/media/dFQROr7oWzulq5Fa7HHGstVUmSkbvyNTrnXTAFQ2rkCvNO3Cgyi1kgLhjVVOrPLeF40.jpg",
+   "page": "https://www.thairath.co.th/news/politic/2928159",
+   "credit": "ไทยรัฐออนไลน์",
+   "crop": [
+    100,
+    30,
+    480,
+    537
+   ],
+   "why": "ข่าว สส.ใหม่ ๔ คนรายงานตัว (ปิติ พงศกร พิบูลย์ ศิริวรรณ) ผู้หญิงคนเดียวในสี่คน ภาพซ้าย; ภาพขวาคือพงศกร ตรงกับภาพอีกข่าว"
+  }
+ }
+}

@@ -97,7 +97,11 @@ panel is labelled as explanation; build.py enforces the facts:
   (party-list: name + party), then the party sites (ประชาชน WP API `personel`,
   ประชาธิปัตย์ pages, ภูมิใจไทย `admin.bhumjaithai.com/wp-json/api/v1/candidate_2026`).
   Every match is kept as `alts`, so the download falls through when a host
-  fails (PPTV's supabase host is blocked here). klathamparty.com is a
+  fails (PPTV's supabase host is blocked here). The 8 party-list MPs who moved up
+  later had no photo anywhere reachable, so `mp_photo_manual.json` holds news
+  photos picked by hand (lead image of an article about that MP, looked at,
+  cropped to that one person, reason written in `why`). Wikipedia article HTML
+  loads even when the API gives 429, but those 8 articles had no image. klathamparty.com is a
   **gambling spam site, not the party**; never use it. ptp.or.th returns 403.
 - **Personal-use photos** (the user's choice for people with no free photo, e.g.
   saved from Facebook): the user saves them as

@@ -9,6 +9,7 @@ Sources (each URL was saved from the official page by another script, never type
   senators  data/external/senators.json        rows[].photo   (www.senate.go.th, tools/fetch_senators.py)
   mps       data/external/mp_photo_urls.json   data[no].src   (hris.parliament.go.th, tools/scrapers/hris-mp-photos.js,
                                                                run on a computer in Thailand: HRIS refuses others)
+            data/external/mp_photo_manual.json data[no]       (news photos picked and checked by hand, with a crop box)
             data/external/mp_photo_party.json  data[no]       (Thai PBS election data / party websites,
                                                                tools/fetch_party_photos.py; used when HRIS has none)
   pm        data/external/pm_portraits.json    data[n].src    (archives.thaigov.go.th E-Museum)
@@ -52,9 +53,13 @@ def jobs():
     names = {r['no']: r['name'] for r in ext('mps')['data']['rows']}
     m = (ext('mp_photo_urls') or {}).get('data', {})
     party = (ext('mp_photo_party') or {}).get('data', {})
+    manual = (ext('mp_photo_manual') or {}).get('data', {})
     for no in sorted(names):
         if m.get(no, {}).get('src'):          # official HRIS photo first
             yield 'mps', names[no], no, m[no]['src'], ext('mp_photo_urls')['url'], 'สำนักงานเลขาธิการสภาผู้แทนราษฎร'
+        elif no in manual:                    # a news photo picked and checked by hand (crop box)
+            e = manual[no]
+            yield 'mps', names[no], no, [(e['src'], e['page'], e['credit'], e['crop'])], None, None
         elif no in party:                     # else Thai PBS / PPTV / the MP's party website
             e = party[no]
             yield 'mps', names[no], no, [(x['src'], x['page'], x['credit']) for x in [e] + e.get('alts', [])], None, None
@@ -86,14 +91,17 @@ def main():
         options = url if isinstance(url, list) else [(url, page, who)]   # tried in order until one downloads
         kept = [o for o in options if prev and prev.get('url') == o[0]]
         if kept and os.path.exists(dest):
-            url, page, who = kept[0]
+            url, page, who = kept[0][:3]
         else:
             errors = []
-            for url, page, who in options:
+            for opt in options:
+                url, page, who = opt[:3]
                 try:
                     data = download(url)
                     im = Image.open(io.BytesIO(data))
                     im = im.convert('RGB')
+                    if len(opt) > 3 and opt[3]:
+                        im = im.crop(tuple(opt[3]))
                     im.thumbnail(BOX, Image.LANCZOS)
                     os.makedirs(os.path.dirname(dest), exist_ok=True)
                     im.save(dest, 'JPEG', quality=80, optimize=True, progressive=True)
