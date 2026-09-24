@@ -99,12 +99,16 @@ editing `assets/site.css` or `assets/site.js`.
    the OCS text first: พระราชบัญญัติเครื่องหมายราชการ พุทธศักราช ๒๔๘๒ ม.๖ forbids
    using a เครื่องหมายราชการ without permission, ม.๗ forbids imitating one, and
    ม.๘ sets the penalty. A Garuda would also make this unofficial site look like
-   a government one. I advised against it. The user replied that the current icon
-   already is the Garuda and must not change. The icon is actually the
-   พานรัฐธรรมนูญ SVG in `assets/icon.svg`, and it stays as is. Rule: never add the
-   Garuda or any other government emblem, and do not redesign the icon unless
-   asked. (Near-miss: from memory I had the Act as พ.ศ. ๒๕๑๑; the OCS title says
-   ๒๔๘๒.)
+   a government one. I advised against it. The user replied "มันครุฑอยู่แล้ว
+   ไม่ต้องเปลี่ยน". I first recorded this as "the icon is really the พาน", which
+   was **wrong**: the user had already replaced `assets/icon.svg` with a Garuda
+   SVG of 532 KB, and `git status` showed it modified. I asserted what the file
+   contained without looking at the working tree. Rules: (a) run `git status`
+   and look at any file the user mentions before saying what it contains;
+   (b) the Garuda icon is the user's informed choice, so keep it and never swap
+   it back; (c) because of it, the "ไม่ใช่เว็บไซต์ของหน่วยงานรัฐ" disclaimers on
+   the page must stay prominent. (Near-miss: from memory I had the Act as
+   พ.ศ. ๒๕๑๑; the OCS title says ๒๔๘๒.)
 8. **Headless profile keeps localStorage between runs:** the mobile screenshot
    came out in the "paper" theme set by the desktop run. Reset state explicitly
    in screenshot specs before judging a theme.
