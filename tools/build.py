@@ -444,7 +444,9 @@ def member_tools(label, keys, counts):
 def ext_members():
     d = ext('mps')['data']
     rows = d['rows']
-    photos = ext('cabinet_photos')['photos']
+    photos = dict(ext('cabinet_photos')['photos'])
+    if os.path.exists(os.path.join(ROOT, 'data', 'external', 'member_photos.json')):
+        photos.update(ext('member_photos')['photos'])
     counts = {}
     for r in rows:
         counts[r['party']] = counts.get(r['party'], 0) + 1
@@ -460,13 +462,18 @@ def ext_members():
     if os.path.exists(spath):
         s = ext('senators')['data']
         srows = s['rows']
-        gcount = {}
+        assert len(srows) == s['total_on_page'], 'senator list shorter than the total the page shows'
+        gcount, gid = {}, {}
         for r in srows:
             gcount[r['group']] = gcount.get(r['group'], 0) + 1
-        groups = sorted(gcount, key=lambda k: (int(re.search(r'\d+', k).group(0)) if re.search(r'\d+', k) else 999, k))
-        sw = ('<p class="tp-note">%s ตามเว็บไซต์ของรัฐสภา ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> สมาชิกวุฒิสภาไม่สังกัดพรรคการเมือง '
-              'จึงแสดงกลุ่มที่ได้รับเลือกแทน</p>%s<div class="tp-people tp-members">%s</div>') % (
-            esc(th(s['heading'])), th_date(ext('senators')['retrieved']), th(len(srows)),
+            gid[r['group']] = r['groupid']
+        groups = sorted(gcount, key=lambda k: gid[k])  # the senate site's own group order
+        sw = ('<p class="tp-note">รายชื่อ%sตามเว็บไซต์วุฒิสภา (สำนักงานเลขาธิการวุฒิสภา) ดึงข้อมูลเมื่อ %s มีรายชื่อ <b>%s คน</b> ใน %s กลุ่ม '
+              'เรียงตามเลขที่ ชื่อและกลุ่มสะกดตามต้นฉบับ สว. ไม่สังกัดพรรคการเมือง จึงแสดงกลุ่มอาชีพที่ได้รับเลือกแทนพรรค '
+              'มีภาพที่ใช้ได้โดยเสรีจาก Wikimedia Commons %s คน</p>'
+              '%s<div class="tp-people tp-members">%s</div>') % (
+            esc(s['heading']), th_date(ext('senators')['retrieved']), th(len(srows)), th(len(groups)),
+            th(sum(1 for r in srows if r['name'] in photos)),
             member_tools('กลุ่ม', groups, gcount),
             member_cards(srows, photos, 'senators', lambda r: ([th(r['group'])], r['group'])))
     else:
@@ -474,9 +481,9 @@ def ext_members():
               'ซึ่งยังไม่ได้ดึงมา หน้านี้จึงยังไม่แสดงรายชื่อที่พิมพ์ขึ้นเอง</div>')
     return ('<div class="tp-chambers" role="tablist">'
             '<button type="button" role="tab" class="tp-filter is-on" data-chamber="mp" aria-selected="true">สส. · สภาผู้แทนราษฎร (%s)</button>'
-            '<button type="button" role="tab" class="tp-filter" data-chamber="sw" aria-selected="false">สว. · วุฒิสภา</button></div>'
+            '<button type="button" role="tab" class="tp-filter" data-chamber="sw" aria-selected="false">สว. · วุฒิสภา%s</button></div>'
             '<div class="tp-chamber" data-chamber="mp">%s</div><div class="tp-chamber" data-chamber="sw" hidden>%s</div>') % (
-        th(len(rows)), mp, sw)
+        th(len(rows)), ' (%s)' % th(len(srows)) if os.path.exists(spath) else '', mp, sw)
 
 
 THMON = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
