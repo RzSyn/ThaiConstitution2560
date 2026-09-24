@@ -9,6 +9,8 @@ Sources (each URL was saved from the official page by another script, never type
   senators  data/external/senators.json        rows[].photo   (www.senate.go.th, tools/fetch_senators.py)
   mps       data/external/mp_photo_urls.json   data[no].src   (hris.parliament.go.th, tools/scrapers/hris-mp-photos.js,
                                                                run on a computer in Thailand: HRIS refuses others)
+            data/external/mp_photo_party.json  data[no]       (Thai PBS election data / party websites,
+                                                               tools/fetch_party_photos.py; used when HRIS has none)
   pm        data/external/pm_portraits.json    data[n].src    (archives.thaigov.go.th E-Museum)
 
 Each photo is shrunk to at most 240×320 and saved as assets/img/official/<set>/<key>.jpg; the list
@@ -23,6 +25,7 @@ import os
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 from PIL import Image
@@ -46,12 +49,15 @@ def jobs():
     for r in s['data']['rows']:
         if r.get('photo'):
             yield 'senators', r['name'], r['no'], r['photo'], s['url'], 'สำนักงานเลขาธิการวุฒิสภา'
-    m = ext('mp_photo_urls')
-    if m:
-        names = {r['no']: r['name'] for r in ext('mps')['data']['rows']}
-        for no, v in sorted(m['data'].items()):
-            if no in names and v.get('src'):
-                yield 'mps', names[no], no, v['src'], m['url'], 'สำนักงานเลขาธิการสภาผู้แทนราษฎร'
+    names = {r['no']: r['name'] for r in ext('mps')['data']['rows']}
+    m = (ext('mp_photo_urls') or {}).get('data', {})
+    party = (ext('mp_photo_party') or {}).get('data', {})
+    for no in sorted(names):
+        if m.get(no, {}).get('src'):          # official HRIS photo first
+            yield 'mps', names[no], no, m[no]['src'], ext('mp_photo_urls')['url'], 'สำนักงานเลขาธิการสภาผู้แทนราษฎร'
+        elif no in party:                     # else Thai PBS / PPTV / the MP's party website
+            e = party[no]
+            yield 'mps', names[no], no, [(x['src'], x['page'], x['credit']) for x in [e] + e.get('alts', [])], None, None
     p = ext('pm_portraits')
     for n, v in sorted(p['data'].items(), key=lambda kv: int(kv[0])):
         yield 'pm', n, n, v['src'], p['url'], 'สำนักเลขาธิการนายกรัฐมนตรี'
@@ -61,7 +67,8 @@ def download(url):
     for wait in (0, 5, 20):
         time.sleep(wait)
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            safe = urllib.parse.quote(url, safe=":/?&=%#+@,;~!$'()*[]")   # Thai file names
+            req = urllib.request.Request(safe, headers={'User-Agent': UA})
             with urllib.request.urlopen(req, timeout=60) as r:
                 return r.read()
         except urllib.error.URLError as e:
@@ -76,19 +83,29 @@ def main():
         rel = 'assets/img/official/%s/%s.jpg' % (kind, fname)
         dest = os.path.join(ROOT, rel)
         prev = old.get(kind, {}).get(key)
-        if not (prev and prev.get('url') == url and os.path.exists(dest)):
-            try:
-                data = download(url)
-                im = Image.open(io.BytesIO(data))
-                im = im.convert('RGB')
-                im.thumbnail(BOX, Image.LANCZOS)
-                os.makedirs(os.path.dirname(dest), exist_ok=True)
-                im.save(dest, 'JPEG', quality=80, optimize=True, progressive=True)
-            except Exception as e:
-                failed.append((kind, key, '%s' % e))
+        options = url if isinstance(url, list) else [(url, page, who)]   # tried in order until one downloads
+        kept = [o for o in options if prev and prev.get('url') == o[0]]
+        if kept and os.path.exists(dest):
+            url, page, who = kept[0]
+        else:
+            errors = []
+            for url, page, who in options:
+                try:
+                    data = download(url)
+                    im = Image.open(io.BytesIO(data))
+                    im = im.convert('RGB')
+                    im.thumbnail(BOX, Image.LANCZOS)
+                    os.makedirs(os.path.dirname(dest), exist_ok=True)
+                    im.save(dest, 'JPEG', quality=80, optimize=True, progressive=True)
+                    break
+                except Exception as e:
+                    errors.append('%s' % e)
+            else:
+                failed.append((kind, key, ' / '.join(errors)))
                 continue
             time.sleep(0.2)
-        sets.setdefault(kind, {})[key] = {'src': rel, 'url': url, 'page': page, 'artist': who, 'license': 'ภาพจากเว็บไซต์ทางการ'}
+        lic = 'ภาพจากเว็บไซต์ทางการ' if who.startswith('สำนัก') else 'ภาพจากเว็บไซต์'
+        sets.setdefault(kind, {})[key] = {'src': rel, 'url': url, 'page': page, 'artist': who, 'license': lic}
     with io.open(os.path.join(ROOT, 'data', 'external', 'official_photos.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump({'retrieved': time.strftime('%Y-%m-%d'), 'sets': sets}, f, ensure_ascii=False, indent=1)
     for k, v in sets.items():

@@ -91,6 +91,14 @@ panel is labelled as explanation; build.py enforces the facts:
 - **สส./สว. tab** (`topics/members.html`, `ext:members`): MPs from mps.json (HRIS),
   senators from `tools/fetch_senators.py` (www.senate.go.th plain HTML, checked
   against the page total).
+- **MP photos** (HRIS unreachable from the cloud): `tools/fetch_party_photos.py`
+  → `mp_photo_party.json`, in this order: Thai PBS election-69 data (district
+  MPs: name + province + district must match), PPTV election-69 party pages
+  (party-list: name + party), then the party sites (ประชาชน WP API `personel`,
+  ประชาธิปัตย์ pages, ภูมิใจไทย `admin.bhumjaithai.com/wp-json/api/v1/candidate_2026`).
+  Every match is kept as `alts`, so the download falls through when a host
+  fails (PPTV's supabase host is blocked here). klathamparty.com is a
+  **gambling spam site, not the party**; never use it. ptp.or.th returns 403.
 - **Personal-use photos** (the user's choice for people with no free photo, e.g.
   saved from Facebook): the user saves them as
   `assets/img/private/<full name as on thaigov>.jpg`. The folder is git-ignored,
