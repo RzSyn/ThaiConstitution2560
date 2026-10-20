@@ -116,6 +116,11 @@ panel is labelled as explanation; build.py enforces the facts:
   401, thaigov.go.th pages show a Cloudflare check; www.senate.go.th and
   media.thaigov.go.th images work. Headless Chromium there fails on the proxy
   certificate, so use curl/Python for static pages.
+- **OCS from a cloud session (2026-10-20):** www.ocs.go.th fails TLS (its
+  chain is incomplete), and searchlaw.ocs.go.th loads, but the app shows
+  "Error 555" (a block on the client), so `scrape_ocs.mjs` cannot run there.
+  Checking for a new amendment must be done from the owner's computer.
+  `verify_gazette.py` needs `pip install pymupdf` in a fresh container.
 
 ## Adding a new amendment (ฉบับที่ ๒ …)
 
